@@ -5,13 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1148815244",
+    "hash" : "0",
     "id" : "7F8BF76A",
-    "lastKnownWriteTime" : 1548525487,
-    "last_content_update" : 1548525487,
+    "lastKnownWriteTime" : 1548521697,
+    "last_content_update" : 1548521697,
     "path" : "C:/Onedrive/Arbeit/Blog/blog/config.toml",
     "project_path" : "config.toml",
     "properties" : {
+        "cursorPosition" : "0,0",
+        "scrollLine" : "0"
     },
     "relative_order" : 1,
     "source_on_save" : false,

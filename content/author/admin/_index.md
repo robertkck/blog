@@ -25,16 +25,22 @@ role: Professor of Artificial Intelligence
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'
+  link: 'mailto:robert.kalcik@gmail.com'
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
+  link: https://twitter.com/RKalcik
 - icon: google-scholar
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://scholar.google.at/citations?user=09qIva8AAAAJ&hl=en
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/robertkck
+- icon: linkedin
+  icon_pack: ai
+  link: https://linkedin.com/in/rkalcik/
+- icon: orcid
+  icon_pack: ai
+  link: https://orcid.org/0000-0001-8369-3284
 superuser: true
 ---
 

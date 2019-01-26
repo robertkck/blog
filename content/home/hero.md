@@ -1,5 +1,5 @@
 ---
-active: true
+active: false
 cta:
   label: <i class="fas fa-download"></i> Install Now
   url: ./post/getting-started/

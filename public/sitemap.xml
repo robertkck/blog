@@ -217,7 +217,7 @@
     
     <url>
     
-      <loc>/categories/bot/</loc>
+      <loc>/tags/bot/</loc>
       <lastmod>2019-01-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -226,7 +226,7 @@
     
     <url>
     
-      <loc>/tags/bot/</loc>
+      <loc>/categories/bot/</loc>
       <lastmod>2019-01-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -289,7 +289,7 @@
     
     <url>
     
-      <loc>/categories/python/</loc>
+      <loc>/tags/python/</loc>
       <lastmod>2019-01-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -298,7 +298,7 @@
     
     <url>
     
-      <loc>/tags/python/</loc>
+      <loc>/categories/python/</loc>
       <lastmod>2019-01-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>

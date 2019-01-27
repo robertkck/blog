@@ -7,6 +7,10 @@ color_theme = "default"
 # Enable users to switch between day and night mode?
 day_night = true
 
+# add github edit https://bookdown.org/yihui/blogdown/templates.html
+GithubEdit = "https://github.com/robertkck/blog/edit/master/content/"
+GithubSource = "https://github.com/robertkck/blog/blob/master/content/"
+
 # Font style.
 #   Choose from `default`, `classic`, or `playfair`.
 font = "default"
@@ -118,11 +122,11 @@ publication_types = [
 ]
 
 # Align the main menu to the right of the page? (true/false)
-menu_align_right = false
+menu_align_right = true
 
 # Link custom CSS and JS assets
 #   (relative to /static/css and /static/js respectively)
-custom_css = []
+custom_css = ["custom-css.css"]
 custom_js  = []
 
 # Configuration of talk pages.

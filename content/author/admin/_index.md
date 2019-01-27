@@ -24,7 +24,7 @@ social:
   icon_pack: fab
   link: https://github.com/robertkck
 - icon: linkedin
-  icon_pack: ai
+  icon_pack: fab
   link: https://linkedin.com/in/rkalcik/
 - icon: orcid
   icon_pack: ai

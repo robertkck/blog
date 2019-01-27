@@ -15,7 +15,7 @@ header:
 The [SETI Institute](http://www.seti.org) never stop producing beautiful vistas into space. Following them on twitter [@SETIInstitute](https://twitter.com/SETIInstitute) pays off and led me to gems like the Venus images of the Explorer, Images from the Expolanet Travel Beauro (see above) and lately a link to a new paper Peas in a Pod: Planets in a Kepler Multi-planet System are Similar in Size and Regularly Spaced.
 
 The authors produced an inticing data viz
-
+{{< tweet 666616452582129664 >}}
 
 The first challenge in approaching the planetary jewells, was dealing with the fixed-width textfile containing the data. The structure of the textfile is a citation of the article and authors followed by a byte-per-byte description of the table and ending in the data. Maybe we can use the information from the byte-per-byte description to parse the data with `readr`. But turns out, reading the docs for `read_fwf` pointed me to the solution: `readr::read_table` which worked a treat. 
 ```{r load_data}

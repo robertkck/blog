@@ -2,7 +2,7 @@
 authors:
 - Admin
 date: "2016-04-20T00:00:00+02:00"
-draft: false
+draft: true
 gallery_item:
 - album: gallery
   caption: Default
@@ -34,7 +34,7 @@ image:
   preview_only: false
 lastmod: "2018-01-13T00:00:00+01:00"
 subtitle: 'Create a beautifully simple website in under 10 minutes :rocket:'
-summary: Create a beautifully simple website or blog in under 10 minutes.
+summary: Create a beautifully simple website or blog in under 10 minut
 tags:
 - Academic
 title: 'Academic: the website designer for Hugo'

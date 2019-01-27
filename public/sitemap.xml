@@ -4,6 +4,14 @@
     
     <url>
     
+      <loc>/project/minister-vlatin/minister-vlatin/</loc>
+      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/post/embedding-patents/</loc>
       <lastmod>2019-01-19T00:00:00+00:00</lastmod>
     </url>
@@ -38,14 +46,6 @@
     
       <loc>/post/creating-this-blog/</loc>
       <lastmod>2018-07-13T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/project/internal-project/sagdeinemeinung/</loc>
-      <lastmod>2018-07-13T00:00:00+02:00</lastmod>
     </url>
     
   
@@ -102,6 +102,14 @@
     
       <loc>/talk/</loc>
       <lastmod>2017-01-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/project/internal-project/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
     </url>
     
   
@@ -209,8 +217,35 @@
     
     <url>
     
+      <loc>/categories/bot/</loc>
+      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/bot/</loc>
+      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/categories/</loc>
       <lastmod>2018-07-12T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/deep-learning/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -237,7 +272,7 @@
     <url>
     
       <loc>/project/</loc>
-      <lastmod>2018-07-13T00:00:00+02:00</lastmod>
+      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -247,6 +282,24 @@
     
       <loc>/publication_types/</loc>
       <lastmod>2013-07-01T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/python/</loc>
+      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/python/</loc>
+      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -296,8 +349,8 @@
     
     <url>
     
-      <loc>/categories/big-data/</loc>
-      <lastmod>2019-01-19T00:00:00+00:00</lastmod>
+      <loc>/tags/world-control/</loc>
+      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -305,8 +358,8 @@
     
     <url>
     
-      <loc>/tags/diskurs/</loc>
-      <lastmod>2018-07-13T00:00:00+02:00</lastmod>
+      <loc>/categories/big-data/</loc>
+      <lastmod>2019-01-19T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -343,15 +396,6 @@
     
       <loc>/categories/machine-learning/</loc>
       <lastmod>2019-01-19T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/media/</loc>
-      <lastmod>2018-07-13T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     

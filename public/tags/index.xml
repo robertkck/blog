@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Academic</title>
+    <title>Tags on viz.</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on Academic</description>
+    <description>Recent content in Tags on viz.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>&amp;copy; Robert Kalcik 2018</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0200</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -21,29 +22,29 @@
     </item>
     
     <item>
-      <title>Deep Learning</title>
-      <link>/tags/deep-learning/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
-      
-      <guid>/tags/deep-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Demo</title>
-      <link>/tags/demo/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
-      
-      <guid>/tags/demo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>R Markdown</title>
       <link>/tags/r-markdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
       <guid>/tags/r-markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>diskurs</title>
+      <link>/tags/diskurs/</link>
+      <pubDate>Fri, 13 Jul 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/tags/diskurs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>media</title>
+      <link>/tags/media/</link>
+      <pubDate>Fri, 13 Jul 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/tags/media/</guid>
       <description></description>
     </item>
     
@@ -62,6 +63,15 @@
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
       <guid>/tags/regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>/tags/tutorial/</link>
+      <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tutorial/</guid>
       <description></description>
     </item>
     

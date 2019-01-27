@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>machine learning on viz.</title>
+    <link>/categories/machine-learning/</link>
+    <description>Recent content in machine learning on viz.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Robert Kalcik 2018</copyright>
+    <lastBuildDate>Sat, 19 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Embedding of the Patent Space</title>
+      <link>/post/embedding-patents/</link>
+      <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/embedding-patents/</guid>
+      <description>Yes yes
+Sources:
+https://www.youtube.com/watch?v=gJD_5Gr5ZHAhttps://www.ted.com/talks/vittorio_loreto_need_a_new_idea_start_at_the_edge_of_what_is_known/reading-list#t-956960</description>
+    </item>
+    
+  </channel>
+</rss>

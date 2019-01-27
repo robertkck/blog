@@ -1,0 +1,20 @@
+---
+title: Creating this blog
+author: Robert Kalcik
+date: '2018-07-13'
+slug: creating-this-blog
+categories:
+  - R
+tags:
+  - tutorial
+header:
+  caption: ''
+  image: ''
+---
+
+Nice blogs with the Hugo Academic Theme: 
+* https://pjs-web.de/
+* Up and running with blogdown and netlify
+* AI Institut Wien
+* Funny dude with glasses
+* Dude von FitteR HappieR

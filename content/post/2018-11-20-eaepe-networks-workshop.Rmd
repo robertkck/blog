@@ -1,0 +1,98 @@
+---
+title: EAEPE - Networks Workshop
+author: Robert Kalcik
+date: '2018-11-20'
+slug: eaepe-networks-workshop
+categories:
+  - networks
+  - economics
+  - innovation
+  - policy
+tags: []
+header:
+  caption: 'New way of innovation policy design and its evaluation - instights from complex adaptive systems and beyond'
+  image: ''
+---
+
+Last week the pluralist forum [EAEPE](https://eaepe.org/) held its workshop on *New ways of innovation policy design and its evaluation - instights from complex adaptive systems and beyond*. 
+
+# Radical innovation
+The feedback on the presentation related to
+
+* The results are no surprise and similar to findings from the exploration/exploitation literature and regional lock-in
+* Single inventors need to be tackled by using a two stage regression approach
+* Exports could be used as another variable to explain the ties between two regions: Inter-regional industrial connection could lead to radical innovations and cross-fertilisation
+* New question: How does radicalness relate to regional competitiveness? Is there a U-Shaped relationship between competitiveness and radicalness
+* Connection to the *weak ties hypothesis*
+* How does strategic patenting / patent trolls affect the analysis
+
+The ideas that come from the feedback are
+
+* Reproduce the model from Agion with radical innovation
+* Check single inventors with a two stage regression approach
+* Control for proximity in the goods space
+
+Some more ideas from other talks
+
+* Control for proximity in the technology space and check effect: Hypothesis that high cognitive proximity leads to incremental innovation, but careful with confounding with definition of radicalness
+* Imrpove radicalness definition. If economic impact is included, more economic controls should be added
+* Use the RPX 
+* Closely inspect the network structure and investigate other network metrics to control for (e.g. homophily)
+* Frame as collaboration regression using collaboration as unit of observation
+* Better specification of distance could be travel time (dykestra, connection between places), see Hidalgo paper on the effect of high-speed train in China
+* Perform test for joint significance (F-Test) of distance and similarity
+* Include continental EFTA (Switzerland and Norway)
+* Can we substitute geographical distance for cognitive or social distance
+* Use a gravity model
+* Check Foray's book on radical transformation building on the ecosystem
+
+## Data sets to explore
+
+* *Förderkatalog* of all German funded projects
+* [Facebook data](https://www.aeaweb.org/articles?id=10.1257/jep.32.3.259) on social ties between counties
+* [RPX Patent troll database](https://insight.rpxcorp.com/)
+
+## Other Talks
+
+* Apostolos pointed towards the risk-reward nexus by [Mazzucato and Lazonick](https://academic.oup.com/icc/article-abstract/22/4/1093/753299) and that it is important ot affec the mental model of agents
+* Fritsch talked about the tradeoff between efficiency and novelty in inventor ties and that the discussion about related and unrelated variety is hyped. Both incremental and disruptive innovation is needed. 
+* [Kristina Bogner](https://inno.uni-hohenheim.de/bogner) took the audience for a tour through the network of bio-economy innovation actors looking for the optimal networ structure for diffusion. At the core was the importance of [dedicated knowledge](https://www.mdpi.com/2071-1050/10/6/1694). She finds a persistend core of innovation actors (old universities, large companies) with a changing periphery. Comparing the network to a small world and scale-free architecture she finds that scale-free networks forster diffusion as the degree distribution is important. 
+* [Gergö Tóth](http://anet.krtk.mta.hu/team/gergo-toth/) and [Zoltán Elekes]() presented an interesting paper explaining persistence in inventor ties with geographical, cognitive (tech) and social (collab) proximity between regions. Nice visualisations in the [paper](https://arxiv.org/pdf/1807.07637.pdf)!
+
+    + Patenting space is fragmented
+    + National borders are important for collaboration
+    + Scatter plot P(collab) on proximity measures
+    + Gravity approaches of co-inventorship
+    + Zero inflated negative binomial regression (probit?)
+    + Check methodology!
+
+* [Kolja Hesse](http://www.crie.uni-bremen.de/de/mitarbeiter_detail/654-kolja-hesse-msc) presented preliminary work on the effect of collaboration between organisations on the radicalness of innovations. He uses a definition of radicalness related to the novelty of IPC combinations. 
+* [Holger Graf](http://www.microtheory.uni-jena.de/team/members/graf/) a colleague of Martin Kalthaus in Jena presented work on the effect of cluster policy. He is the author of network analysis in R for innovation networks
+* kene approach by Gilbert 1997. Gilbert, Ahrweiler, Pyka, SKIN Model
+* Dominique Foray: 
+    + Mission oriented innovation is an Oxymoron
+    + Man to the moon was a hierarchical, disciplinary, centralised mission
+    + intermediate process between bottom-up and top-down is needed
+    + engineering achievement - discrete innovation goal - structural change
+    + Smart Specialisation (S3) is not to identify a sector, but direction for transformation and select projects for transformation
+        1. Forumalte goal
+        2. targeted spending
+        3. specific needs
+        4. agglomeration and scale effects relatedness not cooperation
+        5. strcutural effects
+        6. minimise risks
+    + Tinbergen assignment: How many instruments are needed, [Tinbergen Rule](http://ralphanomics.blogspot.com/2011/02/tinbergen-rule.html)
+    + Abramowits: Good Follower captures spill-overs, help incumbents to absorb and adopt innovation
+
+
+
+
+
+
+
+
+
+
+
+
+Something changes

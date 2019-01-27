@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Homes on Academic</title>
+    <title>Homes on viz.</title>
     <link>/home/</link>
-    <description>Recent content in Homes on Academic</description>
+    <description>Recent content in Homes on viz.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>&amp;copy; Robert Kalcik 2018</copyright>
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0200</lastBuildDate>
     
 	<atom:link href="/home/index.xml" rel="self" type="application/rss+xml" />
@@ -35,7 +36,7 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
       
       <guid>/home/about/</guid>
-      <description></description>
+      <description>About me I am a data scientist working at the Austrian Institute of Technology. Find out more about my projects on Austrian media, posts on data viz, an publications in the area of innovation, policy and low-carbon transition, for example.</description>
     </item>
     
     <item>
@@ -75,15 +76,6 @@
     </item>
     
     <item>
-      <title>Recent Publications</title>
-      <link>/home/publications/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
-      
-      <guid>/home/publications/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Featured Talks</title>
       <link>/home/talks_featured/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
@@ -116,6 +108,15 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
       
       <guid>/home/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Publications</title>
+      <link>/home/publications/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/home/publications/</guid>
       <description></description>
     </item>
     

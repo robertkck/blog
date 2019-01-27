@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>policy on viz.</title>
+    <link>/categories/policy/</link>
+    <description>Recent content in policy on viz.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Robert Kalcik 2018</copyright>
+    <lastBuildDate>Tue, 20 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/policy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>EAEPE - Networks Workshop</title>
+      <link>/post/eaepe-networks-workshop/</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/eaepe-networks-workshop/</guid>
+      <description>Last week the pluralist forum EAEPE held its workshop on New ways of innovation policy design and its evaluation - instights from complex adaptive systems and beyond.
+Radical innovationThe feedback on the presentation related to
+The results are no surprise and similar to findings from the exploration/exploitation literature and regional lock-inSingle inventors need to be tackled by using a two stage regression approachExports could be used as another variable to explain the ties between two regions: Inter-regional industrial connection could lead to radical innovations and cross-fertilisationNew question: How does radicalness relate to regional competitiveness?</description>
+    </item>
+    
+  </channel>
+</rss>

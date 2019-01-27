@@ -1,0 +1,115 @@
+---
+title: Kepler's Peas
+author: Robert Kalcik
+date: '2018-07-12'
+slug: kepler-s-exoplanet-necklaces
+categories:
+  - R
+  - Astronomy
+tags: []
+header:
+  caption: ''
+  image: ''
+---
+
+The [SETI Institute](http://www.seti.org) never stop producing beautiful vistas into space. Following them on twitter [@SETIInstitute](https://twitter.com/SETIInstitute) pays off and led me to gems like the Venus images of the Explorer, Images from the Expolanet Travel Beauro (see above) and lately a link to a new paper Peas in a Pod: Planets in a Kepler Multi-planet System are Similar in Size and Regularly Spaced.
+
+The authors produced an inticing data viz
+
+
+The first challenge in approaching the planetary jewells, was dealing with the fixed-width textfile containing the data. The structure of the textfile is a citation of the article and authors followed by a byte-per-byte description of the table and ending in the data. Maybe we can use the information from the byte-per-byte description to parse the data with `readr`. But turns out, reading the docs for `read_fwf` pointed me to the solution: `readr::read_table` which worked a treat. 
+```{r load_data}
+library(tidyverse)
+library(plotly)
+
+orig <- read_file("http://iopscience.iop.org/1538-3881/155/1/48/suppdata/ajaa9ff6t1_mrt.txt")
+# orig <- read_file("C:/Users/KalcikR/OneDrive/Arbeit/Blog/ibid/data/kepler.txt")
+# heading <- names(read_table(orig, skip = 9, n_max = 0))
+desc <- read_table(orig, skip = 11, n_max = 15, col_names = FALSE) %>% 
+  transmute(
+    var = str_trim(str_extract(X3, "\\s.*")),
+    name = case_when(
+      is.na(X5) ~ X4,
+      TRUE ~ paste(X4, X5)
+    )
+  ) %>% na.omit()
+df <- read_table(orig, skip = 30, col_names = desc$var) %>% janitor::clean_names()
+df %>% head()
+```
+
+
+Let's get dirty visualising. To be honest, I do not have the slightest clue what the variables might indicate, but brute forcing together with a few educated guesses can get you to the goal quickly. 
+
+```{r display, echo = FALSE}
+p <- df %>% filter(row_number() < 50) %>% 
+  ggplot(aes(x = per, y = koi_s, size = rp, colour = t)) +
+  geom_point() +
+  hrbrthemes::theme_ipsum()
+
+ggplotly(p)
+
+```
+
+Or interactively
+
+```{r interactive}
+df %>% 
+  plot_ly(type = 'scatter', mode = 'markers',
+          x = ~log(per), y = ~koi_s, size = ~rp, color = ~t)
+```
+
+or radial
+
+```{r}
+p <- df %>% # filter(row_number() < 100) %>% 
+  ggplot(aes(x = koi_s, y = log(per), size = rp, colour = t)) +
+  geom_jitter() +
+#  labs() +
+  scale_x_discrete(breaks = NULL, labels = NULL) +
+  hrbrthemes::theme_ipsum() + 
+  coord_polar()
+
+p
+```
+
+
+```{r}
+p <- df %>% filter(row_number() < 100) %>% 
+  mutate(loc = 0.5) %>% 
+  ggplot(aes(x = loc, y = log(per), size = rp, colour = t)) +
+  geom_point() +
+  # scale_x_discrete(breaks = NULL, labels = NULL) +
+  hrbrthemes::theme_ipsum() + 
+  coord_polar()
+
+p
+```
+
+```{r}
+p <- df %>%
+  ggplot(aes(x = log(per), size = rp, colour = t)) +
+  geom_histogram() +
+  hrbrthemes::theme_ipsum()
+p
+```
+
+
+Source: 
+
+* http://www.manyworlds.space/index.php/2018/07/09/the-architecture-of-solar-systems/
+* https://arxiv.org/pdf/1706.06204.pdf
+* https://arxiv.org/abs/1706.06204
+* http://iopscience.iop.org/article/10.3847/1538-3881/aa9ff6/meta#ajaa9ff6t1
+* http://www.datasketch.es/may/code/nadieh/
+* https://www.littlemissdata.com/blog/nasadatanauts
+* Stylised map of exoplanets and code to create proper radial chart with interesting hover infromation: https://www.reddit.com/r/dataisbeautiful/comments/9xlmy0/stylised_map_of_all_known_nearby_exoplanets_oc/
+
+
+Embed the SETI Tweet
+
+While on the topic, check out Willem Tulp's gorgeous ESA [Stllar Family Portrait](http://sci.esa.int/gaia-stellar-family-portrait/).
+
+
+![](https://media.giphy.com/media/w5NqcJHMFziBa/giphy.gif)
+
+Header Image: 'headers/Kepler_header.jpg'

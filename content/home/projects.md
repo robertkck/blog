@@ -34,7 +34,7 @@ filter_default = 0
 
 [[filter]]
   name = "Python"
-  tag = ".Python"
+  tag = "Python"
 
 [[filter]]
   name = "Other"

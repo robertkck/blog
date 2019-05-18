@@ -2,121 +2,121 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on viz.</title>
-    <link>https://viz.netlify.com/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on viz.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Robert Kalcik 2018</copyright>
     <lastBuildDate>Sun, 27 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://viz.netlify.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bot</title>
-      <link>https://viz.netlify.com/categories/bot/</link>
+      <link>/categories/bot/</link>
       <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://viz.netlify.com/categories/bot/</guid>
+      <guid>/categories/bot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>https://viz.netlify.com/categories/python/</link>
+      <link>/categories/python/</link>
       <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://viz.netlify.com/categories/python/</guid>
+      <guid>/categories/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>big data</title>
-      <link>https://viz.netlify.com/categories/big-data/</link>
+      <link>/categories/big-data/</link>
       <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://viz.netlify.com/categories/big-data/</guid>
+      <guid>/categories/big-data/</guid>
       <description></description>
     </item>
     
     <item>
       <title>embeddings</title>
-      <link>https://viz.netlify.com/categories/embeddings/</link>
+      <link>/categories/embeddings/</link>
       <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://viz.netlify.com/categories/embeddings/</guid>
+      <guid>/categories/embeddings/</guid>
       <description></description>
     </item>
     
     <item>
       <title>machine learning</title>
-      <link>https://viz.netlify.com/categories/machine-learning/</link>
+      <link>/categories/machine-learning/</link>
       <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://viz.netlify.com/categories/machine-learning/</guid>
+      <guid>/categories/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>technology</title>
-      <link>https://viz.netlify.com/categories/technology/</link>
+      <link>/categories/technology/</link>
       <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://viz.netlify.com/categories/technology/</guid>
+      <guid>/categories/technology/</guid>
       <description></description>
     </item>
     
     <item>
       <title>economics</title>
-      <link>https://viz.netlify.com/categories/economics/</link>
+      <link>/categories/economics/</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://viz.netlify.com/categories/economics/</guid>
+      <guid>/categories/economics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>innovation</title>
-      <link>https://viz.netlify.com/categories/innovation/</link>
+      <link>/categories/innovation/</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://viz.netlify.com/categories/innovation/</guid>
+      <guid>/categories/innovation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>networks</title>
-      <link>https://viz.netlify.com/categories/networks/</link>
+      <link>/categories/networks/</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://viz.netlify.com/categories/networks/</guid>
+      <guid>/categories/networks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>policy</title>
-      <link>https://viz.netlify.com/categories/policy/</link>
+      <link>/categories/policy/</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://viz.netlify.com/categories/policy/</guid>
+      <guid>/categories/policy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>https://viz.netlify.com/categories/r/</link>
+      <link>/categories/r/</link>
       <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://viz.netlify.com/categories/r/</guid>
+      <guid>/categories/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Astronomy</title>
-      <link>https://viz.netlify.com/categories/astronomy/</link>
+      <link>/categories/astronomy/</link>
       <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://viz.netlify.com/categories/astronomy/</guid>
+      <guid>/categories/astronomy/</guid>
       <description></description>
     </item>
     

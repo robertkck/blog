@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GA Cushen on viz.</title>
-    <link>/authors/ga-cushen/</link>
+    <link>https://viz.netlify.com/authors/ga-cushen/</link>
     <description>Recent content in GA Cushen on viz.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Robert Kalcik 2018</copyright>
     <lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="/authors/ga-cushen/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://viz.netlify.com/authors/ga-cushen/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>A Person Re-Identification System For Mobile Devices</title>
-      <link>/publication/person-re-id/</link>
+      <link>https://viz.netlify.com/publication/person-re-id/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0200</pubDate>
       
-      <guid>/publication/person-re-id/</guid>
+      <guid>https://viz.netlify.com/publication/person-re-id/</guid>
       <description>More detail can easily be written here using Markdown and $\rm \LaTeX$ math code.</description>
     </item>
     
     <item>
       <title>Mobile visual clothing search</title>
-      <link>/publication/clothing-search/</link>
+      <link>https://viz.netlify.com/publication/clothing-search/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0200</pubDate>
       
-      <guid>/publication/clothing-search/</guid>
+      <guid>https://viz.netlify.com/publication/clothing-search/</guid>
       <description>More detail can easily be written here using Markdown and $\rm \LaTeX$ math code.</description>
     </item>
     

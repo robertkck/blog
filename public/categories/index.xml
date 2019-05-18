@@ -7,19 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Robert Kalcik 2018</copyright>
-    <lastBuildDate>Thu, 12 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 27 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Astronomy</title>
-      <link>/categories/astronomy/</link>
-      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/astronomy/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Bot</title>
@@ -40,29 +31,11 @@
     </item>
     
     <item>
-      <title>R</title>
-      <link>/categories/r/</link>
-      <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>big data</title>
       <link>/categories/big-data/</link>
       <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/big-data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>economics</title>
-      <link>/categories/economics/</link>
-      <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/economics/</guid>
       <description></description>
     </item>
     
@@ -76,20 +49,38 @@
     </item>
     
     <item>
-      <title>innovation</title>
-      <link>/categories/innovation/</link>
-      <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/innovation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>machine learning</title>
       <link>/categories/machine-learning/</link>
       <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>technology</title>
+      <link>/categories/technology/</link>
+      <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>economics</title>
+      <link>/categories/economics/</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/economics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>innovation</title>
+      <link>/categories/innovation/</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/innovation/</guid>
       <description></description>
     </item>
     
@@ -112,11 +103,20 @@
     </item>
     
     <item>
-      <title>technology</title>
-      <link>/categories/technology/</link>
-      <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
+      <title>R</title>
+      <link>/categories/r/</link>
+      <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/technology/</guid>
+      <guid>/categories/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Astronomy</title>
+      <link>/categories/astronomy/</link>
+      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/astronomy/</guid>
       <description></description>
     </item>
     

@@ -41,7 +41,7 @@ reading_time = true
 comment_count = true
 
 # Display next/previous section pager?
-section_pager = false
+section_pager = true
 
 # Enable global LaTeX math rendering?
 #   If false, you can enable it locally on a per page basis.
@@ -74,7 +74,7 @@ gravatar = false
   # phone = "888 888 88 88"
   skype = "robert.kalcik"
   telegram = "rkalcik"
-  keybase = ""  # Your keybase.io username.
+  keybase = "rkalcik"  # Your keybase.io username.
 
   # Enter an optional link for booking appointments (e.g. calendly.com).
   appointment_url = ""

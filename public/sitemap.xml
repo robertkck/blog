@@ -1,11 +1,91 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+    
+    <url>
+    
+      <loc>/categories/bot/</loc>
+      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/bot/</loc>
+      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/</loc>
+      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
   
     
     <url>
     
       <loc>/project/minister-vlatin/minister-vlatin/</loc>
       <lastmod>2019-01-27T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/project/</loc>
+      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/python/</loc>
+      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/python/</loc>
+      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/</loc>
+      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/world-control/</loc>
+      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/</loc>
+      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -20,8 +100,80 @@
     
     <url>
     
+      <loc>/categories/big-data/</loc>
+      <lastmod>2019-01-19T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/embeddings/</loc>
+      <lastmod>2019-01-19T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/machine-learning/</loc>
+      <lastmod>2019-01-19T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/technology/</loc>
+      <lastmod>2019-01-19T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/post/eaepe-networks-workshop/</loc>
       <lastmod>2018-11-20T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/economics/</loc>
+      <lastmod>2018-11-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/innovation/</loc>
+      <lastmod>2018-11-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/networks/</loc>
+      <lastmod>2018-11-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/policy/</loc>
+      <lastmod>2018-11-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -46,6 +198,33 @@
     
       <loc>/post/creating-this-blog/</loc>
       <lastmod>2018-07-13T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/r/</loc>
+      <lastmod>2018-07-13T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/tutorial/</loc>
+      <lastmod>2018-07-13T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/astronomy/</loc>
+      <lastmod>2018-07-12T00:00:00+00:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -108,8 +287,26 @@
     
     <url>
     
+      <loc>/tags/deep-learning/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/project/internal-project/</loc>
       <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/academic/</loc>
+      <lastmod>2018-01-13T00:00:00+01:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -124,6 +321,33 @@
     
     <url>
     
+      <loc>/authors/admin/</loc>
+      <lastmod>2018-01-13T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/</loc>
+      <lastmod>2018-01-13T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/publication_types/2/</loc>
+      <lastmod>2015-09-01T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/publication/person-re-id/</loc>
       <lastmod>2015-09-01T00:00:00+02:00</lastmod>
     </url>
@@ -132,8 +356,71 @@
     
     <url>
     
+      <loc>/authors/ga-cushen/</loc>
+      <lastmod>2015-09-01T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/publication_types/</loc>
+      <lastmod>2015-09-01T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/post/2015-07-23-r-rmarkdown/</loc>
       <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/r-markdown/</loc>
+      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/plot/</loc>
+      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/regression/</loc>
+      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/publication_types/1/</loc>
+      <lastmod>2013-07-01T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/ms-nixon/</loc>
+      <lastmod>2013-07-01T00:00:00+02:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -155,169 +442,7 @@
     
     <url>
     
-      <loc>/publication_types/1/</loc>
-      <lastmod>2013-07-01T00:00:00+02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication_types/2/</loc>
-      <lastmod>2015-09-01T00:00:00+02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/academic/</loc>
-      <lastmod>2018-01-13T00:00:00+01:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/admin/</loc>
-      <lastmod>2018-01-13T00:00:00+01:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/astronomy/</loc>
-      <lastmod>2018-07-12T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/author/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/</loc>
-      <lastmod>2018-01-13T00:00:00+01:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/bot/</loc>
-      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/bot/</loc>
-      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/</loc>
-      <lastmod>2018-07-12T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/deep-learning/</loc>
-      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/ga-cushen/</loc>
-      <lastmod>2015-09-01T00:00:00+02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/ms-nixon/</loc>
-      <lastmod>2013-07-01T00:00:00+02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/project/</loc>
-      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication_types/</loc>
-      <lastmod>2013-07-01T00:00:00+02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/python/</loc>
-      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/python/</loc>
-      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/r/</loc>
-      <lastmod>2018-07-13T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/r-markdown/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -334,132 +459,6 @@
     <url>
     
       <loc>/slides/example-slides/</loc>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/</loc>
-      <lastmod>2018-01-13T00:00:00+01:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/world-control/</loc>
-      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/big-data/</loc>
-      <lastmod>2019-01-19T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/economics/</loc>
-      <lastmod>2018-11-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/embeddings/</loc>
-      <lastmod>2019-01-19T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/innovation/</loc>
-      <lastmod>2018-11-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/machine-learning/</loc>
-      <lastmod>2019-01-19T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/networks/</loc>
-      <lastmod>2018-11-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/plot/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/policy/</loc>
-      <lastmod>2018-11-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/regression/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/technology/</loc>
-      <lastmod>2019-01-19T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/tutorial/</loc>
-      <lastmod>2018-07-13T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/</loc>
-      <lastmod>2017-10-15T00:00:00+02:00</lastmod>
-      <priority>0</priority>
     </url>
     
   

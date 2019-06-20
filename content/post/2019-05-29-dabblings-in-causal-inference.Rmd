@@ -1,0 +1,51 @@
+---
+title: Dabblings in Causal Inference
+author: Robert Kalcik
+date: '2019-05-29'
+slug: dabblings-in-causal-inference
+categories:
+  - economics
+  - R
+tags: []
+draft: true
+image:
+  caption: ''
+  focal_point: ''
+---
+
+Following lecture Causal Inference Lecture 2 Collider Bias
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+talent = rnorm(1000)
+looks = rnorm(1000)
+
+cor(talent, looks)
+```
+
+```{r}
+x = talent + looks
+skimr::skim(x)
+```
+
+```{r}
+job = x > quantile(x, .75)
+cor(talent[job], looks[job])
+```
+
+```{r}
+df <- tibble(talent, looks, job) 
+df %>% 
+  ggplot(aes(talent, looks, colour = job)) + 
+    geom_point()
+```
+```{r}
+df %>% filter(job) %>% 
+  ggplot(aes(talent, looks)) + 
+    geom_point() + 
+    geom_smooth()
+```
+

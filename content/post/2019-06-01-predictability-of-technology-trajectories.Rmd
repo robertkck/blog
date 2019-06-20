@@ -1,0 +1,22 @@
+---
+title: Predictability of technology trajectories using representation learning on graphs
+author: ''
+date: '2019-06-01'
+slug: predictability-of-technology-trajectories
+categories: []
+bibliography: references/complexity.bib
+tags: []
+draft: true
+image:
+  caption: ''
+  focal_point: ''
+---
+
+Regional technological specialisation follows an underlying time-varying multilayer network of technologies and geographical units hosting inventors. Thus, the socio-technological system is characterised by emergence and inherently hard to predict [@thurner]. Nevertheless, high effort has been put into developing methods for predicting the development of emergent technologies (see e.g. vpinstitute.org/research-examples/), regional technological trajectories [@farmer; @uhlbach] and new avenues for research based on existing patent data [@agrawal]. Predicting technological specialisation often takes the vantage point of understanding technological development as a meandering movement through the adjacent possible [@kauffman; @loreto].
+
+New developments in predictive analytics have enabled researchers and engineers to capture non-linear behaviour and complex interactions to formulate predictions to an unprecedented degree of precision. To apply these methods, the research questions need to be reframed as a prediction problem. These methods require the research question to be reframed as a prediction problem, thus, opening up the possibility to utilize learning methods. 
+
+In this paper, we study trajectories of regional technological specialisation  in Europe by reframing the analysis as a prediction problem and using  methods from the computational socioeconomics and deep learning. More specifically, we use a data driven approach to predict regional technological specialisation patterns based on the REGPAT database. @mealy have shown the equivalence between spectral clustering algorithm, dimensionality reduction methods and the ECI. We add to the literature by investigating graph embedding techniques - another form of dimensionality reduction methods [@goyal; @cai] - for link prediction and node classification. Traditionally, machine learning approaches relied on pre-defined heuristics to extract features encoding structural information about a graph  [@hamilton]. Structural Deep Network Embeddings, as one method of representation learning on graphs, is applied to automatically learn to encode graph structure on the bipartite RTA - region network. The results help to better understand the predictability of technology trajectories on this type of knowledge graphs and yield high-precision predictions on a short to medium time-frame. 
+
+
+## References

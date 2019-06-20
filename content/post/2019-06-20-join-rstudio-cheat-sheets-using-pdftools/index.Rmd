@@ -1,14 +1,12 @@
 ---
-title: 'Join RStudio Cheat Sheets using the pdftools package'
+title: 'Join RStudio Cheatsheets using the pdftools package'
 author: Robert Kalcik
 date: '2019-06-20'
 bibliography: [../references/packages.bib]
+summary: 'Merge all RStudio Cheatsheets into a 1-sided and a 2-sided PDF for :printer:'
 link-citations: true
 categories:
   - R
-tags:
-  - cheasheet
-  - conference
 header:
   caption: 'RStudio and various authors'
   focal_point: ''
@@ -24,23 +22,26 @@ At the occastion of the [RISIS Summer School on Data Science in Science, Technol
 
 Garrett Grolemund at RStudio maintains the [github repo](https://github.com/rstudio/cheatsheets) of all contributed cheatsheets. Since the sheets have been contributed by members of the R Community under [CC-BY-4.0](https://creativecommons.org/licenses/by-sa/4.0/), I can share my merged files with you. You will find credits for each individual sheet author at the bottom of the page. 
 
-Either download each cheatsheet into a folder or clone the github repo mentioned above (>900MB). Then, using the  [pdftools](https://ropensci.org/technotes/2019/04/24/pdftools-22/) package by [Jeroen Ooms](https://twitter.com/opencpu), I merged the one-sided and two-sided cheatsheets into to individual PDFs for easy printing :printer:
+Either download each cheatsheet into a folder or clone the github repo mentioned above (>900MB). Then, using the  [pdftools](https://ropensci.org/technotes/2019/04/24/pdftools-22/) package by [Jeroen Ooms](https://twitter.com/opencpu), merge the one-sided and two-sided cheatsheets into to individual PDFs for easy printing :printer:
 
 ```{r cache = TRUE, warning = FALSE, eval = FALSE}
+library(pdftools)
+
 f <- list.files("cheatsheets/", pattern = "\\.pdf$", full.names = TRUE)
-len <- purrr::map_int(f, pdftools::pdf_length)
-pdftools::pdf_combine(f[len == 2], output = "2sided.pdf")
-pdftools::pdf_combine(f[len == 1], output = "1sided.pdf")
+len <- purrr::map_int(f, pdf_length)
+pdf_combine(f[len == 1], output = "1sided.pdf")
+pdf_combine(f[len == 2], output = "2sided.pdf")
 
 ```
 
+
+---
+
 You can download the output here:
 
-* `r fa("download", fill = "#ee5863")` [2-sided cheatsheets](2sided.pdf)
-* [1-sided cheatsheets](1sided.pdf) 
+* `r fa("download", fill = "#343c56")` [2-sided cheatsheets](2sided.pdf){download="cheatsheets_2sided.pdf"}
+* `r fa("download", fill = "#343c56")` [1-sided cheatsheets](1sided.pdf){download="cheatsheets_1sided.pdf"} 
 
- 
-
-
+---
 
 

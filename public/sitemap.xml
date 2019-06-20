@@ -53,33 +53,6 @@
     
     <url>
     
-      <loc>/tags/</loc>
-      <lastmod>2019-06-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/cheasheet/</loc>
-      <lastmod>2019-06-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/conference/</loc>
-      <lastmod>2019-06-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/</loc>
       <lastmod>2019-06-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -158,6 +131,15 @@
     <url>
     
       <loc>/tags/source-themes/</loc>
+      <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/</loc>
       <lastmod>2019-04-07T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>

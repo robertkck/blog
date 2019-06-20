@@ -3,6 +3,7 @@ title: Creating this blog
 author: Robert Kalcik
 date: '2018-07-13'
 slug: creating-this-blog
+draft: true
 categories:
   - R
 tags:

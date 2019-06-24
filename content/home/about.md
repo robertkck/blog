@@ -14,6 +14,4 @@ title = "About me :wave:"
 author = "Admin"
 +++
 
-I am a data scientist interested in open data, data visualisation and machine learning. At the Austrian Institute of Technology my research revolves around the socio-economic impact of R&I policy. Find out more about my [projects](#projects) on Austrian media, [posts](../post/_master/LICENSE_index.md) on data viz, an [publications](http://www.viz.netlify.com/#publications) in the area of innovation, policy and low-carbon transition, for example. 
-
 # When I'm not analysing shit, I enjoy making stuff. 

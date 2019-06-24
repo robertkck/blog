@@ -1,0 +1,13 @@
+---
+title: Seats in the European Parliament
+author: Robert Kalcik
+date: '2019-06-20'
+slug: []
+categories: []
+tags:
+  - Apportionment
+  - EP
+image:
+  caption: ''
+  focal_point: ''
+---

@@ -27,7 +27,25 @@
     
     <url>
     
+      <loc>/tags/apportionment/</loc>
+      <lastmod>2019-06-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/categories/</loc>
+      <lastmod>2019-06-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/ep/</loc>
       <lastmod>2019-06-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -44,7 +62,33 @@
     
     <url>
     
+      <loc>/project/</loc>
+      <lastmod>2019-06-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/categories/r/</loc>
+      <lastmod>2019-06-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/project/2019-06-20-seats-in-the-european-parliament/</loc>
+      <lastmod>2019-06-20T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/</loc>
       <lastmod>2019-06-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -139,15 +183,6 @@
     
     <url>
     
-      <loc>/tags/</loc>
-      <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/authors/admin/</loc>
       <lastmod>2019-04-07T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -202,15 +237,6 @@
     
       <loc>/project/minister-vlatin/minister-vlatin/</loc>
       <lastmod>2019-01-27T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/project/</loc>
-      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   

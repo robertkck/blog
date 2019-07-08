@@ -1,0 +1,60 @@
+---
+title: RISIS Summer School on Data Science in STI
+author: Robert Kalcik
+date: '2019-06-25'
+slug: []
+draft: true 
+categories: []
+tags: []
+image:
+  caption: ''
+  focal_point: ''
+---
+
+# Rodrigo Costas:
+
+* Scientometrics is a part of Data Science as it extracts knowledge from structured and unstructured data
+* "We are archeologists" We follow traces about topics, semantics, authors
+* Scientometric indicators approximate a concept of interest. How good is the operationalization given the concept (e.g. quality, impact, collaboration, productivity)
+* Theoretical foundations of citation analysis
+  - Garfield 1962: Why do people cite?
+  - Diversity of citation: Characterise citation as substantial, superficial or critical
+  - Theories of citation behaviour
+    + Merton 1973 Ethos of science: Normative theory
+    + Social constructivitst theory: I want to convince the reviewer that my paper is good -> Biases
+  - Citations as a proxy for scientific impact
+* Indicator characteristics
+  - Size independence
+
+Terminology:
+
+* References what you find in the paper
+* Citation is what a paper receives
+
+# Vissen:
+
+* Non-normalized indicators
+  - P: # Publications
+  - TCS: Total citation score
+  - MCS: Mean citation score
+* Articles and reviews excluding self-citations
+* Expected citations are mean citations by field and year (World or Database averages)
+  - MNCS: Mean normalised citation score
+  - PP Proportion of highly cited publications: Top 10% citation threshold. X% of the publications belong to the top X%
+* Citation windows: Fixed-length or variable length citation window
+
+
+# h-index
+
+* Hirsch 2005
+* Where rank of publications and citations intersect
+* Critique
+  - Document type restrictions
+  - ...
+  - Arbitrariness of the h-index
+  - Inconsistency
+* Fractional / full counting
+  - Full counting is biased in favour of biomedical research
+  - Fractional counting punishes collaboration
+  - Use fractional counting in analyses at the level o finstituions or countries
+  

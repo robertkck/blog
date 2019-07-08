@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>0 on viz.</title>
+    <link>/publication_types/0/</link>
+    <description>Recent content in 0 on viz.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Robert Kalcik 2018</copyright>
+    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/publication_types/0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Does the European Parliament miss an opportunity to reform after Brexit? textbar Bruegel</title>
+      <link>/publication/kalcik-does-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/kalcik-does-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Is China’s innovation strategy a threat?</title>
+      <link>/publication/kalcik-is-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/kalcik-is-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Trade flows between the US, UK and EU27: what goes where? textbar Bruegel</title>
+      <link>/publication/biondi-trade-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/biondi-trade-2017/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Georg Zachmann on viz.</title>
+    <link>/authors/georg-zachmann/</link>
+    <description>Recent content in Georg Zachmann on viz.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Robert Kalcik 2018</copyright>
+    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/authors/georg-zachmann/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Export and Patent Specialization in Low-Carbon Technologies</title>
+      <link>/publication/zachmann-export-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/zachmann-export-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Europe&#39;s comparative advantage in low-carbon technology</title>
+      <link>/publication/veugelers-remaking-2017/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/veugelers-remaking-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Europe&#39;s comparative advantage in low-carbon technology</title>
+      <link>/publication/zachmann-europes-2017/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/zachmann-europes-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An approach to identify the sources of low-carbon growth for Europe</title>
+      <link>/publication/zachmann-approach-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/zachmann-approach-2017/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

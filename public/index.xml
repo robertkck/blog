@@ -6,7 +6,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Robert Kalcik 2018</copyright>
-    <lastBuildDate>Thu, 20 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Jun 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
@@ -78,6 +78,84 @@
 &lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
 
 &lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>RISIS Summer School on Data Science in STI</title>
+      <link>/post/2019-06-25-risis-summer-school-on-data-science-in-sti/</link>
+      <pubDate>Tue, 25 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019-06-25-risis-summer-school-on-data-science-in-sti/</guid>
+      <description>
+
+
+&lt;div id=&#34;rodrigo-costas&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Rodrigo Costas:&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Scientometrics is a part of Data Science as it extracts knowledge from structured and unstructured data&lt;/li&gt;
+&lt;li&gt;“We are archeologists” We follow traces about topics, semantics, authors&lt;/li&gt;
+&lt;li&gt;Scientometric indicators approximate a concept of interest. How good is the operationalization given the concept (e.g. quality, impact, collaboration, productivity)&lt;/li&gt;
+&lt;li&gt;Theoretical foundations of citation analysis
+&lt;ul&gt;
+&lt;li&gt;Garfield 1962: Why do people cite?&lt;/li&gt;
+&lt;li&gt;Diversity of citation: Characterise citation as substantial, superficial or critical&lt;/li&gt;
+&lt;li&gt;Theories of citation behaviour
+&lt;ul&gt;
+&lt;li&gt;Merton 1973 Ethos of science: Normative theory&lt;/li&gt;
+&lt;li&gt;Social constructivitst theory: I want to convince the reviewer that my paper is good -&amp;gt; Biases&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Citations as a proxy for scientific impact&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Indicator characteristics
+&lt;ul&gt;
+&lt;li&gt;Size independence&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Terminology:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;References what you find in the paper&lt;/li&gt;
+&lt;li&gt;Citation is what a paper receives&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;vissen&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Vissen:&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Non-normalized indicators
+&lt;ul&gt;
+&lt;li&gt;P: # Publications&lt;/li&gt;
+&lt;li&gt;TCS: Total citation score&lt;/li&gt;
+&lt;li&gt;MCS: Mean citation score&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Articles and reviews excluding self-citations&lt;/li&gt;
+&lt;li&gt;Expected citations are mean citations by field and year (World or Database averages)
+&lt;ul&gt;
+&lt;li&gt;MNCS: Mean normalised citation score&lt;/li&gt;
+&lt;li&gt;PP Proportion of highly cited publications: Top 10% citation threshold. X% of the publications belong to the top X%&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Citation windows: Fixed-length or variable length citation window&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;h-index&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;h-index&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Hirsch 2005&lt;/li&gt;
+&lt;li&gt;Where rank of publications and citations intersect&lt;/li&gt;
+&lt;li&gt;Critique
+&lt;ul&gt;
+&lt;li&gt;Document type restrictions&lt;/li&gt;
+&lt;li&gt;…&lt;/li&gt;
+&lt;li&gt;Arbitrariness of the h-index&lt;/li&gt;
+&lt;li&gt;Inconsistency&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Fractional / full counting
+&lt;ul&gt;
+&lt;li&gt;Full counting is biased in favour of biomedical research&lt;/li&gt;
+&lt;li&gt;Fractional counting punishes collaboration&lt;/li&gt;
+&lt;li&gt;Use fractional counting in analyses at the level o finstituions or countries&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -248,24 +326,6 @@ df %&amp;gt;%
     geom_smooth()&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `geom_smooth()` using method = &amp;#39;loess&amp;#39; and formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2019-05-29-dabblings-in-causal-inference_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>An example preprint / working paper</title>
-      <link>/publication/preprint/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/preprint/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    
-Click the *Slides* button above to demo Academic&#39;s Markdown slides feature.
-
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

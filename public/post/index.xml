@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>RISIS Summer School on Data Science in STI</title>
+      <link>/post/2019-06-25-risis-summer-school-on-data-science-in-sti/</link>
+      <pubDate>Tue, 25 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019-06-25-risis-summer-school-on-data-science-in-sti/</guid>
+      <description>Rodrigo Costas:Scientometrics is a part of Data Science as it extracts knowledge from structured and unstructured data“We are archeologists” We follow traces about topics, semantics, authorsScientometric indicators approximate a concept of interest. How good is the operationalization given the concept (e.g. quality, impact, collaboration, productivity)Theoretical foundations of citation analysisGarfield 1962: Why do people cite?Diversity of citation: Characterise citation as substantial, superficial or criticalTheories of citation behaviourMerton 1973 Ethos of science: Normative theorySocial constructivitst theory: I want to convince the reviewer that my paper is good -&amp;gt; BiasesCitations as a proxy for scientific impactIndicator characteristicsSize independenceTerminology:</description>
+    </item>
+    
+    <item>
       <title>Join RStudio Cheatsheets using the pdftools package</title>
       <link>/post/2019-06-20-join-rstudio-cheat-sheets-using-pdftools/</link>
       <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>

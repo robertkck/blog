@@ -33,12 +33,16 @@ filter_default = 0
   tag = "*"
 
 [[filter]]
-  name = "Python"
-  tag = "Python"
+  name = "Shiny"
+  tag = "Shiny"
 
 [[filter]]
-  name = "Other"
-  tag = ".demo"
+  name = "Media"
+  tag = "Media"
+
+[[filter]]
+  name = "Bot"
+  tag = "Bot"
 
 +++
 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Media on viz.</title>
+    <link>/tags/media/</link>
+    <description>Recent content in Media on viz.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Robert Kalcik 2018</copyright>
+    <lastBuildDate>Sun, 04 Aug 2019 11:02:38 +0200</lastBuildDate>
+    
+	<atom:link href="/tags/media/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sag Deine Meinung (de)</title>
+      <link>/project/sag-deine-meinung/</link>
+      <pubDate>Sun, 04 Aug 2019 11:02:38 +0200</pubDate>
+      
+      <guid>/project/sag-deine-meinung/</guid>
+      <description>Öffentlicher Diskurs und Mitsprache</description>
+    </item>
+    
+  </channel>
+</rss>

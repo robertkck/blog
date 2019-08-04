@@ -31,4 +31,4 @@ social:
   link: https://orcid.org/0000-0001-8369-3284
 superuser: true
 ---
-I am a data scientist interested in open data, data visualisation and machine learning. At the Austrian Institute of Technology my research revolves around the socio-economic impact of R&I policy. Find out more about my [projects](#projects) on Austrian media, [posts](../post/_master/LICENSE_index.md) on data viz, an [publications](http://www.viz.netlify.com/#publications) in the area of innovation, policy and low-carbon transition, for example. 
+I am a data scientist interested in open data, data visualisation and machine learning. My research revolves around the socio-economic impact of R&I policy. Find out more about my [projects](#projects) on Austrian media, [posts](#posts) on data viz, an [publications](#publications) in the area of innovation, policy and low-carbon transition, for example. 

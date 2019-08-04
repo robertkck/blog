@@ -27,6 +27,86 @@
     
     <url>
     
+      <loc>/categories/</loc>
+      <lastmod>2019-08-04T11:02:38+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/discourse/</loc>
+      <lastmod>2019-08-04T11:02:38+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/media/</loc>
+      <lastmod>2019-08-04T11:02:38+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/media/</loc>
+      <lastmod>2019-08-04T11:02:38+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/participation/</loc>
+      <lastmod>2019-08-04T11:02:38+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/project/</loc>
+      <lastmod>2019-08-04T11:02:38+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/project/sag-deine-meinung/</loc>
+      <lastmod>2019-08-04T11:02:38+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/</loc>
+      <lastmod>2019-08-04T11:02:38+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/</loc>
+      <lastmod>2019-08-04T11:02:38+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/post/2019-06-25-risis-summer-school-on-data-science-in-sti/</loc>
       <lastmod>2019-06-25T00:00:00+00:00</lastmod>
     </url>
@@ -35,25 +115,7 @@
     
     <url>
     
-      <loc>/</loc>
-      <lastmod>2019-06-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/tags/apportionment/</loc>
-      <lastmod>2019-06-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/</loc>
       <lastmod>2019-06-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -79,15 +141,6 @@
     
     <url>
     
-      <loc>/project/</loc>
-      <lastmod>2019-06-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/categories/r/</loc>
       <lastmod>2019-06-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -105,7 +158,7 @@
     
     <url>
     
-      <loc>/tags/</loc>
+      <loc>/tags/cheatsheets/</loc>
       <lastmod>2019-06-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -210,15 +263,6 @@
     
       <loc>/project/minister-vlatin/minister-vlatin/</loc>
       <lastmod>2019-01-27T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/python/</loc>
-      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -372,6 +416,14 @@
     
     <url>
     
+      <loc>/post/kepler-s-exoplanet-necklaces/</loc>
+      <lastmod>2018-07-12T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/license/</loc>
       <lastmod>2018-06-28T00:00:00+02:00</lastmod>
     </url>
@@ -461,14 +513,6 @@
       <loc>/authors/robert-kalcik/</loc>
       <lastmod>2018-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication/veugelers-remaking-2017/</loc>
-      <lastmod>2017-09-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -609,40 +653,6 @@
     
     <url>
     
-      <loc>/tags/demo/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/project/external-project/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/deep-learning/</loc>
-      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/project/internal-project/</loc>
-      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/tags/academic/</loc>
       <lastmod>2018-01-13T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -689,67 +699,6 @@
       <loc>/tags/regression/</loc>
       <lastmod>2015-07-23T21:13:14-05:00</lastmod>
       <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication_types/1/</loc>
-      <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication/conference-paper/</loc>
-      <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/robert-ford/</loc>
-      <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/source-themes/</loc>
-      <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/ga-cushen/</loc>
-      <lastmod>2013-07-01T00:00:00+02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/ms-nixon/</loc>
-      <lastmod>2013-07-01T00:00:00+02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication/clothing-search/</loc>
-      <lastmod>2013-07-01T00:00:00+02:00</lastmod>
     </url>
     
   

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Robert Kalcik 2018</copyright>
-    <lastBuildDate>Thu, 20 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Aug 2019 11:02:38 +0200</lastBuildDate>
     
 	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sag Deine Meinung (de)</title>
+      <link>/project/sag-deine-meinung/</link>
+      <pubDate>Sun, 04 Aug 2019 11:02:38 +0200</pubDate>
+      
+      <guid>/project/sag-deine-meinung/</guid>
+      <description>Öffentlicher Diskurs und Mitsprache</description>
+    </item>
     
     <item>
       <title>Seats in the European Parliament</title>
@@ -18,7 +27,7 @@
       <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>/project/2019-06-20-seats-in-the-european-parliament/</guid>
-      <description></description>
+      <description></description>
     </item>
     
     <item>
@@ -27,25 +36,13 @@
       <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/project/minister-vlatin/minister-vlatin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>External Project</title>
-      <link>/project/external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/project/external-project/</guid>
-      <description>An example of linking directly to an external project website using &lt;code&gt;external_link&lt;/code&gt;.</description>
-    </item>
-    
-    <item>
-      <title>Internal Project</title>
-      <link>/project/internal-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
-      
-      <guid>/project/internal-project/</guid>
-      <description>An example of using the in-built project page.</description>
+      <description>Meet Minister Vlatin! @MinisterVlatin is WorldControl&amp;rsquo;s own Twitter-Bot, that grants you the possibility to turn your #FakeNewz into real Game-Events
+This is how it works:
+ Tweet your news with the tags #fakenewz and @truWorldControl Include the intended game effect in [square brackets] @MinisterVlatin will take it from there!  Example:
+@truWorldControl #fakenewz
+The Queen drowns in a cup of tea
+England sues India for bad taste.
+[ MUMBAI 70b &amp;gt; LONDON ]</description>
     </item>
     
   </channel>

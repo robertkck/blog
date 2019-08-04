@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Robert Kalcik 2018</copyright>
-    <lastBuildDate>Thu, 20 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Aug 2019 11:02:38 +0200</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Discourse</title>
+      <link>/tags/discourse/</link>
+      <pubDate>Sun, 04 Aug 2019 11:02:38 +0200</pubDate>
+      
+      <guid>/tags/discourse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Media</title>
+      <link>/tags/media/</link>
+      <pubDate>Sun, 04 Aug 2019 11:02:38 +0200</pubDate>
+      
+      <guid>/tags/media/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Participation</title>
+      <link>/tags/participation/</link>
+      <pubDate>Sun, 04 Aug 2019 11:02:38 +0200</pubDate>
+      
+      <guid>/tags/participation/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Apportionment</title>
@@ -27,6 +54,15 @@
       <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/ep/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cheatsheets</title>
+      <link>/tags/cheatsheets/</link>
+      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/cheatsheets/</guid>
       <description></description>
     </item>
     
@@ -67,24 +103,6 @@
     </item>
     
     <item>
-      <title>Demo</title>
-      <link>/tags/demo/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/demo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Deep Learning</title>
-      <link>/tags/deep-learning/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
-      
-      <guid>/tags/deep-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Academic</title>
       <link>/tags/academic/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
@@ -117,15 +135,6 @@
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
       <guid>/tags/regression/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Source Themes</title>
-      <link>/tags/source-themes/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/source-themes/</guid>
       <description></description>
     </item>
     

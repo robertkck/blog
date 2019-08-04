@@ -666,7 +666,11 @@
 
 <p>At the occastion of the <a href="https://www.risis2.eu/summer-schools/">RISIS Summer School on Data Science in Science, Technology and Innovation Studies</a> I wanted to print all <a href="https://www.rstudio.com/resources/cheatsheets/">RStudio cheatsheets</a>. They are very well designed, speed up the coding and provide a good overview of the main functionality of a package. The regex, ggplot2, purrr and RMarkdown cheatsheets are my go to source.</p>
 <p>Garrett Grolemund at RStudio maintains the <a href="https://github.com/rstudio/cheatsheets">github repo</a> of all contributed cheatsheets. Since the sheets have been contributed by members of the R Community under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-4.0</a>, I can share my merged files with you. You will find credits for each individual sheet author at the bottom of the page.</p>
-<p>Either download each cheatsheet into a folder or clone the github repo mentioned above (&gt;900MB). Then, using the <a href="https://ropensci.org/technotes/2019/04/24/pdftools-22/">pdftools</a> package by <a href="https://twitter.com/opencpu">Jeroen Ooms</a>, merge the one-sided and two-sided cheatsheets into to individual PDFs for easy printing 🖨</p>
+<p>This is how to do it in R:</p>
+<ul>
+<li><p>Either download each cheatsheet into a folder or clone the github repo mentioned above (&gt;900MB). <code>git clone https://github.com/rstudio/cheatsheets</code></p></li>
+<li><p>Then, using the <a href="https://ropensci.org/technotes/2019/04/24/pdftools-22/">pdftools</a> package by <a href="https://twitter.com/opencpu">Jeroen Ooms</a>, merge the one-sided and two-sided cheatsheets into to individual PDFs for easy printing 🖨</p></li>
+</ul>
 <pre class="r"><code>library(pdftools)
 
 f &lt;- list.files(&quot;cheatsheets/&quot;, pattern = &quot;\\.pdf$&quot;, full.names = TRUE)
@@ -691,6 +695,15 @@ pdf_combine(f[len == 2], output = &quot;2sided.pdf&quot;)
     </div>
 
     
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/cheatsheets/">cheatsheets</a>
+  
+</div>
+
+
 
       
 

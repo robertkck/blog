@@ -1,0 +1,99 @@
+---
+title: Deploying with Shinyproxy and Golem
+author: Robert Kalcik
+date: '2019-08-22'
+slug: []
+draft: true
+categories:
+  - R
+  - Shiny
+tags:
+  - deployment
+image:
+  caption: ''
+  focal_point: ''
+---
+
+
+
+<p>After hitting <code>golem::add_docker_shinyproxy</code> I had to edit the dockerfile and replace the last line with …</p>
+<p>Loading <code>golem</code> as a remote did not work so I fetched it from github.</p>
+<p>The full working dockerfile is</p>
+<pre class="bash"><code>FROM rocker/tidyverse:3.6.0
+RUN R -e &#39;install.packages(&quot;remotes&quot;)&#39;
+RUN R -e &#39;remotes::install_github(&quot;r-lib/remotes&quot;, ref = &quot;97bbf81&quot;)&#39;
+RUN R -e &#39;remotes::install_cran(&quot;attempt&quot;)&#39;
+RUN R -e &#39;remotes::install_cran(&quot;DT&quot;)&#39;
+RUN R -e &#39;remotes::install_cran(&quot;glue&quot;)&#39;
+RUN R -e &#39;remotes::install_github(&quot;ThinkR-open/golem&quot;)&#39;
+RUN R -e &#39;remotes::install_cran(&quot;htmltools&quot;)&#39;
+RUN R -e &#39;remotes::install_cran(&quot;shiny&quot;)&#39;
+COPY communitymap_*.tar.gz /app.tar.gz
+
+
+RUN R -e &#39;remotes::install_local(&quot;/app.tar.gz&quot;)&#39;
+EXPOSE 3838
+CMD  [&quot;R&quot;, &quot;-e&quot;, &quot;options(&#39;shiny.port&#39;=3838,shiny.host=&#39;0.0.0.0&#39;); communitymap::run_app()&quot;]
+</code></pre>
+<p>This way I could build the docker image running <code>docker build -t "community_map"</code>.</p>
+<p>And then take the app for a spin using <code>docker run -p 3838:3838 community_map</code>.</p>
+<div id="enter-shinyproxy" class="section level1">
+<h1>Enter Shinyproxy</h1>
+<p>Let’s navigate to the folder containing the shinyproxy jar file and the application.yml.</p>
+<p>The application.yaml should include a reference to our Shiny App:</p>
+<pre><code>  - id: community_map
+    container-cmd: [&quot;R&quot;, &quot;-e&quot;, &quot;options(&#39;shiny.port&#39;=3838,shiny.host=&#39;0.0.0.0&#39;); communitymap::run_app()&quot;]
+    container-image: community_map</code></pre>
+<p>Here we run <code>java -jar shinyproxy-2.3.0.jar</code> et voilá.</p>
+</div>
+<div id="containerized-shinyproxy" class="section level1">
+<h1>Containerized Shinyproxy</h1>
+<p>Let’s set up a docker network:</p>
+<p><code>docker network create sp-example-net</code></p>
+<p>We use a combo of a new application.yml and dockerfile like so:</p>
+<pre><code>FROM openjdk:8-jre
+
+RUN mkdir -p /opt/shinyproxy/
+RUN wget https://www.shinyproxy.io/downloads/shinyproxy-2.3.0.jar -O /opt/shinyproxy/shinyproxy.jar
+COPY application.yml /opt/shinyproxy/application.yml
+
+WORKDIR /opt/shinyproxy/
+CMD [&quot;java&quot;, &quot;-jar&quot;, &quot;/opt/shinyproxy/shinyproxy.jar&quot;]</code></pre>
+<p>and</p>
+<pre><code>proxy:
+  port: 8080
+  authentication: simple
+  admin-groups: admins
+  users:
+  - name: jack
+    password: password
+    groups: admins
+  - name: jeff
+    password: password
+  docker:
+      internal-networking: true
+  specs:
+  - id: community_map
+    container-cmd: [&quot;R&quot;, &quot;-e&quot;, &quot;options(&#39;shiny.port&#39;=3838,shiny.host=&#39;0.0.0.0&#39;); communitymap::run_app()&quot;]
+    container-image: community_map
+    container-network: sp-example-net
+
+logging:
+  file:
+    shinyproxy.log</code></pre>
+<p>Important is that we have <code>proxy:docker:internal-networking: true</code> and that the apps are connected to the right container-network.</p>
+</div>
+<div id="saving-docker-image" class="section level1">
+<h1>Saving Docker Image</h1>
+<p>The docker image can be saved using</p>
+<pre><code>docker save community_map | gzip &gt; community_map.tar.gz</code></pre>
+<p>And the use <code>docker load</code> to fetch the image.</p>
+</div>
+<div id="connecting-to-the-databse" class="section level1">
+<h1>Connecting to the databse</h1>
+<p>Source: <a href="https://nickjanetakis.com/blog/docker-tip-35-connect-to-a-database-running-on-your-docker-host" class="uri">https://nickjanetakis.com/blog/docker-tip-35-connect-to-a-database-running-on-your-docker-host</a></p>
+<p>Also: <a href="https://forums.docker.com/t/single-db-instance-with-multiple-apps/40106/3" class="uri">https://forums.docker.com/t/single-db-instance-with-multiple-apps/40106/3</a></p>
+<p>And: <a href="https://docs.docker.com/storage/volumes/" class="uri">https://docs.docker.com/storage/volumes/</a></p>
+<p>Officially: <a href="https://www.openanalytics.eu/blog/2017/11/12/shinyproxy-1.0.2/" class="uri">https://www.openanalytics.eu/blog/2017/11/12/shinyproxy-1.0.2/</a></p>
+<p>We need a custom bridge Docker network so that the DIA Dashbaord and the Community Map can access the SQLite database</p>
+</div>

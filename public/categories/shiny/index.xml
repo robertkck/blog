@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shiny on viz.</title>
+    <link>/categories/shiny/</link>
+    <description>Recent content in Shiny on viz.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Robert Kalcik 2018</copyright>
+    <lastBuildDate>Thu, 22 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/shiny/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Deploying with Shinyproxy and Golem</title>
+      <link>/post/2019-08-22-deploying-with-shinyproxy-and-golem/</link>
+      <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019-08-22-deploying-with-shinyproxy-and-golem/</guid>
+      <description>After hitting golem::add_docker_shinyproxy I had to edit the dockerfile and replace the last line with …
+Loading golem as a remote did not work so I fetched it from github.
+The full working dockerfile is
+FROM rocker/tidyverse:3.6.0RUN R -e &amp;#39;install.packages(&amp;quot;remotes&amp;quot;)&amp;#39;RUN R -e &amp;#39;remotes::install_github(&amp;quot;r-lib/remotes&amp;quot;, ref = &amp;quot;97bbf81&amp;quot;)&amp;#39;RUN R -e &amp;#39;remotes::install_cran(&amp;quot;attempt&amp;quot;)&amp;#39;RUN R -e &amp;#39;remotes::install_cran(&amp;quot;DT&amp;quot;)&amp;#39;RUN R -e &amp;#39;remotes::install_cran(&amp;quot;glue&amp;quot;)&amp;#39;RUN R -e &amp;#39;remotes::install_github(&amp;quot;ThinkR-open/golem&amp;quot;)&amp;#39;RUN R -e &amp;#39;remotes::install_cran(&amp;quot;htmltools&amp;quot;)&amp;#39;RUN R -e &amp;#39;remotes::install_cran(&amp;quot;shiny&amp;quot;)&amp;#39;COPY communitymap_*.</description>
+    </item>
+    
+    <item>
+      <title>Community Map</title>
+      <link>/project/2019-08-21-community-map/</link>
+      <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/2019-08-21-community-map/</guid>
+      <description>The Austrian Digitisation Agency commissioned a stakeholder mapping of actors pushing digitisation forward in Austria. The Community Map, a Shiny app, shows data collected from a snowballing survey in which key actors identified their main partners and provided information about their R&amp;amp;D, business and data sharing links.</description>
+    </item>
+    
+    <item>
+      <title>Seats in the European Parliament</title>
+      <link>/project/2019-06-20-seats-in-the-european-parliament/</link>
+      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/2019-06-20-seats-in-the-european-parliament/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

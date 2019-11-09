@@ -28,7 +28,121 @@
     <url>
     
       <loc>/categories/</loc>
-      <lastmod>2019-08-04T11:02:38+02:00</lastmod>
+      <lastmod>2019-08-22T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/2019-08-22-deploying-with-shinyproxy-and-golem/</loc>
+      <lastmod>2019-08-22T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/r/</loc>
+      <lastmod>2019-08-22T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/shiny/</loc>
+      <lastmod>2019-08-22T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/</loc>
+      <lastmod>2019-08-22T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/deployment/</loc>
+      <lastmod>2019-08-22T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/</loc>
+      <lastmod>2019-08-22T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/project/2019-08-21-community-map/</loc>
+      <lastmod>2019-08-21T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/2019-08-21-custom-markers-in-leaflet/</loc>
+      <lastmod>2019-08-21T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/digitisation/</loc>
+      <lastmod>2019-08-21T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/project/</loc>
+      <lastmod>2019-08-21T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/digitisation/</loc>
+      <lastmod>2019-08-21T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/leaflet/</loc>
+      <lastmod>2019-08-21T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/network/</loc>
+      <lastmod>2019-08-21T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -72,35 +186,8 @@
     
     <url>
     
-      <loc>/project/</loc>
-      <lastmod>2019-08-04T11:02:38+02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/project/sag-deine-meinung/</loc>
       <lastmod>2019-08-04T11:02:38+02:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/</loc>
-      <lastmod>2019-08-04T11:02:38+02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/</loc>
-      <lastmod>2019-08-04T11:02:38+02:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -141,17 +228,17 @@
     
     <url>
     
-      <loc>/categories/r/</loc>
+      <loc>/project/2019-06-20-seats-in-the-european-parliament/</loc>
       <lastmod>2019-06-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
     
     <url>
     
-      <loc>/project/2019-06-20-seats-in-the-european-parliament/</loc>
+      <loc>/tags/shiny/</loc>
       <lastmod>2019-06-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -647,6 +734,40 @@
     
       <loc>/talk/</loc>
       <lastmod>2017-01-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/demo/</loc>
+      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/project/external-project/</loc>
+      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/deep-learning/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/project/internal-project/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
     </url>
     
   

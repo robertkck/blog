@@ -1,0 +1,43 @@
+---
+title: Custom Markers in Leaflet
+author: Robert Kalcik
+date: '2019-08-21'
+slug: []
+
+draft: true
+categories:
+  - R
+tags:
+  - leaflet
+image:
+  caption: ''
+  focal_point: ''
+---
+
+It is impossible to customise the colour of markers in leaflet for R.
+
+It is possible with [MapMaker.io](https://mapmarker.io/) which provides icons under a Creative Commons Library. 
+
+```{r}
+library(leaflet)
+
+df <- data.frame(
+  lng = c(0, 22),
+  lat = c(33, 44)
+)
+
+custom_icon <- makeIcon(
+        iconUrl = "https://cdn.mapmarker.io/api/v1/pin?size=120&background=%23009CE0&icon=fa-flag&color=%23FFFFFF&voffset=0&hoffset=1&",
+        iconWidth = 40, iconHeight = 40,
+        iconAnchorX = 20, iconAnchorY = 40,
+        shadowUrl = "www/marker/shadow.png",
+        shadowWidth = 40, shadowHeight = 20,
+        shadowAnchorX = 9, shadowAnchorY = 25,
+        popupAnchorX = 0, popupAnchorY = -20
+    )
+
+leaflet(df) %>% 
+  addTiles() %>% 
+  addMarkers(lng = ~lng, lat = ~lat, icon = custom_icon)
+```
+

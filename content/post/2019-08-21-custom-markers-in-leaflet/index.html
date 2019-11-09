@@ -1,0 +1,51 @@
+---
+title: Custom Markers in Leaflet
+author: Robert Kalcik
+date: '2019-08-21'
+slug: []
+
+draft: true
+categories:
+  - R
+tags:
+  - leaflet
+image:
+  caption: ''
+  focal_point: ''
+---
+
+<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="/rmarkdown-libs/leaflet/leaflet.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/leaflet/leaflet.js"></script>
+<link href="/rmarkdown-libs/leafletfix/leafletfix.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/Proj4Leaflet/proj4-compressed.js"></script>
+<script src="/rmarkdown-libs/Proj4Leaflet/proj4leaflet.js"></script>
+<link href="/rmarkdown-libs/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/leaflet-binding/leaflet.js"></script>
+
+
+<p>It is impossible to customise the colour of markers in leaflet for R.</p>
+<p>It is possible with <a href="https://mapmarker.io/">MapMaker.io</a> which provides icons under a Creative Commons Library.</p>
+<pre class="r"><code>library(leaflet)</code></pre>
+<pre><code>## Warning: package &#39;leaflet&#39; was built under R version 3.5.3</code></pre>
+<pre class="r"><code>df &lt;- data.frame(
+  lng = c(0, 22),
+  lat = c(33, 44)
+)
+
+custom_icon &lt;- makeIcon(
+        iconUrl = &quot;https://cdn.mapmarker.io/api/v1/pin?size=120&amp;background=%23009CE0&amp;icon=fa-flag&amp;color=%23FFFFFF&amp;voffset=0&amp;hoffset=1&amp;&quot;,
+        iconWidth = 40, iconHeight = 40,
+        iconAnchorX = 20, iconAnchorY = 40,
+        shadowUrl = &quot;www/marker/shadow.png&quot;,
+        shadowWidth = 40, shadowHeight = 20,
+        shadowAnchorX = 9, shadowAnchorY = 25,
+        popupAnchorX = 0, popupAnchorY = -20
+    )
+
+leaflet(df) %&gt;% 
+  addTiles() %&gt;% 
+  addMarkers(lng = ~lng, lat = ~lat, icon = custom_icon)</code></pre>
+<div id="htmlwidget-1" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[33,44],[0,22],{"iconUrl":{"data":"https://cdn.mapmarker.io/api/v1/pin?size=120&background=%23009CE0&icon=fa-flag&color=%23FFFFFF&voffset=0&hoffset=1&","index":0},"iconWidth":40,"iconHeight":40,"iconAnchorX":20,"iconAnchorY":40,"shadowUrl":{"data":"www/marker/shadow.png","index":0},"shadowWidth":40,"shadowHeight":20,"shadowAnchorX":9,"shadowAnchorY":25,"popupAnchorX":0,"popupAnchorY":-20},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[33,44],"lng":[0,22]}},"evals":[],"jsHooks":[]}</script>

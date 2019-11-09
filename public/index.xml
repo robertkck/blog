@@ -6,7 +6,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Robert Kalcik 2018</copyright>
-    <lastBuildDate>Sun, 04 Aug 2019 11:02:38 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 22 Aug 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
@@ -78,6 +78,157 @@
 &lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
 
 &lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Deploying with Shinyproxy and Golem</title>
+      <link>/post/2019-08-22-deploying-with-shinyproxy-and-golem/</link>
+      <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019-08-22-deploying-with-shinyproxy-and-golem/</guid>
+      <description>
+
+
+&lt;p&gt;After hitting &lt;code&gt;golem::add_docker_shinyproxy&lt;/code&gt; I had to edit the dockerfile and replace the last line with …&lt;/p&gt;
+&lt;p&gt;Loading &lt;code&gt;golem&lt;/code&gt; as a remote did not work so I fetched it from github.&lt;/p&gt;
+&lt;p&gt;The full working dockerfile is&lt;/p&gt;
+&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;FROM rocker/tidyverse:3.6.0
+RUN R -e &amp;#39;install.packages(&amp;quot;remotes&amp;quot;)&amp;#39;
+RUN R -e &amp;#39;remotes::install_github(&amp;quot;r-lib/remotes&amp;quot;, ref = &amp;quot;97bbf81&amp;quot;)&amp;#39;
+RUN R -e &amp;#39;remotes::install_cran(&amp;quot;attempt&amp;quot;)&amp;#39;
+RUN R -e &amp;#39;remotes::install_cran(&amp;quot;DT&amp;quot;)&amp;#39;
+RUN R -e &amp;#39;remotes::install_cran(&amp;quot;glue&amp;quot;)&amp;#39;
+RUN R -e &amp;#39;remotes::install_github(&amp;quot;ThinkR-open/golem&amp;quot;)&amp;#39;
+RUN R -e &amp;#39;remotes::install_cran(&amp;quot;htmltools&amp;quot;)&amp;#39;
+RUN R -e &amp;#39;remotes::install_cran(&amp;quot;shiny&amp;quot;)&amp;#39;
+COPY communitymap_*.tar.gz /app.tar.gz
+
+
+RUN R -e &amp;#39;remotes::install_local(&amp;quot;/app.tar.gz&amp;quot;)&amp;#39;
+EXPOSE 3838
+CMD  [&amp;quot;R&amp;quot;, &amp;quot;-e&amp;quot;, &amp;quot;options(&amp;#39;shiny.port&amp;#39;=3838,shiny.host=&amp;#39;0.0.0.0&amp;#39;); communitymap::run_app()&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This way I could build the docker image running &lt;code&gt;docker build -t &#34;community_map&#34;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;And then take the app for a spin using &lt;code&gt;docker run -p 3838:3838 community_map&lt;/code&gt;.&lt;/p&gt;
+&lt;div id=&#34;enter-shinyproxy&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Enter Shinyproxy&lt;/h1&gt;
+&lt;p&gt;Let’s navigate to the folder containing the shinyproxy jar file and the application.yml.&lt;/p&gt;
+&lt;p&gt;The application.yaml should include a reference to our Shiny App:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  - id: community_map
+    container-cmd: [&amp;quot;R&amp;quot;, &amp;quot;-e&amp;quot;, &amp;quot;options(&amp;#39;shiny.port&amp;#39;=3838,shiny.host=&amp;#39;0.0.0.0&amp;#39;); communitymap::run_app()&amp;quot;]
+    container-image: community_map&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here we run &lt;code&gt;java -jar shinyproxy-2.3.0.jar&lt;/code&gt; et voilá.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;containerized-shinyproxy&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Containerized Shinyproxy&lt;/h1&gt;
+&lt;p&gt;Let’s set up a docker network:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;docker network create sp-example-net&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;We use a combo of a new application.yml and dockerfile like so:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;FROM openjdk:8-jre
+
+RUN mkdir -p /opt/shinyproxy/
+RUN wget https://www.shinyproxy.io/downloads/shinyproxy-2.3.0.jar -O /opt/shinyproxy/shinyproxy.jar
+COPY application.yml /opt/shinyproxy/application.yml
+
+WORKDIR /opt/shinyproxy/
+CMD [&amp;quot;java&amp;quot;, &amp;quot;-jar&amp;quot;, &amp;quot;/opt/shinyproxy/shinyproxy.jar&amp;quot;]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;proxy:
+  port: 8080
+  authentication: simple
+  admin-groups: admins
+  users:
+  - name: jack
+    password: password
+    groups: admins
+  - name: jeff
+    password: password
+  docker:
+      internal-networking: true
+  specs:
+  - id: community_map
+    container-cmd: [&amp;quot;R&amp;quot;, &amp;quot;-e&amp;quot;, &amp;quot;options(&amp;#39;shiny.port&amp;#39;=3838,shiny.host=&amp;#39;0.0.0.0&amp;#39;); communitymap::run_app()&amp;quot;]
+    container-image: community_map
+    container-network: sp-example-net
+
+logging:
+  file:
+    shinyproxy.log&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Important is that we have &lt;code&gt;proxy:docker:internal-networking: true&lt;/code&gt; and that the apps are connected to the right container-network.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;saving-docker-image&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Saving Docker Image&lt;/h1&gt;
+&lt;p&gt;The docker image can be saved using&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker save community_map | gzip &amp;gt; community_map.tar.gz&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And the use &lt;code&gt;docker load&lt;/code&gt; to fetch the image.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;connecting-to-the-databse&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Connecting to the databse&lt;/h1&gt;
+&lt;p&gt;Source: &lt;a href=&#34;https://nickjanetakis.com/blog/docker-tip-35-connect-to-a-database-running-on-your-docker-host&#34; class=&#34;uri&#34;&gt;https://nickjanetakis.com/blog/docker-tip-35-connect-to-a-database-running-on-your-docker-host&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Also: &lt;a href=&#34;https://forums.docker.com/t/single-db-instance-with-multiple-apps/40106/3&#34; class=&#34;uri&#34;&gt;https://forums.docker.com/t/single-db-instance-with-multiple-apps/40106/3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;And: &lt;a href=&#34;https://docs.docker.com/storage/volumes/&#34; class=&#34;uri&#34;&gt;https://docs.docker.com/storage/volumes/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Officially: &lt;a href=&#34;https://www.openanalytics.eu/blog/2017/11/12/shinyproxy-1.0.2/&#34; class=&#34;uri&#34;&gt;https://www.openanalytics.eu/blog/2017/11/12/shinyproxy-1.0.2/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We need a custom bridge Docker network so that the DIA Dashbaord and the Community Map can access the SQLite database&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Community Map</title>
+      <link>/project/2019-08-21-community-map/</link>
+      <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/2019-08-21-community-map/</guid>
+      <description>
+
+
+&lt;p&gt;The Austrian &lt;a href=&#34;https://www.digitalaustria.gv.at/&#34;&gt;Digitisation Agency&lt;/a&gt; commissioned a stakeholder mapping of actors pushing digitisation forward in Austria. The &lt;a href=&#34;http://robertkck.shinyapps.io/community_map&#34;&gt;Community Map&lt;/a&gt;, a Shiny app, shows data collected from a snowballing survey in which key actors identified their main partners and provided information about their R&amp;amp;D, business and data sharing links.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Custom Markers in Leaflet</title>
+      <link>/post/2019-08-21-custom-markers-in-leaflet/</link>
+      <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019-08-21-custom-markers-in-leaflet/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/leaflet/leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/leaflet/leaflet.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/leafletfix/leafletfix.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/Proj4Leaflet/proj4-compressed.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/Proj4Leaflet/proj4leaflet.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/rstudio_leaflet/rstudio_leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/leaflet-binding/leaflet.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;It is impossible to customise the colour of markers in leaflet for R.&lt;/p&gt;
+&lt;p&gt;It is possible with &lt;a href=&#34;https://mapmarker.io/&#34;&gt;MapMaker.io&lt;/a&gt; which provides icons under a Creative Commons Library.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(leaflet)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: package &amp;#39;leaflet&amp;#39; was built under R version 3.5.3&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df &amp;lt;- data.frame(
+  lng = c(0, 22),
+  lat = c(33, 44)
+)
+
+custom_icon &amp;lt;- makeIcon(
+        iconUrl = &amp;quot;https://cdn.mapmarker.io/api/v1/pin?size=120&amp;amp;background=%23009CE0&amp;amp;icon=fa-flag&amp;amp;color=%23FFFFFF&amp;amp;voffset=0&amp;amp;hoffset=1&amp;amp;&amp;quot;,
+        iconWidth = 40, iconHeight = 40,
+        iconAnchorX = 20, iconAnchorY = 40,
+        shadowUrl = &amp;quot;www/marker/shadow.png&amp;quot;,
+        shadowWidth = 40, shadowHeight = 20,
+        shadowAnchorX = 9, shadowAnchorY = 25,
+        popupAnchorX = 0, popupAnchorY = -20
+    )
+
+leaflet(df) %&amp;gt;% 
+  addTiles() %&amp;gt;% 
+  addMarkers(lng = ~lng, lat = ~lat, icon = custom_icon)&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;htmlwidget-1&#34; style=&#34;width:672px;height:480px;&#34; class=&#34;leaflet html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-1&#34;&gt;{&#34;x&#34;:{&#34;options&#34;:{&#34;crs&#34;:{&#34;crsClass&#34;:&#34;L.CRS.EPSG3857&#34;,&#34;code&#34;:null,&#34;proj4def&#34;:null,&#34;projectedBounds&#34;:null,&#34;options&#34;:{}}},&#34;calls&#34;:[{&#34;method&#34;:&#34;addTiles&#34;,&#34;args&#34;:[&#34;//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#34;,null,null,{&#34;minZoom&#34;:0,&#34;maxZoom&#34;:18,&#34;tileSize&#34;:256,&#34;subdomains&#34;:&#34;abc&#34;,&#34;errorTileUrl&#34;:&#34;&#34;,&#34;tms&#34;:false,&#34;noWrap&#34;:false,&#34;zoomOffset&#34;:0,&#34;zoomReverse&#34;:false,&#34;opacity&#34;:1,&#34;zIndex&#34;:1,&#34;detectRetina&#34;:false,&#34;attribution&#34;:&#34;&amp;copy; &lt;a href=\&#34;http://openstreetmap.org\&#34;&gt;OpenStreetMap&lt;\/a&gt; contributors, &lt;a href=\&#34;http://creativecommons.org/licenses/by-sa/2.0/\&#34;&gt;CC-BY-SA&lt;\/a&gt;&#34;}]},{&#34;method&#34;:&#34;addMarkers&#34;,&#34;args&#34;:[[33,44],[0,22],{&#34;iconUrl&#34;:{&#34;data&#34;:&#34;https://cdn.mapmarker.io/api/v1/pin?size=120&amp;background=%23009CE0&amp;icon=fa-flag&amp;color=%23FFFFFF&amp;voffset=0&amp;hoffset=1&amp;&#34;,&#34;index&#34;:0},&#34;iconWidth&#34;:40,&#34;iconHeight&#34;:40,&#34;iconAnchorX&#34;:20,&#34;iconAnchorY&#34;:40,&#34;shadowUrl&#34;:{&#34;data&#34;:&#34;www/marker/shadow.png&#34;,&#34;index&#34;:0},&#34;shadowWidth&#34;:40,&#34;shadowHeight&#34;:20,&#34;shadowAnchorX&#34;:9,&#34;shadowAnchorY&#34;:25,&#34;popupAnchorX&#34;:0,&#34;popupAnchorY&#34;:-20},null,null,{&#34;interactive&#34;:true,&#34;draggable&#34;:false,&#34;keyboard&#34;:true,&#34;title&#34;:&#34;&#34;,&#34;alt&#34;:&#34;&#34;,&#34;zIndexOffset&#34;:0,&#34;opacity&#34;:1,&#34;riseOnHover&#34;:false,&#34;riseOffset&#34;:250},null,null,null,null,null,{&#34;interactive&#34;:false,&#34;permanent&#34;:false,&#34;direction&#34;:&#34;auto&#34;,&#34;opacity&#34;:1,&#34;offset&#34;:[0,0],&#34;textsize&#34;:&#34;10px&#34;,&#34;textOnly&#34;:false,&#34;className&#34;:&#34;&#34;,&#34;sticky&#34;:true},null]}],&#34;limits&#34;:{&#34;lat&#34;:[33,44],&#34;lng&#34;:[0,22]}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
 </description>
     </item>
     
@@ -641,136 +792,6 @@ $$&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;@MinisterVlatin will then send you a link to a pdf for printing &amp;amp; cutting&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Embedding of the Patent Space</title>
-      <link>/post/embedding-patents/</link>
-      <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/embedding-patents/</guid>
-      <description>
-
-
-&lt;p&gt;Yes yes&lt;/p&gt;
-&lt;p&gt;Sources:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=gJD_5Gr5ZHA&#34; class=&#34;uri&#34;&gt;https://www.youtube.com/watch?v=gJD_5Gr5ZHA&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.ted.com/talks/vittorio_loreto_need_a_new_idea_start_at_the_edge_of_what_is_known/reading-list#t-956960&#34; class=&#34;uri&#34;&gt;https://www.ted.com/talks/vittorio_loreto_need_a_new_idea_start_at_the_edge_of_what_is_known/reading-list#t-956960&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>EAEPE - Networks Workshop</title>
-      <link>/post/eaepe-networks-workshop/</link>
-      <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/eaepe-networks-workshop/</guid>
-      <description>
-
-
-&lt;p&gt;Last week the pluralist forum &lt;a href=&#34;https://eaepe.org/&#34;&gt;EAEPE&lt;/a&gt; held its workshop on &lt;em&gt;New ways of innovation policy design and its evaluation - instights from complex adaptive systems and beyond&lt;/em&gt;.&lt;/p&gt;
-&lt;div id=&#34;radical-innovation&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Radical innovation&lt;/h1&gt;
-&lt;p&gt;The feedback on the presentation related to&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The results are no surprise and similar to findings from the exploration/exploitation literature and regional lock-in&lt;/li&gt;
-&lt;li&gt;Single inventors need to be tackled by using a two stage regression approach&lt;/li&gt;
-&lt;li&gt;Exports could be used as another variable to explain the ties between two regions: Inter-regional industrial connection could lead to radical innovations and cross-fertilisation&lt;/li&gt;
-&lt;li&gt;New question: How does radicalness relate to regional competitiveness? Is there a U-Shaped relationship between competitiveness and radicalness&lt;/li&gt;
-&lt;li&gt;Connection to the &lt;em&gt;weak ties hypothesis&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;How does strategic patenting / patent trolls affect the analysis&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The ideas that come from the feedback are&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Reproduce the model from Agion with radical innovation&lt;/li&gt;
-&lt;li&gt;Check single inventors with a two stage regression approach&lt;/li&gt;
-&lt;li&gt;Control for proximity in the goods space&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Some more ideas from other talks&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Control for proximity in the technology space and check effect: Hypothesis that high cognitive proximity leads to incremental innovation, but careful with confounding with definition of radicalness&lt;/li&gt;
-&lt;li&gt;Imrpove radicalness definition. If economic impact is included, more economic controls should be added&lt;/li&gt;
-&lt;li&gt;Use the RPX&lt;/li&gt;
-&lt;li&gt;Closely inspect the network structure and investigate other network metrics to control for (e.g. homophily)&lt;/li&gt;
-&lt;li&gt;Frame as collaboration regression using collaboration as unit of observation&lt;/li&gt;
-&lt;li&gt;Better specification of distance could be travel time (dykestra, connection between places), see Hidalgo paper on the effect of high-speed train in China&lt;/li&gt;
-&lt;li&gt;Perform test for joint significance (F-Test) of distance and similarity&lt;/li&gt;
-&lt;li&gt;Include continental EFTA (Switzerland and Norway)&lt;/li&gt;
-&lt;li&gt;Can we substitute geographical distance for cognitive or social distance&lt;/li&gt;
-&lt;li&gt;Use a gravity model&lt;/li&gt;
-&lt;li&gt;Check Foray’s book on radical transformation building on the ecosystem&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div id=&#34;data-sets-to-explore&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Data sets to explore&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Förderkatalog&lt;/em&gt; of all German funded projects&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.aeaweb.org/articles?id=10.1257/jep.32.3.259&#34;&gt;Facebook data&lt;/a&gt; on social ties between counties&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://insight.rpxcorp.com/&#34;&gt;RPX Patent troll database&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id=&#34;other-talks&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Other Talks&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Apostolos pointed towards the risk-reward nexus by &lt;a href=&#34;https://academic.oup.com/icc/article-abstract/22/4/1093/753299&#34;&gt;Mazzucato and Lazonick&lt;/a&gt; and that it is important ot affec the mental model of agents&lt;/li&gt;
-&lt;li&gt;Fritsch talked about the tradeoff between efficiency and novelty in inventor ties and that the discussion about related and unrelated variety is hyped. Both incremental and disruptive innovation is needed.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://inno.uni-hohenheim.de/bogner&#34;&gt;Kristina Bogner&lt;/a&gt; took the audience for a tour through the network of bio-economy innovation actors looking for the optimal networ structure for diffusion. At the core was the importance of &lt;a href=&#34;https://www.mdpi.com/2071-1050/10/6/1694&#34;&gt;dedicated knowledge&lt;/a&gt;. She finds a persistend core of innovation actors (old universities, large companies) with a changing periphery. Comparing the network to a small world and scale-free architecture she finds that scale-free networks forster diffusion as the degree distribution is important.&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://anet.krtk.mta.hu/team/gergo-toth/&#34;&gt;Gergö Tóth&lt;/a&gt; and &lt;a href=&#34;&#34;&gt;Zoltán Elekes&lt;/a&gt; presented an interesting paper explaining persistence in inventor ties with geographical, cognitive (tech) and social (collab) proximity between regions. Nice visualisations in the &lt;a href=&#34;https://arxiv.org/pdf/1807.07637.pdf&#34;&gt;paper&lt;/a&gt;!&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Patenting space is fragmented&lt;/li&gt;
-&lt;li&gt;National borders are important for collaboration&lt;/li&gt;
-&lt;li&gt;Scatter plot P(collab) on proximity measures&lt;/li&gt;
-&lt;li&gt;Gravity approaches of co-inventorship&lt;/li&gt;
-&lt;li&gt;Zero inflated negative binomial regression (probit?)&lt;/li&gt;
-&lt;li&gt;Check methodology!&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.crie.uni-bremen.de/de/mitarbeiter_detail/654-kolja-hesse-msc&#34;&gt;Kolja Hesse&lt;/a&gt; presented preliminary work on the effect of collaboration between organisations on the radicalness of innovations. He uses a definition of radicalness related to the novelty of IPC combinations.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.microtheory.uni-jena.de/team/members/graf/&#34;&gt;Holger Graf&lt;/a&gt; a colleague of Martin Kalthaus in Jena presented work on the effect of cluster policy. He is the author of network analysis in R for innovation networks&lt;/li&gt;
-&lt;li&gt;kene approach by Gilbert 1997. Gilbert, Ahrweiler, Pyka, SKIN Model&lt;/li&gt;
-&lt;li&gt;Dominique Foray:
-&lt;ul&gt;
-&lt;li&gt;Mission oriented innovation is an Oxymoron&lt;/li&gt;
-&lt;li&gt;Man to the moon was a hierarchical, disciplinary, centralised mission&lt;/li&gt;
-&lt;li&gt;intermediate process between bottom-up and top-down is needed&lt;/li&gt;
-&lt;li&gt;engineering achievement - discrete innovation goal - structural change&lt;/li&gt;
-&lt;li&gt;Smart Specialisation (S3) is not to identify a sector, but direction for transformation and select projects for transformation
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Forumalte goal&lt;/li&gt;
-&lt;li&gt;targeted spending&lt;/li&gt;
-&lt;li&gt;specific needs&lt;/li&gt;
-&lt;li&gt;agglomeration and scale effects relatedness not cooperation&lt;/li&gt;
-&lt;li&gt;strcutural effects&lt;/li&gt;
-&lt;li&gt;minimise risks&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;Tinbergen assignment: How many instruments are needed, &lt;a href=&#34;http://ralphanomics.blogspot.com/2011/02/tinbergen-rule.html&#34;&gt;Tinbergen Rule&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Abramowits: Good Follower captures spill-overs, help incumbents to absorb and adopt innovation&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Something changes&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Example Page</title>
-      <link>/tutorial/example/</link>
-      <pubDate>Sun, 09 Sep 2018 00:00:00 +0200</pubDate>
-      
-      <guid>/tutorial/example/</guid>
-      <description>
-
-&lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
-
-&lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
-
-&lt;p&gt;&amp;hellip;&lt;/p&gt;
-
-&lt;h2 id=&#34;tip-2&#34;&gt;Tip 2&lt;/h2&gt;
-
-&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
     </item>
     

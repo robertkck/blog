@@ -394,6 +394,207 @@
 
   <span class="article-date">
     
+    <meta content="2019-08-22 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2019-08-22 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+      Aug 22, 2019
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  
+  <span class="article-date">
+    <i class="fab fa-twitter"></i>
+    <a href="https://twitter.com/RKalcik" target="_blank">@RKalcik</a>&nbsp
+  
+
+  
+
+
+
+
+
+  
+
+
+
+
+  <span class="middot-divider"></span>
+  
+  <span class="article-date">
+    <i class="fab fa-github"></i>
+    <a href="https://github.com/robertkck/blog/blob/master/content/post/2019-08-22-deploying-with-shinyproxy-and-golem/index.Rmd" target="_blank">View source</a>&nbsp
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    
+    <a href="/categories/r/">R</a>, 
+    
+    <a href="/categories/shiny/">Shiny</a>
+    
+  </span>
+  
+  
+
+  
+
+</div>
+
+  
+  
+  
+  <h3 class="article-title" itemprop="headline">
+    <a href="/post/2019-08-22-deploying-with-shinyproxy-and-golem/" itemprop="url">Deploying with Shinyproxy and Golem</a>
+  </h3>
+  <div class="article-style" itemprop="articleBody">
+    
+    After hitting golem::add_docker_shinyproxy I had to edit the dockerfile and replace the last line with …
+Loading golem as a remote did not work so I fetched it from github.
+The full working dockerfile is
+FROM rocker/tidyverse:3.6.0RUN R -e &#39;install.packages(&quot;remotes&quot;)&#39;RUN R -e &#39;remotes::install_github(&quot;r-lib/remotes&quot;, ref = &quot;97bbf81&quot;)&#39;RUN R -e &#39;remotes::install_cran(&quot;attempt&quot;)&#39;RUN R -e &#39;remotes::install_cran(&quot;DT&quot;)&#39;RUN R -e &#39;remotes::install_cran(&quot;glue&quot;)&#39;RUN R -e &#39;remotes::install_github(&quot;ThinkR-open/golem&quot;)&#39;RUN R -e &#39;remotes::install_cran(&quot;htmltools&quot;)&#39;RUN R -e &#39;remotes::install_cran(&quot;shiny&quot;)&#39;COPY communitymap_*.
+    
+  </div>
+  <p class="read-more" itemprop="mainEntityOfPage">
+    <a href="/post/2019-08-22-deploying-with-shinyproxy-and-golem/" class="btn btn-outline-primary my-1">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
+    
+  
+    
+      
+
+<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+  
+
+<div class="article-metadata">
+
+  
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="">
+  </span>
+  
+
+  <span class="article-date">
+    
+    <meta content="2019-08-21 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2019-08-21 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+      Aug 21, 2019
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  
+  <span class="article-date">
+    <i class="fab fa-twitter"></i>
+    <a href="https://twitter.com/RKalcik" target="_blank">@RKalcik</a>&nbsp
+  
+
+  
+
+
+
+
+
+  
+
+
+
+
+  <span class="middot-divider"></span>
+  
+  <span class="article-date">
+    <i class="fab fa-github"></i>
+    <a href="https://github.com/robertkck/blog/blob/master/content/post/2019-08-21-custom-markers-in-leaflet/index.Rmd" target="_blank">View source</a>&nbsp
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    
+    <a href="/categories/r/">R</a>
+    
+  </span>
+  
+  
+
+  
+
+</div>
+
+  
+  
+  
+  <h3 class="article-title" itemprop="headline">
+    <a href="/post/2019-08-21-custom-markers-in-leaflet/" itemprop="url">Custom Markers in Leaflet</a>
+  </h3>
+  <div class="article-style" itemprop="articleBody">
+    
+    It is impossible to customise the colour of markers in leaflet for R.
+It is possible with MapMaker.io which provides icons under a Creative Commons Library.
+library(leaflet)## Warning: package &#39;leaflet&#39; was built under R version 3.5.3df &lt;- data.frame(lng = c(0, 22),lat = c(33, 44))custom_icon &lt;- makeIcon(iconUrl = &quot;https://cdn.mapmarker.io/api/v1/pin?size=120&amp;background=%23009CE0&amp;icon=fa-flag&amp;color=%23FFFFFF&amp;voffset=0&amp;hoffset=1&amp;&quot;,iconWidth = 40, iconHeight = 40,iconAnchorX = 20, iconAnchorY = 40,shadowUrl = &quot;www/marker/shadow.
+    
+  </div>
+  <p class="read-more" itemprop="mainEntityOfPage">
+    <a href="/post/2019-08-21-custom-markers-in-leaflet/" class="btn btn-outline-primary my-1">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
+    
+  
+    
+      
+
+<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+  
+
+<div class="article-metadata">
+
+  
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="">
+  </span>
+  
+
+  <span class="article-date">
+    
     <meta content="2019-06-25 00:00:00 &#43;0000 UTC" itemprop="datePublished">
     <time datetime="2019-06-25 00:00:00 &#43;0000 UTC" itemprop="dateModified">
       Jun 25, 2019
@@ -1146,209 +1347,6 @@ Radical innovationThe feedback on the presentation related to
   </div>
   <p class="read-more" itemprop="mainEntityOfPage">
     <a href="/post/eaepe-networks-workshop/" class="btn btn-outline-primary my-1">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-    
-  
-    
-      
-
-<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-  
-
-<div class="article-metadata">
-
-  
-  
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="">
-  </span>
-  
-
-  <span class="article-date">
-    
-    <meta content="2018-07-13 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-    <time datetime="2018-07-13 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-      Jul 13, 2018
-    </time>
-  </span>
-  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="">
-  </span>
-
-  
-  <span class="middot-divider"></span>
-  
-  <span class="article-date">
-    <i class="fab fa-twitter"></i>
-    <a href="https://twitter.com/RKalcik" target="_blank">@RKalcik</a>&nbsp
-  
-
-  
-
-
-
-
-
-  
-
-
-
-
-  <span class="middot-divider"></span>
-  
-  <span class="article-date">
-    <i class="fab fa-github"></i>
-    <a href="https://github.com/robertkck/blog/blob/master/content/post/2018-07-13-creating-this-blog.markdown" target="_blank">View source</a>&nbsp
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    1 min read
-  </span>
-  
-
-  
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder"></i>
-    
-    <a href="/categories/r/">R</a>
-    
-  </span>
-  
-  
-
-  
-
-</div>
-
-  
-  
-  
-  <h3 class="article-title" itemprop="headline">
-    <a href="/post/creating-this-blog/" itemprop="url">Creating this blog</a>
-  </h3>
-  <div class="article-style" itemprop="articleBody">
-    
-    <p>Nice blogs with the Hugo Academic Theme:
-* <a href="https://pjs-web.de/" target="_blank">https://pjs-web.de/</a>
-* Up and running with blogdown and netlify
-* AI Institut Wien
-* Funny dude with glasses
-* Dude von FitteR HappieR</p>
-
-    
-  </div>
-  <p class="read-more" itemprop="mainEntityOfPage">
-    <a href="/post/creating-this-blog/" class="btn btn-outline-primary my-1">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-    
-  
-    
-      
-
-<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-  
-
-<div class="article-metadata">
-
-  
-  
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="">
-  </span>
-  
-
-  <span class="article-date">
-    
-    <meta content="2018-07-12 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-    <time datetime="2018-07-12 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-      Jul 12, 2018
-    </time>
-  </span>
-  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="">
-  </span>
-
-  
-  <span class="middot-divider"></span>
-  
-  <span class="article-date">
-    <i class="fab fa-twitter"></i>
-    <a href="https://twitter.com/RKalcik" target="_blank">@RKalcik</a>&nbsp
-  
-
-  
-
-
-
-
-
-  
-
-
-
-
-  <span class="middot-divider"></span>
-  
-  <span class="article-date">
-    <i class="fab fa-github"></i>
-    <a href="https://github.com/robertkck/blog/blob/master/content/post/2018-07-12-kepler-s-exoplanet-necklaces-DESKTOP-8AE7PKR.html" target="_blank">View source</a>&nbsp
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    12 min read
-  </span>
-  
-
-  
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder"></i>
-    
-    <a href="/categories/r/">R</a>, 
-    
-    <a href="/categories/astronomy/">Astronomy</a>
-    
-  </span>
-  
-  
-
-  
-
-</div>
-
-  
-  
-  
-  <h3 class="article-title" itemprop="headline">
-    <a href="/post/kepler-s-exoplanet-necklaces/" itemprop="url">Kepler&#39;s Peas</a>
-  </h3>
-  <div class="article-style" itemprop="articleBody">
-    
-    The SETI Institute never stop producing beautiful vistas into space. Following them on twitter [@SETIInstitute](https://twitter.com/SETIInstitute) pays off and led me to gems like the Venus images of the Explorer, Images from the Expolanet Travel Beauro (see above) and lately a link to a new paper Peas in a Pod: Planets in a Kepler Multi-planet System are Similar in Size and Regularly Spaced.
-The authors produced an inticing data viz{{&lt; tweet 666616452582129664 &gt;}}
-    
-  </div>
-  <p class="read-more" itemprop="mainEntityOfPage">
-    <a href="/post/kepler-s-exoplanet-necklaces/" class="btn btn-outline-primary my-1">
       CONTINUE READING
     </a>
   </p>

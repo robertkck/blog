@@ -141,7 +141,7 @@
   <meta property="og:description" content="Innovation Systems and Policy"><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2019-06-20T00:00:00&#43;00:00">
+  <meta property="og:updated_time" content="2019-08-22T00:00:00&#43;00:00">
   
 
   
@@ -377,6 +377,38 @@
   
 
   
+  
+  <div>
+    <h2><a href="/post/2019-08-22-deploying-with-shinyproxy-and-golem/">Deploying with Shinyproxy and Golem</a></h2>
+    <div class="article-style">
+      
+      After hitting golem::add_docker_shinyproxy I had to edit the dockerfile and replace the last line with …
+Loading golem as a remote did not work so I fetched it from github.
+The full working dockerfile is
+FROM rocker/tidyverse:3.6.0RUN R -e &#39;install.packages(&quot;remotes&quot;)&#39;RUN R -e &#39;remotes::install_github(&quot;r-lib/remotes&quot;, ref = &quot;97bbf81&quot;)&#39;RUN R -e &#39;remotes::install_cran(&quot;attempt&quot;)&#39;RUN R -e &#39;remotes::install_cran(&quot;DT&quot;)&#39;RUN R -e &#39;remotes::install_cran(&quot;glue&quot;)&#39;RUN R -e &#39;remotes::install_github(&quot;ThinkR-open/golem&quot;)&#39;RUN R -e &#39;remotes::install_cran(&quot;htmltools&quot;)&#39;RUN R -e &#39;remotes::install_cran(&quot;shiny&quot;)&#39;COPY communitymap_*.
+      
+    </div>
+  </div>
+  
+  <div>
+    <h2><a href="/project/2019-08-21-community-map/">Community Map</a></h2>
+    <div class="article-style">
+      
+      The Austrian Digitisation Agency commissioned a stakeholder mapping of actors pushing digitisation forward in Austria. The Community Map, a Shiny app, shows data collected from a snowballing survey in which key actors identified their main partners and provided information about their R&amp;D, business and data sharing links.
+      
+    </div>
+  </div>
+  
+  <div>
+    <h2><a href="/post/2019-08-21-custom-markers-in-leaflet/">Custom Markers in Leaflet</a></h2>
+    <div class="article-style">
+      
+      It is impossible to customise the colour of markers in leaflet for R.
+It is possible with MapMaker.io which provides icons under a Creative Commons Library.
+library(leaflet)## Warning: package &#39;leaflet&#39; was built under R version 3.5.3df &lt;- data.frame(lng = c(0, 22),lat = c(33, 44))custom_icon &lt;- makeIcon(iconUrl = &quot;https://cdn.mapmarker.io/api/v1/pin?size=120&amp;background=%23009CE0&amp;icon=fa-flag&amp;color=%23FFFFFF&amp;voffset=0&amp;hoffset=1&amp;&quot;,iconWidth = 40, iconHeight = 40,iconAnchorX = 20, iconAnchorY = 40,shadowUrl = &quot;www/marker/shadow.
+      
+    </div>
+  </div>
   
   <div>
     <h2><a href="/post/2019-06-20-join-rstudio-cheat-sheets-using-pdftools/">Join RStudio Cheatsheets using the pdftools package</a></h2>

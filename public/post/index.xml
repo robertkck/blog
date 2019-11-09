@@ -13,6 +13,29 @@
     
     
     <item>
+      <title>Deploying with Shinyproxy and Golem</title>
+      <link>/post/2019-08-22-deploying-with-shinyproxy-and-golem/</link>
+      <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019-08-22-deploying-with-shinyproxy-and-golem/</guid>
+      <description>After hitting golem::add_docker_shinyproxy I had to edit the dockerfile and replace the last line with …
+Loading golem as a remote did not work so I fetched it from github.
+The full working dockerfile is
+FROM rocker/tidyverse:3.6.0RUN R -e &amp;#39;install.packages(&amp;quot;remotes&amp;quot;)&amp;#39;RUN R -e &amp;#39;remotes::install_github(&amp;quot;r-lib/remotes&amp;quot;, ref = &amp;quot;97bbf81&amp;quot;)&amp;#39;RUN R -e &amp;#39;remotes::install_cran(&amp;quot;attempt&amp;quot;)&amp;#39;RUN R -e &amp;#39;remotes::install_cran(&amp;quot;DT&amp;quot;)&amp;#39;RUN R -e &amp;#39;remotes::install_cran(&amp;quot;glue&amp;quot;)&amp;#39;RUN R -e &amp;#39;remotes::install_github(&amp;quot;ThinkR-open/golem&amp;quot;)&amp;#39;RUN R -e &amp;#39;remotes::install_cran(&amp;quot;htmltools&amp;quot;)&amp;#39;RUN R -e &amp;#39;remotes::install_cran(&amp;quot;shiny&amp;quot;)&amp;#39;COPY communitymap_*.</description>
+    </item>
+    
+    <item>
+      <title>Custom Markers in Leaflet</title>
+      <link>/post/2019-08-21-custom-markers-in-leaflet/</link>
+      <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019-08-21-custom-markers-in-leaflet/</guid>
+      <description>It is impossible to customise the colour of markers in leaflet for R.
+It is possible with MapMaker.io which provides icons under a Creative Commons Library.
+library(leaflet)## Warning: package &amp;#39;leaflet&amp;#39; was built under R version 3.5.3df &amp;lt;- data.frame(lng = c(0, 22),lat = c(33, 44))custom_icon &amp;lt;- makeIcon(iconUrl = &amp;quot;https://cdn.mapmarker.io/api/v1/pin?size=120&amp;amp;background=%23009CE0&amp;amp;icon=fa-flag&amp;amp;color=%23FFFFFF&amp;amp;voffset=0&amp;amp;hoffset=1&amp;amp;&amp;quot;,iconWidth = 40, iconHeight = 40,iconAnchorX = 20, iconAnchorY = 40,shadowUrl = &amp;quot;www/marker/shadow.</description>
+    </item>
+    
+    <item>
       <title>RISIS Summer School on Data Science in STI</title>
       <link>/post/2019-06-25-risis-summer-school-on-data-science-in-sti/</link>
       <pubDate>Tue, 25 Jun 2019 00:00:00 +0000</pubDate>

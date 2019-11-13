@@ -1,7 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>viz. on viz.</title>
-    <link>/</link>
+    <link>https://viz.netlify.com/</link>
     <description>Recent content in viz. on viz.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,10 +11,10 @@
     
     <item>
       <title>Example Page 1</title>
-      <link>/courses/example/example1/</link>
+      <link>https://viz.netlify.com/courses/example/example1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       
-      <guid>/courses/example/example1/</guid>
+      <guid>https://viz.netlify.com/courses/example/example1/</guid>
       <description>
 
 &lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
@@ -47,10 +47,10 @@
     
     <item>
       <title>Example Page 2</title>
-      <link>/courses/example/example2/</link>
+      <link>https://viz.netlify.com/courses/example/example2/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       
-      <guid>/courses/example/example2/</guid>
+      <guid>https://viz.netlify.com/courses/example/example2/</guid>
       <description>
 
 &lt;p&gt;Here are some more tips for getting started with Academic:&lt;/p&gt;
@@ -83,277 +83,36 @@
     
     <item>
       <title>R&amp;D Investment Dashboard</title>
-      <link>/project/2019-11-13-r-d-investment-dashboard/</link>
+      <link>https://viz.netlify.com/project/2019-11-13-r-d-investment-dashboard/</link>
       <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/project/2019-11-13-r-d-investment-dashboard/</guid>
+      <guid>https://viz.netlify.com/project/2019-11-13-r-d-investment-dashboard/</guid>
       <description>
 
 
 
-</description>
-    </item>
-    
-    <item>
-      <title>Deploying with Shinyproxy and Golem</title>
-      <link>/post/2019-08-22-deploying-with-shinyproxy-and-golem/</link>
-      <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2019-08-22-deploying-with-shinyproxy-and-golem/</guid>
-      <description>
-
-
-&lt;p&gt;After hitting &lt;code&gt;golem::add_docker_shinyproxy&lt;/code&gt; I had to edit the dockerfile and replace the last line with …&lt;/p&gt;
-&lt;p&gt;Loading &lt;code&gt;golem&lt;/code&gt; as a remote did not work so I fetched it from github.&lt;/p&gt;
-&lt;p&gt;The full working dockerfile is&lt;/p&gt;
-&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;FROM rocker/tidyverse:3.6.0
-RUN R -e &amp;#39;install.packages(&amp;quot;remotes&amp;quot;)&amp;#39;
-RUN R -e &amp;#39;remotes::install_github(&amp;quot;r-lib/remotes&amp;quot;, ref = &amp;quot;97bbf81&amp;quot;)&amp;#39;
-RUN R -e &amp;#39;remotes::install_cran(&amp;quot;attempt&amp;quot;)&amp;#39;
-RUN R -e &amp;#39;remotes::install_cran(&amp;quot;DT&amp;quot;)&amp;#39;
-RUN R -e &amp;#39;remotes::install_cran(&amp;quot;glue&amp;quot;)&amp;#39;
-RUN R -e &amp;#39;remotes::install_github(&amp;quot;ThinkR-open/golem&amp;quot;)&amp;#39;
-RUN R -e &amp;#39;remotes::install_cran(&amp;quot;htmltools&amp;quot;)&amp;#39;
-RUN R -e &amp;#39;remotes::install_cran(&amp;quot;shiny&amp;quot;)&amp;#39;
-COPY communitymap_*.tar.gz /app.tar.gz
-
-
-RUN R -e &amp;#39;remotes::install_local(&amp;quot;/app.tar.gz&amp;quot;)&amp;#39;
-EXPOSE 3838
-CMD  [&amp;quot;R&amp;quot;, &amp;quot;-e&amp;quot;, &amp;quot;options(&amp;#39;shiny.port&amp;#39;=3838,shiny.host=&amp;#39;0.0.0.0&amp;#39;); communitymap::run_app()&amp;quot;]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This way I could build the docker image running &lt;code&gt;docker build -t &#34;community_map&#34;&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;And then take the app for a spin using &lt;code&gt;docker run -p 3838:3838 community_map&lt;/code&gt;.&lt;/p&gt;
-&lt;div id=&#34;enter-shinyproxy&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Enter Shinyproxy&lt;/h1&gt;
-&lt;p&gt;Let’s navigate to the folder containing the shinyproxy jar file and the application.yml.&lt;/p&gt;
-&lt;p&gt;The application.yaml should include a reference to our Shiny App:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;  - id: community_map
-    container-cmd: [&amp;quot;R&amp;quot;, &amp;quot;-e&amp;quot;, &amp;quot;options(&amp;#39;shiny.port&amp;#39;=3838,shiny.host=&amp;#39;0.0.0.0&amp;#39;); communitymap::run_app()&amp;quot;]
-    container-image: community_map&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Here we run &lt;code&gt;java -jar shinyproxy-2.3.0.jar&lt;/code&gt; et voilá.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;containerized-shinyproxy&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Containerized Shinyproxy&lt;/h1&gt;
-&lt;p&gt;Let’s set up a docker network:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;docker network create sp-example-net&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;We use a combo of a new application.yml and dockerfile like so:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;FROM openjdk:8-jre
-
-RUN mkdir -p /opt/shinyproxy/
-RUN wget https://www.shinyproxy.io/downloads/shinyproxy-2.3.0.jar -O /opt/shinyproxy/shinyproxy.jar
-COPY application.yml /opt/shinyproxy/application.yml
-
-WORKDIR /opt/shinyproxy/
-CMD [&amp;quot;java&amp;quot;, &amp;quot;-jar&amp;quot;, &amp;quot;/opt/shinyproxy/shinyproxy.jar&amp;quot;]&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;and&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;proxy:
-  port: 8080
-  authentication: simple
-  admin-groups: admins
-  users:
-  - name: jack
-    password: password
-    groups: admins
-  - name: jeff
-    password: password
-  docker:
-      internal-networking: true
-  specs:
-  - id: community_map
-    container-cmd: [&amp;quot;R&amp;quot;, &amp;quot;-e&amp;quot;, &amp;quot;options(&amp;#39;shiny.port&amp;#39;=3838,shiny.host=&amp;#39;0.0.0.0&amp;#39;); communitymap::run_app()&amp;quot;]
-    container-image: community_map
-    container-network: sp-example-net
-
-logging:
-  file:
-    shinyproxy.log&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Important is that we have &lt;code&gt;proxy:docker:internal-networking: true&lt;/code&gt; and that the apps are connected to the right container-network.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;saving-docker-image&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Saving Docker Image&lt;/h1&gt;
-&lt;p&gt;The docker image can be saved using&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker save community_map | gzip &amp;gt; community_map.tar.gz&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;And the use &lt;code&gt;docker load&lt;/code&gt; to fetch the image.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;connecting-to-the-databse&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Connecting to the databse&lt;/h1&gt;
-&lt;p&gt;Source: &lt;a href=&#34;https://nickjanetakis.com/blog/docker-tip-35-connect-to-a-database-running-on-your-docker-host&#34; class=&#34;uri&#34;&gt;https://nickjanetakis.com/blog/docker-tip-35-connect-to-a-database-running-on-your-docker-host&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Also: &lt;a href=&#34;https://forums.docker.com/t/single-db-instance-with-multiple-apps/40106/3&#34; class=&#34;uri&#34;&gt;https://forums.docker.com/t/single-db-instance-with-multiple-apps/40106/3&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;And: &lt;a href=&#34;https://docs.docker.com/storage/volumes/&#34; class=&#34;uri&#34;&gt;https://docs.docker.com/storage/volumes/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Officially: &lt;a href=&#34;https://www.openanalytics.eu/blog/2017/11/12/shinyproxy-1.0.2/&#34; class=&#34;uri&#34;&gt;https://www.openanalytics.eu/blog/2017/11/12/shinyproxy-1.0.2/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;We need a custom bridge Docker network so that the DIA Dashbaord and the Community Map can access the SQLite database&lt;/p&gt;
-&lt;/div&gt;
 </description>
     </item>
     
     <item>
       <title>Community Map (WIP)</title>
-      <link>/project/2019-08-21-community-map/</link>
+      <link>https://viz.netlify.com/project/2019-08-21-community-map/</link>
       <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/project/2019-08-21-community-map/</guid>
+      <guid>https://viz.netlify.com/project/2019-08-21-community-map/</guid>
       <description>
 
 
 
-</description>
-    </item>
-    
-    <item>
-      <title>Custom Markers in Leaflet</title>
-      <link>/post/2019-08-21-custom-markers-in-leaflet/</link>
-      <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2019-08-21-custom-markers-in-leaflet/</guid>
-      <description>
-&lt;script src=&#34;/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;/rmarkdown-libs/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;/rmarkdown-libs/leaflet/leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;/rmarkdown-libs/leaflet/leaflet.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;/rmarkdown-libs/leafletfix/leafletfix.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;/rmarkdown-libs/Proj4Leaflet/proj4-compressed.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;/rmarkdown-libs/Proj4Leaflet/proj4leaflet.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;/rmarkdown-libs/rstudio_leaflet/rstudio_leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;/rmarkdown-libs/leaflet-binding/leaflet.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;p&gt;It is impossible to customise the colour of markers in leaflet for R.&lt;/p&gt;
-&lt;p&gt;It is possible with &lt;a href=&#34;https://mapmarker.io/&#34;&gt;MapMaker.io&lt;/a&gt; which provides icons under a Creative Commons Library.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(leaflet)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Warning: package &amp;#39;leaflet&amp;#39; was built under R version 3.5.3&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df &amp;lt;- data.frame(
-  lng = c(0, 22),
-  lat = c(33, 44)
-)
-
-custom_icon &amp;lt;- makeIcon(
-        iconUrl = &amp;quot;https://cdn.mapmarker.io/api/v1/pin?size=120&amp;amp;background=%23009CE0&amp;amp;icon=fa-flag&amp;amp;color=%23FFFFFF&amp;amp;voffset=0&amp;amp;hoffset=1&amp;amp;&amp;quot;,
-        iconWidth = 40, iconHeight = 40,
-        iconAnchorX = 20, iconAnchorY = 40,
-        shadowUrl = &amp;quot;www/marker/shadow.png&amp;quot;,
-        shadowWidth = 40, shadowHeight = 20,
-        shadowAnchorX = 9, shadowAnchorY = 25,
-        popupAnchorX = 0, popupAnchorY = -20
-    )
-
-leaflet(df) %&amp;gt;% 
-  addTiles() %&amp;gt;% 
-  addMarkers(lng = ~lng, lat = ~lat, icon = custom_icon)&lt;/code&gt;&lt;/pre&gt;
-&lt;div id=&#34;htmlwidget-1&#34; style=&#34;width:672px;height:480px;&#34; class=&#34;leaflet html-widget&#34;&gt;&lt;/div&gt;
-&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-1&#34;&gt;{&#34;x&#34;:{&#34;options&#34;:{&#34;crs&#34;:{&#34;crsClass&#34;:&#34;L.CRS.EPSG3857&#34;,&#34;code&#34;:null,&#34;proj4def&#34;:null,&#34;projectedBounds&#34;:null,&#34;options&#34;:{}}},&#34;calls&#34;:[{&#34;method&#34;:&#34;addTiles&#34;,&#34;args&#34;:[&#34;//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#34;,null,null,{&#34;minZoom&#34;:0,&#34;maxZoom&#34;:18,&#34;tileSize&#34;:256,&#34;subdomains&#34;:&#34;abc&#34;,&#34;errorTileUrl&#34;:&#34;&#34;,&#34;tms&#34;:false,&#34;noWrap&#34;:false,&#34;zoomOffset&#34;:0,&#34;zoomReverse&#34;:false,&#34;opacity&#34;:1,&#34;zIndex&#34;:1,&#34;detectRetina&#34;:false,&#34;attribution&#34;:&#34;&amp;copy; &lt;a href=\&#34;http://openstreetmap.org\&#34;&gt;OpenStreetMap&lt;\/a&gt; contributors, &lt;a href=\&#34;http://creativecommons.org/licenses/by-sa/2.0/\&#34;&gt;CC-BY-SA&lt;\/a&gt;&#34;}]},{&#34;method&#34;:&#34;addMarkers&#34;,&#34;args&#34;:[[33,44],[0,22],{&#34;iconUrl&#34;:{&#34;data&#34;:&#34;https://cdn.mapmarker.io/api/v1/pin?size=120&amp;background=%23009CE0&amp;icon=fa-flag&amp;color=%23FFFFFF&amp;voffset=0&amp;hoffset=1&amp;&#34;,&#34;index&#34;:0},&#34;iconWidth&#34;:40,&#34;iconHeight&#34;:40,&#34;iconAnchorX&#34;:20,&#34;iconAnchorY&#34;:40,&#34;shadowUrl&#34;:{&#34;data&#34;:&#34;www/marker/shadow.png&#34;,&#34;index&#34;:0},&#34;shadowWidth&#34;:40,&#34;shadowHeight&#34;:20,&#34;shadowAnchorX&#34;:9,&#34;shadowAnchorY&#34;:25,&#34;popupAnchorX&#34;:0,&#34;popupAnchorY&#34;:-20},null,null,{&#34;interactive&#34;:true,&#34;draggable&#34;:false,&#34;keyboard&#34;:true,&#34;title&#34;:&#34;&#34;,&#34;alt&#34;:&#34;&#34;,&#34;zIndexOffset&#34;:0,&#34;opacity&#34;:1,&#34;riseOnHover&#34;:false,&#34;riseOffset&#34;:250},null,null,null,null,null,{&#34;interactive&#34;:false,&#34;permanent&#34;:false,&#34;direction&#34;:&#34;auto&#34;,&#34;opacity&#34;:1,&#34;offset&#34;:[0,0],&#34;textsize&#34;:&#34;10px&#34;,&#34;textOnly&#34;:false,&#34;className&#34;:&#34;&#34;,&#34;sticky&#34;:true},null]}],&#34;limits&#34;:{&#34;lat&#34;:[33,44],&#34;lng&#34;:[0,22]}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Sag Deine Meinung (de)</title>
-      <link>/project/sag-deine-meinung/</link>
-      <pubDate>Sun, 04 Aug 2019 11:02:38 +0200</pubDate>
-      
-      <guid>/project/sag-deine-meinung/</guid>
-      <description>
-
-&lt;h1 id=&#34;repräsentatives-meinungsbild&#34;&gt;Repräsentatives Meinungsbild&lt;/h1&gt;
-
-&lt;p&gt;wir motivieren die schweigende Mehrheit, sich aktiv im österreichischen Online-Diskurs zu beteiligen umso ein repräsentativeres Meinungsbild zu schaffen. Noch nie war es so einfach sich am Meinungsbildungsprozess zu beteiligen und trotzdem tun es aktuell nur sehr Wenige.
-Ein tagesaktuelles Analysetool erfasst Online-Kommentare automatisiert und gibt Hinweise über deren Repräsentativität. Die Resultate werden in einem Dashboard mit Gamification-Elementen dargestellt, um spielerische Anreize für Beteiligung zu setzen. Mit Hilfe einer Social-Media-Kampagne werden zentrale Erkenntnisse verbreitet, eine österreichische Community aufgebaut und somit die Beteiligung der schweigenden Mehrheit erhöht.&lt;/p&gt;
-
-&lt;h1 id=&#34;wer-wir-sind&#34;&gt;Wer wir sind&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Manuel Lackner: studierte Volks- und Sozialwirtschaft und arbeitet für die                            Koordinierungsstelle Ausbildung bis 18&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Robert Kalcik: studierte Volkswirtschaftslehre und arbeitet für das Austrian Institute of Technologie&lt;/li&gt;
-&lt;li&gt;Verena Fabris: studierte Politik- und Kommunikationswissenschaften derzeit Leiterin der Beratungsstelle Extremismus, Nationale No Hate Speech Koordinatorin&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Jokob Faber: studierte Politikwissenschaft und arbeitet als Social Media Consultant          in einer PR-Agentur&lt;/li&gt;
-&lt;li&gt;Valerie Uhlmann: studierte Kommunikationswissenschaften und arbeitet als Redakteurin       bei PULS 4(ProSiebenSat1)&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>RISIS Summer School on Data Science in STI</title>
-      <link>/post/2019-06-25-risis-summer-school-on-data-science-in-sti/</link>
-      <pubDate>Tue, 25 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2019-06-25-risis-summer-school-on-data-science-in-sti/</guid>
-      <description>
-
-
-&lt;div id=&#34;rodrigo-costas&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Rodrigo Costas:&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Scientometrics is a part of Data Science as it extracts knowledge from structured and unstructured data&lt;/li&gt;
-&lt;li&gt;“We are archeologists” We follow traces about topics, semantics, authors&lt;/li&gt;
-&lt;li&gt;Scientometric indicators approximate a concept of interest. How good is the operationalization given the concept (e.g. quality, impact, collaboration, productivity)&lt;/li&gt;
-&lt;li&gt;Theoretical foundations of citation analysis
-&lt;ul&gt;
-&lt;li&gt;Garfield 1962: Why do people cite?&lt;/li&gt;
-&lt;li&gt;Diversity of citation: Characterise citation as substantial, superficial or critical&lt;/li&gt;
-&lt;li&gt;Theories of citation behaviour
-&lt;ul&gt;
-&lt;li&gt;Merton 1973 Ethos of science: Normative theory&lt;/li&gt;
-&lt;li&gt;Social constructivitst theory: I want to convince the reviewer that my paper is good -&amp;gt; Biases&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Citations as a proxy for scientific impact&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Indicator characteristics
-&lt;ul&gt;
-&lt;li&gt;Size independence&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Terminology:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;References what you find in the paper&lt;/li&gt;
-&lt;li&gt;Citation is what a paper receives&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id=&#34;vissen&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Vissen:&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Non-normalized indicators
-&lt;ul&gt;
-&lt;li&gt;P: # Publications&lt;/li&gt;
-&lt;li&gt;TCS: Total citation score&lt;/li&gt;
-&lt;li&gt;MCS: Mean citation score&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Articles and reviews excluding self-citations&lt;/li&gt;
-&lt;li&gt;Expected citations are mean citations by field and year (World or Database averages)
-&lt;ul&gt;
-&lt;li&gt;MNCS: Mean normalised citation score&lt;/li&gt;
-&lt;li&gt;PP Proportion of highly cited publications: Top 10% citation threshold. X% of the publications belong to the top X%&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Citation windows: Fixed-length or variable length citation window&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id=&#34;h-index&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;h-index&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Hirsch 2005&lt;/li&gt;
-&lt;li&gt;Where rank of publications and citations intersect&lt;/li&gt;
-&lt;li&gt;Critique
-&lt;ul&gt;
-&lt;li&gt;Document type restrictions&lt;/li&gt;
-&lt;li&gt;…&lt;/li&gt;
-&lt;li&gt;Arbitrariness of the h-index&lt;/li&gt;
-&lt;li&gt;Inconsistency&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Fractional / full counting
-&lt;ul&gt;
-&lt;li&gt;Full counting is biased in favour of biomedical research&lt;/li&gt;
-&lt;li&gt;Fractional counting punishes collaboration&lt;/li&gt;
-&lt;li&gt;Use fractional counting in analyses at the level o finstituions or countries&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
 </description>
     </item>
     
     <item>
       <title>Join RStudio Cheatsheets using the pdftools package</title>
-      <link>/post/2019-06-20-join-rstudio-cheat-sheets-using-pdftools/</link>
+      <link>https://viz.netlify.com/post/2019-06-20-join-rstudio-cheat-sheets-using-pdftools/</link>
       <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/2019-06-20-join-rstudio-cheat-sheets-using-pdftools/</guid>
+      <guid>https://viz.netlify.com/post/2019-06-20-join-rstudio-cheat-sheets-using-pdftools/</guid>
       <description>
 
 
@@ -389,208 +148,23 @@ pdf_combine(f[len == 2], output = &amp;quot;2sided.pdf&amp;quot;)
     
     <item>
       <title>Seats in the European Parliament</title>
-      <link>/project/2019-06-20-seats-in-the-european-parliament/</link>
+      <link>https://viz.netlify.com/project/2019-06-20-seats-in-the-european-parliament/</link>
       <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/project/2019-06-20-seats-in-the-european-parliament/</guid>
+      <guid>https://viz.netlify.com/project/2019-06-20-seats-in-the-european-parliament/</guid>
       <description>
 
 
 
-</description>
-    </item>
-    
-    <item>
-      <title>Is there information in technology specialisation?</title>
-      <link>/post/is-there-information-in-technology-specialisation/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/is-there-information-in-technology-specialisation/</guid>
-      <description>
-
-
-&lt;p&gt;We use an entropy based null-model to understand the technology specialisation bipartite network &lt;span class=&#34;citation&#34;&gt;[@straka]&lt;/span&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Predictability of technology trajectories using representation learning on graphs</title>
-      <link>/post/predictability-of-technology-trajectories/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/predictability-of-technology-trajectories/</guid>
-      <description>
-
-
-&lt;p&gt;Regional technological specialisation follows an underlying time-varying multilayer network of technologies and geographical units hosting inventors. Thus, the socio-technological system is characterised by emergence and inherently hard to predict &lt;span class=&#34;citation&#34;&gt;(Thurner, Hanel, and Klimek 2018)&lt;/span&gt;. Nevertheless, high effort has been put into developing methods for predicting the development of emergent technologies (see e.g. vpinstitute.org/research-examples/), regional technological trajectories &lt;span class=&#34;citation&#34;&gt;(Farmer and Lafond 2016; Uhlbach, Balland, and Scherngell 2017)&lt;/span&gt; and new avenues for research based on existing patent data &lt;span class=&#34;citation&#34;&gt;(Agrawal, McHale, and Oettl 2017)&lt;/span&gt;. Predicting technological specialisation often takes the vantage point of understanding technological development as a meandering movement through the adjacent possible &lt;span class=&#34;citation&#34;&gt;(Kauffman 2003; Loreto et al. 2016)&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;New developments in predictive analytics have enabled researchers and engineers to capture non-linear behaviour and complex interactions to formulate predictions to an unprecedented degree of precision. To apply these methods, the research questions need to be reframed as a prediction problem. These methods require the research question to be reframed as a prediction problem, thus, opening up the possibility to utilize learning methods.&lt;/p&gt;
-&lt;p&gt;In this paper, we study trajectories of regional technological specialisation in Europe by reframing the analysis as a prediction problem and using methods from the computational socioeconomics and deep learning. More specifically, we use a data driven approach to predict regional technological specialisation patterns based on the REGPAT database. &lt;span class=&#34;citation&#34;&gt;Mealy, Farmer, and Teytelboym (2019)&lt;/span&gt; have shown the equivalence between spectral clustering algorithm, dimensionality reduction methods and the ECI. We add to the literature by investigating graph embedding techniques - another form of dimensionality reduction methods &lt;span class=&#34;citation&#34;&gt;(Goyal and Ferrara 2018; Cai, Zheng, and Chang 2017)&lt;/span&gt; - for link prediction and node classification. Traditionally, machine learning approaches relied on pre-defined heuristics to extract features encoding structural information about a graph &lt;span class=&#34;citation&#34;&gt;(Hamilton, Ying, and Leskovec 2017)&lt;/span&gt;. Structural Deep Network Embeddings, as one method of representation learning on graphs, is applied to automatically learn to encode graph structure on the bipartite RTA - region network. The results help to better understand the predictability of technology trajectories on this type of knowledge graphs and yield high-precision predictions on a short to medium time-frame.&lt;/p&gt;
-&lt;div id=&#34;references&#34; class=&#34;section level2 unnumbered&#34;&gt;
-&lt;h2&gt;References&lt;/h2&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-agrawal&#34;&gt;
-&lt;p&gt;Agrawal, Ajay, John McHale, and Alexander Oettl. 2017. “Finding Needles in Haystacks: Artificial Intelligence and Recombinant Growth,” 39.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-cai&#34;&gt;
-&lt;p&gt;Cai, Hongyun, Vincent W. Zheng, and Kevin Chen-Chuan Chang. 2017. “A Comprehensive Survey of Graph Embedding: Problems, Techniques and Applications.” &lt;em&gt;arXiv:1709.07604 [Cs]&lt;/em&gt;, September. &lt;a href=&#34;http://arxiv.org/abs/1709.07604&#34;&gt;http://arxiv.org/abs/1709.07604&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-farmer&#34;&gt;
-&lt;p&gt;Farmer, J. Doyne, and François Lafond. 2016. “How Predictable Is Technological Progress?” &lt;em&gt;Research Policy&lt;/em&gt; 45 (3): 647–65. &lt;a href=&#34;https://doi.org/10.1016/j.respol.2015.11.001&#34;&gt;https://doi.org/10.1016/j.respol.2015.11.001&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-goyal&#34;&gt;
-&lt;p&gt;Goyal, Palash, and Emilio Ferrara. 2018. “Graph Embedding Techniques, Applications, and Performance: A Survey.” &lt;em&gt;Knowledge-Based Systems&lt;/em&gt; 151 (July): 78–94. &lt;a href=&#34;https://doi.org/10.1016/j.knosys.2018.03.022&#34;&gt;https://doi.org/10.1016/j.knosys.2018.03.022&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-hamilton&#34;&gt;
-&lt;p&gt;Hamilton, William L., Rex Ying, and Jure Leskovec. 2017. “Representation Learning on Graphs: Methods and Applications.” &lt;em&gt;arXiv:1709.05584 [Cs]&lt;/em&gt;, September. &lt;a href=&#34;http://arxiv.org/abs/1709.05584&#34;&gt;http://arxiv.org/abs/1709.05584&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-kauffman&#34;&gt;
-&lt;p&gt;Kauffman, Stuart A. 2003. &lt;em&gt;Investigations: Investigations&lt;/em&gt;. Oxford, New York: Oxford University Press.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-loreto&#34;&gt;
-&lt;p&gt;Loreto, Vittorio, Vito D. P. Servedio, Steven H. Strogatz, and Francesca Tria. 2016. “Dynamics on Expanding Spaces: Modeling the Emergence of Novelties.” &lt;em&gt;arXiv:1701.00994 [Physics]&lt;/em&gt;, 59–83. &lt;a href=&#34;https://doi.org/10.1007/978-3-319-24403-7_5&#34;&gt;https://doi.org/10.1007/978-3-319-24403-7_5&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-mealy&#34;&gt;
-&lt;p&gt;Mealy, Penny, J. Doyne Farmer, and Alexander Teytelboym. 2019. “Interpreting Economic Complexity.” &lt;em&gt;Science Advances&lt;/em&gt; 5 (1): eaau1705. &lt;a href=&#34;https://doi.org/10.1126/sciadv.aau1705&#34;&gt;https://doi.org/10.1126/sciadv.aau1705&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-thurner&#34;&gt;
-&lt;p&gt;Thurner, Stefan, Rudolf Hanel, and Peter Klimek. 2018. &lt;em&gt;Introduction to the Theory of Complex Systems&lt;/em&gt;. Oxford, New York: Oxford University Press.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-uhlbach&#34;&gt;
-&lt;p&gt;Uhlbach, Wolf-Hendrik, Pierre Alexandre Balland, and Thomas Scherngell. 2017. “R&amp;amp;D Policy and Technological Trajectories of Regions: Evidence from the EU Framework Programmes.” SSRN Scholarly Paper ID 3027919. Rochester, NY: Social Science Research Network. &lt;a href=&#34;https://papers.ssrn.com/abstract=3027919&#34;&gt;https://papers.ssrn.com/abstract=3027919&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Dabblings in Causal Inference</title>
-      <link>/post/dabblings-in-causal-inference/</link>
-      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/dabblings-in-causal-inference/</guid>
-      <description>
-
-
-&lt;p&gt;Following lecture Causal Inference Lecture 2 Collider Bias&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Warning: package &amp;#39;tidyverse&amp;#39; was built under R version 3.5.3&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## -- Attaching packages --------------------------------------------------------------------- tidyverse 1.2.1 --&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## v ggplot2 3.1.1     v purrr   0.3.2
-## v tibble  2.1.2     v dplyr   0.8.1
-## v tidyr   0.8.3     v stringr 1.4.0
-## v readr   1.3.1     v forcats 0.4.0&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Warning: package &amp;#39;ggplot2&amp;#39; was built under R version 3.5.3&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Warning: package &amp;#39;tidyr&amp;#39; was built under R version 3.5.3&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Warning: package &amp;#39;readr&amp;#39; was built under R version 3.5.3&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Warning: package &amp;#39;purrr&amp;#39; was built under R version 3.5.3&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Warning: package &amp;#39;dplyr&amp;#39; was built under R version 3.5.3&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Warning: package &amp;#39;stringr&amp;#39; was built under R version 3.5.3&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Warning: package &amp;#39;forcats&amp;#39; was built under R version 3.5.3&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## -- Conflicts ------------------------------------------------------------------------ tidyverse_conflicts() --
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;talent = rnorm(1000)
-looks = rnorm(1000)
-
-cor(talent, looks)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] -0.04912481&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;x = talent + looks
-skimr::skim(x)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 
-## Skim summary statistics
-## 
-## -- Variable type:numeric -------------------------------------------------------------------------------------
-##  variable missing complete    n  mean   sd    p0   p25   p50  p75 p100
-##         x       0     1000 1000 0.052 1.36 -4.01 -0.88 0.043 0.96 4.38
-##      hist
-##  &amp;lt;U+2581&amp;gt;&amp;lt;U+2582&amp;gt;&amp;lt;U+2585&amp;gt;&amp;lt;U+2587&amp;gt;&amp;lt;U+2587&amp;gt;&amp;lt;U+2585&amp;gt;&amp;lt;U+2581&amp;gt;&amp;lt;U+2581&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;job = x &amp;gt; quantile(x, .75)
-cor(talent[job], looks[job])&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] -0.636274&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df &amp;lt;- tibble(talent, looks, job) 
-df %&amp;gt;% 
-  ggplot(aes(talent, looks, colour = job)) + 
-    geom_point()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/2019-05-29-dabblings-in-causal-inference_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df %&amp;gt;% filter(job) %&amp;gt;% 
-  ggplot(aes(talent, looks)) + 
-    geom_point() + 
-    geom_smooth()&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using method = &amp;#39;loess&amp;#39; and formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/2019-05-29-dabblings-in-causal-inference_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Display Jupyter Notebooks with Academic</title>
-      <link>/post/jupyter/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/jupyter/</guid>
-      <description>
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from IPython.core.display import Image
-Image(&#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&#39;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;./academic_0_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&amp;quot;Welcome to Academic!&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;Welcome to Academic!
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;install-python-and-jupyter&#34;&gt;Install Python and Jupyter&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.anaconda.com/distribution/#download-section&#34; target=&#34;_blank&#34;&gt;Install Anaconda&lt;/a&gt; which includes Python 3 and Jupyter notebook.&lt;/p&gt;
-
-&lt;p&gt;Otherwise, for advanced users, install Jupyter notebook with &lt;code&gt;pip3 install jupyter&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;create-a-new-blog-post-as-usual-https-sourcethemes-com-academic-docs-managing-content-create-a-blog-post&#34;&gt;Create a new blog post &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-a-blog-post&#34; target=&#34;_blank&#34;&gt;as usual&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;Run the following commands in your Terminal, substituting &lt;code&gt;&amp;lt;MY_WEBSITE_FOLDER&amp;gt;&lt;/code&gt; and &lt;code&gt;my-post&lt;/code&gt; with the file path to your Academic website folder and a name for your blog post (without spaces), respectively:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd &amp;lt;MY_WEBSITE_FOLDER&amp;gt;
-hugo new  --kind post post/my-post
-cd &amp;lt;MY_WEBSITE_FOLDER&amp;gt;/content/post/my-post/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;create-or-upload-a-jupyter-notebook&#34;&gt;Create or upload a Jupyter notebook&lt;/h2&gt;
-
-&lt;p&gt;Run the following command to start Jupyter within your new blog post folder. Then create a new Jupyter notebook (&lt;em&gt;New &amp;gt; Python Notebook&lt;/em&gt;) or upload a notebook.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;jupyter notebook
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;convert-notebook-to-markdown&#34;&gt;Convert notebook to Markdown&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;jupyter nbconvert Untitled.ipynb --to markdown --NbConvertApp.output_files_dir=.
-
-# Copy the contents of Untitled.md and append it to index.md:
-cat Untitled.md | tee -a index.md
-
-# Remove the temporary file:
-rm Untitled.md
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;edit-your-post-metadata&#34;&gt;Edit your post metadata&lt;/h2&gt;
-
-&lt;p&gt;Open &lt;code&gt;index.md&lt;/code&gt; in your text editor and edit the title etc. in the &lt;a href=&#34;https://sourcethemes.com/academic/docs/front-matter/&#34; target=&#34;_blank&#34;&gt;front matter&lt;/a&gt; according to your preference.&lt;/p&gt;
-
-&lt;p&gt;To set a &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#featured-image&#34; target=&#34;_blank&#34;&gt;featured image&lt;/a&gt;, place an image named &lt;code&gt;featured&lt;/code&gt; into your post&amp;rsquo;s folder.&lt;/p&gt;
-
-&lt;p&gt;For other tips, such as using math, see the guide on &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;writing content with Academic&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Slides</title>
-      <link>/slides/example/</link>
+      <link>https://viz.netlify.com/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/slides/example/</guid>
+      <guid>https://viz.netlify.com/slides/example/</guid>
       <description>
 
 &lt;h1 id=&#34;welcome-to-slides&#34;&gt;Welcome to Slides&lt;/h1&gt;
@@ -765,6 +339,117 @@ $$&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Minister Vlatin</title>
+      <link>https://viz.netlify.com/project/minister-vlatin/minister-vlatin/</link>
+      <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://viz.netlify.com/project/minister-vlatin/minister-vlatin/</guid>
+      <description>
+
+&lt;h1 id=&#34;meet-minister-vlatin&#34;&gt;Meet Minister Vlatin!&lt;/h1&gt;
+
+&lt;p&gt;@MinisterVlatin is WorldControl&amp;rsquo;s own Twitter-Bot, that grants you the possibility to turn your #FakeNewz into real Game-Events&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://cdn.shopify.com/s/files/1/2321/0379/files/wc_selection-53_large.jpg?v=1520462231&#34; alt=&#34;World Control game-event cards&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is how it works:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tweet your news with the tags #fakenewz and @truWorldControl&lt;/li&gt;
+&lt;li&gt;Include the intended game effect in [square brackets]&lt;/li&gt;
+&lt;li&gt;@MinisterVlatin will take it from there!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Example:&lt;/p&gt;
+
+&lt;div class=&#34;center&#34;&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/truWorldControl?ref_src=twsrc%5Etfw&#34;&gt;@truWorldControl&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/fakenewz?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#fakenewz&lt;/a&gt;&lt;br&gt;The Queen drowns in a cup of tea&lt;br&gt;&lt;br&gt;England sues India for bad taste.&lt;br&gt;&lt;br&gt;[ MUMBAI 70b &amp;gt; LONDON ]&lt;/p&gt;&amp;mdash; imago.im (@im_imago) &lt;a href=&#34;https://twitter.com/im_imago/status/1042402544859979777?ref_src=twsrc%5Etfw&#34;&gt;September 19, 2018&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt; 
+&lt;/div&gt;
+
+&lt;p&gt;@MinisterVlatin will then send you a link to a pdf for printing &amp;amp; cutting&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Example Page</title>
+      <link>https://viz.netlify.com/tutorial/example/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://viz.netlify.com/tutorial/example/</guid>
+      <description>
+
+&lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
+
+&lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;h2 id=&#34;tip-2&#34;&gt;Tip 2&lt;/h2&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CC BY SA</title>
+      <link>https://viz.netlify.com/license/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://viz.netlify.com/license/</guid>
+      <description>&lt;p&gt;My &lt;a href=&#34;https://viz.netlify.com/post/&#34;&gt;blog posts&lt;/a&gt; are released under a &lt;a href=&#34;http://creativecommons.org/licenses/by-sa/4.0/&#34; target=&#34;_blank&#34;&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;i class=&#34;fab fa-creative-commons fa-2x&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fab fa-creative-commons-by fa-2x&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fab fa-creative-commons-sa fa-2x&#34;&gt;&lt;/i&gt;
+&lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Does the European Parliament miss an opportunity to reform after Brexit? textbar Bruegel</title>
+      <link>https://viz.netlify.com/publication/kalcik-does-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://viz.netlify.com/publication/kalcik-does-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Export and Patent Specialization in Low-Carbon Technologies</title>
+      <link>https://viz.netlify.com/publication/zachmann-export-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://viz.netlify.com/publication/zachmann-export-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Europe&#39;s comparative advantage in low-carbon technology</title>
+      <link>https://viz.netlify.com/publication/zachmann-europes-2017/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://viz.netlify.com/publication/zachmann-europes-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An approach to identify the sources of low-carbon growth for Europe</title>
+      <link>https://viz.netlify.com/publication/zachmann-approach-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://viz.netlify.com/publication/zachmann-approach-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Brexit and the European financial system: mapping markets, players and jobs</title>
+      <link>https://viz.netlify.com/publication/batsaikhan-brexit-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://viz.netlify.com/publication/batsaikhan-brexit-2017/</guid>
+      <description></description>
     </item>
     
   </channel>

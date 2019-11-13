@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>EP on viz.</title>
-    <link>/tags/ep/</link>
+    <link>https://viz.netlify.com/tags/ep/</link>
     <description>Recent content in EP on viz.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Robert Kalcik 2018</copyright>
     <lastBuildDate>Thu, 20 Jun 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/ep/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://viz.netlify.com/tags/ep/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Seats in the European Parliament</title>
-      <link>/project/2019-06-20-seats-in-the-european-parliament/</link>
+      <link>https://viz.netlify.com/project/2019-06-20-seats-in-the-european-parliament/</link>
       <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/project/2019-06-20-seats-in-the-european-parliament/</guid>
+      <guid>https://viz.netlify.com/project/2019-06-20-seats-in-the-european-parliament/</guid>
       <description>With the UK leaving the EU, 73 MEPs leave the Parliament. The distribution of these seats matters for Europe. Find out about the proposals and explore your own distribution</description>
     </item>
     

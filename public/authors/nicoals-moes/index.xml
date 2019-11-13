@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nicoals Moes on viz.</title>
-    <link>/authors/nicoals-moes/</link>
+    <link>https://viz.netlify.com/authors/nicoals-moes/</link>
     <description>Recent content in Nicoals Moes on viz.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Robert Kalcik 2018</copyright>
     <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/authors/nicoals-moes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://viz.netlify.com/authors/nicoals-moes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Does the European Parliament miss an opportunity to reform after Brexit? textbar Bruegel</title>
-      <link>/publication/kalcik-does-2018/</link>
+      <link>https://viz.netlify.com/publication/kalcik-does-2018/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/publication/kalcik-does-2018/</guid>
+      <guid>https://viz.netlify.com/publication/kalcik-does-2018/</guid>
       <description></description>
     </item>
     

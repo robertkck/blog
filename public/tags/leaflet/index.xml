@@ -2,34 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>leaflet on viz.</title>
-    <link>/tags/leaflet/</link>
+    <link>https://viz.netlify.com/tags/leaflet/</link>
     <description>Recent content in leaflet on viz.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Robert Kalcik 2018</copyright>
     <lastBuildDate>Wed, 21 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/leaflet/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://viz.netlify.com/tags/leaflet/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Community Map (WIP)</title>
-      <link>/project/2019-08-21-community-map/</link>
+      <link>https://viz.netlify.com/project/2019-08-21-community-map/</link>
       <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/project/2019-08-21-community-map/</guid>
+      <guid>https://viz.netlify.com/project/2019-08-21-community-map/</guid>
       <description>The Austrian &lt;a href=&#34;https://www.digitalaustria.gv.at/&#34; target=&#34;_blank&#34;&gt;Digitisation Agency&lt;/a&gt; commissioned a stakeholder mapping of actors pushing digitisation forward in Austria. The &lt;a href=&#34;http://robertkck.shinyapps.io/community_map&#34; target=&#34;_blank&#34;&gt;Community Map&lt;/a&gt;, a Shiny app, shows data collected from a snowballing survey in which key actors identified their main partners and provided information about their R&amp;amp;D, business and data sharing links.</description>
-    </item>
-    
-    <item>
-      <title>Custom Markers in Leaflet</title>
-      <link>/post/2019-08-21-custom-markers-in-leaflet/</link>
-      <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2019-08-21-custom-markers-in-leaflet/</guid>
-      <description>It is impossible to customise the colour of markers in leaflet for R.
-It is possible with MapMaker.io which provides icons under a Creative Commons Library.
-library(leaflet)## Warning: package &amp;#39;leaflet&amp;#39; was built under R version 3.5.3df &amp;lt;- data.frame(lng = c(0, 22),lat = c(33, 44))custom_icon &amp;lt;- makeIcon(iconUrl = &amp;quot;https://cdn.mapmarker.io/api/v1/pin?size=120&amp;amp;background=%23009CE0&amp;amp;icon=fa-flag&amp;amp;color=%23FFFFFF&amp;amp;voffset=0&amp;amp;hoffset=1&amp;amp;&amp;quot;,iconWidth = 40, iconHeight = 40,iconAnchorX = 20, iconAnchorY = 40,shadowUrl = &amp;quot;www/marker/shadow.</description>
     </item>
     
   </channel>

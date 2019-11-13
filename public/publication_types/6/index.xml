@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>6 on viz.</title>
-    <link>/publication_types/6/</link>
+    <link>https://viz.netlify.com/publication_types/6/</link>
     <description>Recent content in 6 on viz.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Robert Kalcik 2018</copyright>
     <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/publication_types/6/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://viz.netlify.com/publication_types/6/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Export and Patent Specialization in Low-Carbon Technologies</title>
-      <link>/publication/zachmann-export-2018/</link>
+      <link>https://viz.netlify.com/publication/zachmann-export-2018/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/publication/zachmann-export-2018/</guid>
+      <guid>https://viz.netlify.com/publication/zachmann-export-2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Europe&#39;s comparative advantage in low-carbon technology</title>
-      <link>/publication/zachmann-europes-2017/</link>
+      <link>https://viz.netlify.com/publication/zachmann-europes-2017/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/publication/zachmann-europes-2017/</guid>
+      <guid>https://viz.netlify.com/publication/zachmann-europes-2017/</guid>
       <description></description>
     </item>
     

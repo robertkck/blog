@@ -2,77 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on viz.</title>
-    <link>/project/</link>
+    <link>https://viz.netlify.com/project/</link>
     <description>Recent content in Projects on viz.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Robert Kalcik 2018</copyright>
     <lastBuildDate>Wed, 13 Nov 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://viz.netlify.com/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>R&amp;D Investment Dashboard</title>
-      <link>/project/2019-11-13-r-d-investment-dashboard/</link>
+      <link>https://viz.netlify.com/project/2019-11-13-r-d-investment-dashboard/</link>
       <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/project/2019-11-13-r-d-investment-dashboard/</guid>
+      <guid>https://viz.netlify.com/project/2019-11-13-r-d-investment-dashboard/</guid>
       <description>The JRC annualy publishes the top R&amp;amp;D investing firms. This dashboard helps to explore the 2017 dataset.</description>
     </item>
     
     <item>
       <title>Community Map (WIP)</title>
-      <link>/project/2019-08-21-community-map/</link>
+      <link>https://viz.netlify.com/project/2019-08-21-community-map/</link>
       <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/project/2019-08-21-community-map/</guid>
+      <guid>https://viz.netlify.com/project/2019-08-21-community-map/</guid>
       <description>The Austrian &lt;a href=&#34;https://www.digitalaustria.gv.at/&#34; target=&#34;_blank&#34;&gt;Digitisation Agency&lt;/a&gt; commissioned a stakeholder mapping of actors pushing digitisation forward in Austria. The &lt;a href=&#34;http://robertkck.shinyapps.io/community_map&#34; target=&#34;_blank&#34;&gt;Community Map&lt;/a&gt;, a Shiny app, shows data collected from a snowballing survey in which key actors identified their main partners and provided information about their R&amp;amp;D, business and data sharing links.</description>
     </item>
     
     <item>
-      <title>Sag Deine Meinung (de)</title>
-      <link>/project/sag-deine-meinung/</link>
-      <pubDate>Sun, 04 Aug 2019 11:02:38 +0200</pubDate>
-      
-      <guid>/project/sag-deine-meinung/</guid>
-      <description>Öffentlicher Diskurs und Mitsprache</description>
-    </item>
-    
-    <item>
       <title>Seats in the European Parliament</title>
-      <link>/project/2019-06-20-seats-in-the-european-parliament/</link>
+      <link>https://viz.netlify.com/project/2019-06-20-seats-in-the-european-parliament/</link>
       <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/project/2019-06-20-seats-in-the-european-parliament/</guid>
+      <guid>https://viz.netlify.com/project/2019-06-20-seats-in-the-european-parliament/</guid>
       <description>With the UK leaving the EU, 73 MEPs leave the Parliament. The distribution of these seats matters for Europe. Find out about the proposals and explore your own distribution</description>
     </item>
     
     <item>
       <title>Minister Vlatin</title>
-      <link>/project/minister-vlatin/minister-vlatin/</link>
+      <link>https://viz.netlify.com/project/minister-vlatin/minister-vlatin/</link>
       <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/project/minister-vlatin/minister-vlatin/</guid>
+      <guid>https://viz.netlify.com/project/minister-vlatin/minister-vlatin/</guid>
       <description>Minister Vlatin ist der Haus und Hof Bot von dem totalen Brettspiel True World Control</description>
-    </item>
-    
-    <item>
-      <title>External Project</title>
-      <link>/project/external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/project/external-project/</guid>
-      <description>An example of linking directly to an external project website using &lt;code&gt;external_link&lt;/code&gt;.</description>
-    </item>
-    
-    <item>
-      <title>Internal Project</title>
-      <link>/project/internal-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
-      
-      <guid>/project/internal-project/</guid>
-      <description>An example of using the in-built project page.</description>
     </item>
     
   </channel>

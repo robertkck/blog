@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on viz.</title>
-    <link>/tags/python/</link>
+    <link>https://viz.netlify.com/tags/python/</link>
     <description>Recent content in Python on viz.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Robert Kalcik 2018</copyright>
     <lastBuildDate>Sun, 27 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://viz.netlify.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Minister Vlatin</title>
-      <link>/project/minister-vlatin/minister-vlatin/</link>
+      <link>https://viz.netlify.com/project/minister-vlatin/minister-vlatin/</link>
       <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/project/minister-vlatin/minister-vlatin/</guid>
+      <guid>https://viz.netlify.com/project/minister-vlatin/minister-vlatin/</guid>
       <description>Minister Vlatin ist der Haus und Hof Bot von dem totalen Brettspiel True World Control</description>
     </item>
     

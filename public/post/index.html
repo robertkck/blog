@@ -31,7 +31,7 @@
   <meta name="description" content="Innovation Systems and Policy">
 
   
-  <link rel="alternate" hreflang="en-us" href="/post/">
+  <link rel="alternate" hreflang="en-us" href="https://viz.netlify.com/post/">
 
   
 
@@ -111,15 +111,15 @@
   
 
   
-  <link rel="alternate" href="/post/index.xml" type="application/rss+xml" title="viz.">
-  <link rel="feed" href="/post/index.xml" type="application/rss+xml" title="viz.">
+  <link rel="alternate" href="https://viz.netlify.com/post/index.xml" type="application/rss+xml" title="viz.">
+  <link rel="feed" href="https://viz.netlify.com/post/index.xml" type="application/rss+xml" title="viz.">
   
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/post/">
+  <link rel="canonical" href="https://viz.netlify.com/post/">
 
   
   
@@ -134,9 +134,9 @@
   <meta property="twitter:creator" content="@RKalcik">
   
   <meta property="og:site_name" content="viz.">
-  <meta property="og:url" content="/post/">
+  <meta property="og:url" content="https://viz.netlify.com/post/">
   <meta property="og:title" content="Posts | viz.">
-  <meta property="og:description" content="Innovation Systems and Policy"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="Innovation Systems and Policy"><meta property="og:image" content="https://viz.netlify.com/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="og:updated_time" content="2017-01-01T00:00:00&#43;01:00">
@@ -394,293 +394,6 @@
 
   <span class="article-date">
     
-    <meta content="2019-08-22 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-    <time datetime="2019-08-22 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-      Aug 22, 2019
-    </time>
-  </span>
-  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="">
-  </span>
-
-  
-  <span class="middot-divider"></span>
-  
-  <span class="article-date">
-    <i class="fab fa-twitter"></i>
-    <a href="https://twitter.com/RKalcik" target="_blank">@RKalcik</a>&nbsp
-  
-
-  
-
-
-
-
-
-  
-
-
-
-
-  <span class="middot-divider"></span>
-  
-  <span class="article-date">
-    <i class="fab fa-github"></i>
-    <a href="https://github.com/robertkck/blog/blob/master/content/post/2019-08-22-deploying-with-shinyproxy-and-golem/index.Rmd" target="_blank">View source</a>&nbsp
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    2 min read
-  </span>
-  
-
-  
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder"></i>
-    
-    <a href="/categories/r/">R</a>, 
-    
-    <a href="/categories/shiny/">Shiny</a>
-    
-  </span>
-  
-  
-
-  
-
-</div>
-
-  
-  
-  
-  <h3 class="article-title" itemprop="headline">
-    <a href="/post/2019-08-22-deploying-with-shinyproxy-and-golem/" itemprop="url">Deploying with Shinyproxy and Golem</a>
-  </h3>
-  <div class="article-style" itemprop="articleBody">
-    
-    After hitting golem::add_docker_shinyproxy I had to edit the dockerfile and replace the last line with …
-Loading golem as a remote did not work so I fetched it from github.
-The full working dockerfile is
-FROM rocker/tidyverse:3.6.0RUN R -e &#39;install.packages(&quot;remotes&quot;)&#39;RUN R -e &#39;remotes::install_github(&quot;r-lib/remotes&quot;, ref = &quot;97bbf81&quot;)&#39;RUN R -e &#39;remotes::install_cran(&quot;attempt&quot;)&#39;RUN R -e &#39;remotes::install_cran(&quot;DT&quot;)&#39;RUN R -e &#39;remotes::install_cran(&quot;glue&quot;)&#39;RUN R -e &#39;remotes::install_github(&quot;ThinkR-open/golem&quot;)&#39;RUN R -e &#39;remotes::install_cran(&quot;htmltools&quot;)&#39;RUN R -e &#39;remotes::install_cran(&quot;shiny&quot;)&#39;COPY communitymap_*.
-    
-  </div>
-  <p class="read-more" itemprop="mainEntityOfPage">
-    <a href="/post/2019-08-22-deploying-with-shinyproxy-and-golem/" class="btn btn-outline-primary my-1">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-    
-  
-    
-      
-
-<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-  
-
-<div class="article-metadata">
-
-  
-  
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="">
-  </span>
-  
-
-  <span class="article-date">
-    
-    <meta content="2019-08-21 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-    <time datetime="2019-08-21 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-      Aug 21, 2019
-    </time>
-  </span>
-  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="">
-  </span>
-
-  
-  <span class="middot-divider"></span>
-  
-  <span class="article-date">
-    <i class="fab fa-twitter"></i>
-    <a href="https://twitter.com/RKalcik" target="_blank">@RKalcik</a>&nbsp
-  
-
-  
-
-
-
-
-
-  
-
-
-
-
-  <span class="middot-divider"></span>
-  
-  <span class="article-date">
-    <i class="fab fa-github"></i>
-    <a href="https://github.com/robertkck/blog/blob/master/content/post/2019-08-21-custom-markers-in-leaflet/index.Rmd" target="_blank">View source</a>&nbsp
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    1 min read
-  </span>
-  
-
-  
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder"></i>
-    
-    <a href="/categories/r/">R</a>
-    
-  </span>
-  
-  
-
-  
-
-</div>
-
-  
-  
-  
-  <h3 class="article-title" itemprop="headline">
-    <a href="/post/2019-08-21-custom-markers-in-leaflet/" itemprop="url">Custom Markers in Leaflet</a>
-  </h3>
-  <div class="article-style" itemprop="articleBody">
-    
-    It is impossible to customise the colour of markers in leaflet for R.
-It is possible with MapMaker.io which provides icons under a Creative Commons Library.
-library(leaflet)## Warning: package &#39;leaflet&#39; was built under R version 3.5.3df &lt;- data.frame(lng = c(0, 22),lat = c(33, 44))custom_icon &lt;- makeIcon(iconUrl = &quot;https://cdn.mapmarker.io/api/v1/pin?size=120&amp;background=%23009CE0&amp;icon=fa-flag&amp;color=%23FFFFFF&amp;voffset=0&amp;hoffset=1&amp;&quot;,iconWidth = 40, iconHeight = 40,iconAnchorX = 20, iconAnchorY = 40,shadowUrl = &quot;www/marker/shadow.
-    
-  </div>
-  <p class="read-more" itemprop="mainEntityOfPage">
-    <a href="/post/2019-08-21-custom-markers-in-leaflet/" class="btn btn-outline-primary my-1">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-    
-  
-    
-      
-
-<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-  
-
-<div class="article-metadata">
-
-  
-  
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="">
-  </span>
-  
-
-  <span class="article-date">
-    
-    <meta content="2019-06-25 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-    <time datetime="2019-06-25 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-      Jun 25, 2019
-    </time>
-  </span>
-  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="">
-  </span>
-
-  
-  <span class="middot-divider"></span>
-  
-  <span class="article-date">
-    <i class="fab fa-twitter"></i>
-    <a href="https://twitter.com/RKalcik" target="_blank">@RKalcik</a>&nbsp
-  
-
-  
-
-
-
-
-
-  
-
-
-
-
-  <span class="middot-divider"></span>
-  
-  <span class="article-date">
-    <i class="fab fa-github"></i>
-    <a href="https://github.com/robertkck/blog/blob/master/content/post/2019-06-25-risis-summer-school-on-data-science-in-sti/index.Rmd" target="_blank">View source</a>&nbsp
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    2 min read
-  </span>
-  
-
-  
-
-  
-
-</div>
-
-  
-  
-  
-  <h3 class="article-title" itemprop="headline">
-    <a href="/post/2019-06-25-risis-summer-school-on-data-science-in-sti/" itemprop="url">RISIS Summer School on Data Science in STI</a>
-  </h3>
-  <div class="article-style" itemprop="articleBody">
-    
-    Rodrigo Costas:Scientometrics is a part of Data Science as it extracts knowledge from structured and unstructured data“We are archeologists” We follow traces about topics, semantics, authorsScientometric indicators approximate a concept of interest. How good is the operationalization given the concept (e.g. quality, impact, collaboration, productivity)Theoretical foundations of citation analysisGarfield 1962: Why do people cite?Diversity of citation: Characterise citation as substantial, superficial or criticalTheories of citation behaviourMerton 1973 Ethos of science: Normative theorySocial constructivitst theory: I want to convince the reviewer that my paper is good -&gt; BiasesCitations as a proxy for scientific impactIndicator characteristicsSize independenceTerminology:
-    
-  </div>
-  <p class="read-more" itemprop="mainEntityOfPage">
-    <a href="/post/2019-06-25-risis-summer-school-on-data-science-in-sti/" class="btn btn-outline-primary my-1">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-    
-  
-    
-      
-
-<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-  
-
-<div class="article-metadata">
-
-  
-  
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="">
-  </span>
-  
-
-  <span class="article-date">
-    
     <meta content="2019-06-20 00:00:00 &#43;0000 UTC" itemprop="datePublished">
     <time datetime="2019-06-20 00:00:00 &#43;0000 UTC" itemprop="dateModified">
       Jun 20, 2019
@@ -766,605 +479,8 @@ library(leaflet)## Warning: package &#39;leaflet&#39; was built under R version
 
     
   
-    
-      
 
-<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
   
-
-<div class="article-metadata">
-
-  
-  
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="">
-  </span>
-  
-
-  <span class="article-date">
-    
-    <meta content="2019-06-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-    <time datetime="2019-06-01 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-      Jun 1, 2019
-    </time>
-  </span>
-  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="">
-  </span>
-
-  
-  <span class="middot-divider"></span>
-  
-  <span class="article-date">
-    <i class="fab fa-twitter"></i>
-    <a href="https://twitter.com/RKalcik" target="_blank">@RKalcik</a>&nbsp
-  
-
-  
-
-
-
-
-
-  
-
-
-
-
-  <span class="middot-divider"></span>
-  
-  <span class="article-date">
-    <i class="fab fa-github"></i>
-    <a href="https://github.com/robertkck/blog/blob/master/content/post/2019-06-01-is-there-information-in-technology-specialisation.Rmd" target="_blank">View source</a>&nbsp
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    1 min read
-  </span>
-  
-
-  
-
-  
-
-</div>
-
-  
-  
-  
-  <h3 class="article-title" itemprop="headline">
-    <a href="/post/is-there-information-in-technology-specialisation/" itemprop="url">Is there information in technology specialisation?</a>
-  </h3>
-  <div class="article-style" itemprop="articleBody">
-    
-    
-
-
-<p>We use an entropy based null-model to understand the technology specialisation bipartite network <span class="citation">[@straka]</span></p>
-
-    
-  </div>
-  <p class="read-more" itemprop="mainEntityOfPage">
-    <a href="/post/is-there-information-in-technology-specialisation/" class="btn btn-outline-primary my-1">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-    
-  
-    
-      
-
-<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-  
-
-<div class="article-metadata">
-
-  
-  
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="">
-  </span>
-  
-
-  <span class="article-date">
-    
-    <meta content="2019-06-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-    <time datetime="2019-06-01 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-      Jun 1, 2019
-    </time>
-  </span>
-  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="">
-  </span>
-
-  
-  <span class="middot-divider"></span>
-  
-  <span class="article-date">
-    <i class="fab fa-twitter"></i>
-    <a href="https://twitter.com/RKalcik" target="_blank">@RKalcik</a>&nbsp
-  
-
-  
-
-
-
-
-
-  
-
-
-
-
-  <span class="middot-divider"></span>
-  
-  <span class="article-date">
-    <i class="fab fa-github"></i>
-    <a href="https://github.com/robertkck/blog/blob/master/content/post/2019-06-01-predictability-of-technology-trajectories.Rmd" target="_blank">View source</a>&nbsp
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    3 min read
-  </span>
-  
-
-  
-
-  
-
-</div>
-
-  
-  
-  
-  <h3 class="article-title" itemprop="headline">
-    <a href="/post/predictability-of-technology-trajectories/" itemprop="url">Predictability of technology trajectories using representation learning on graphs</a>
-  </h3>
-  <div class="article-style" itemprop="articleBody">
-    
-    Regional technological specialisation follows an underlying time-varying multilayer network of technologies and geographical units hosting inventors. Thus, the socio-technological system is characterised by emergence and inherently hard to predict (Thurner, Hanel, and Klimek 2018). Nevertheless, high effort has been put into developing methods for predicting the development of emergent technologies (see e.g. vpinstitute.org/research-examples/), regional technological trajectories (Farmer and Lafond 2016; Uhlbach, Balland, and Scherngell 2017) and new avenues for research based on existing patent data (Agrawal, McHale, and Oettl 2017).
-    
-  </div>
-  <p class="read-more" itemprop="mainEntityOfPage">
-    <a href="/post/predictability-of-technology-trajectories/" class="btn btn-outline-primary my-1">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-    
-  
-    
-      
-
-<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-  
-
-<div class="article-metadata">
-
-  
-  
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="">
-  </span>
-  
-
-  <span class="article-date">
-    
-    <meta content="2019-05-29 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-    <time datetime="2019-05-29 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-      May 29, 2019
-    </time>
-  </span>
-  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="">
-  </span>
-
-  
-  <span class="middot-divider"></span>
-  
-  <span class="article-date">
-    <i class="fab fa-twitter"></i>
-    <a href="https://twitter.com/RKalcik" target="_blank">@RKalcik</a>&nbsp
-  
-
-  
-
-
-
-
-
-  
-
-
-
-
-  <span class="middot-divider"></span>
-  
-  <span class="article-date">
-    <i class="fab fa-github"></i>
-    <a href="https://github.com/robertkck/blog/blob/master/content/post/2019-05-29-dabblings-in-causal-inference.Rmd" target="_blank">View source</a>&nbsp
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    2 min read
-  </span>
-  
-
-  
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder"></i>
-    
-    <a href="/categories/economics/">economics</a>, 
-    
-    <a href="/categories/r/">R</a>
-    
-  </span>
-  
-  
-
-  
-
-</div>
-
-  
-  
-  
-  <h3 class="article-title" itemprop="headline">
-    <a href="/post/dabblings-in-causal-inference/" itemprop="url">Dabblings in Causal Inference</a>
-  </h3>
-  <div class="article-style" itemprop="articleBody">
-    
-    Following lecture Causal Inference Lecture 2 Collider Bias
-library(tidyverse)## Warning: package &#39;tidyverse&#39; was built under R version 3.5.3## -- Attaching packages --------------------------------------------------------------------- tidyverse 1.2.1 --## v ggplot2 3.1.1 v purrr 0.3.2## v tibble 2.1.2 v dplyr 0.8.1## v tidyr 0.8.3 v stringr 1.4.0## v readr 1.3.1 v forcats 0.4.0## Warning: package &#39;ggplot2&#39; was built under R version 3.5.3## Warning: package &#39;tidyr&#39; was built under R version 3.
-    
-  </div>
-  <p class="read-more" itemprop="mainEntityOfPage">
-    <a href="/post/dabblings-in-causal-inference/" class="btn btn-outline-primary my-1">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-    
-  
-    
-      
-
-<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-  
-
-<div class="article-metadata">
-
-  
-  
-  
-  <div>
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">admin</span>
-    </span>
-    
-  </div>
-  
-
-  <span class="article-date">
-    
-    <meta content="2019-02-05 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-    <time datetime="2019-02-05 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-      Feb 5, 2019
-    </time>
-  </span>
-  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="">
-  </span>
-
-  
-  <span class="middot-divider"></span>
-  
-  <span class="article-date">
-    <i class="fab fa-twitter"></i>
-    <a href="https://twitter.com/RKalcik" target="_blank">@RKalcik</a>&nbsp
-  
-
-  
-
-
-
-
-
-  
-
-
-
-
-  <span class="middot-divider"></span>
-  
-  <span class="article-date">
-    <i class="fab fa-github"></i>
-    <a href="https://github.com/robertkck/blog/blob/master/content/post/jupyter/index.md" target="_blank">View source</a>&nbsp
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    1 min read
-  </span>
-  
-
-  
-
-  
-
-</div>
-
-  
-  
-  
-  
-  <a href="/post/jupyter/">
-      <img src="/post/jupyter/featured_hub1daa031c2af6888ff37bd93eb033a1a_71549_918x517_fill_q90_box_smart1_2.png" class="article-banner" itemprop="image" alt="">
-  </a>
-  
-  <h3 class="article-title" itemprop="headline">
-    <a href="/post/jupyter/" itemprop="url">Display Jupyter Notebooks with Academic</a>
-  </h3>
-  <div class="article-style" itemprop="articleBody">
-    
-    <p>Learn how to blog in Academic using Jupyter notebooks</p>
-    
-  </div>
-  <p class="read-more" itemprop="mainEntityOfPage">
-    <a href="/post/jupyter/" class="btn btn-outline-primary my-1">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-    
-  
-    
-      
-
-<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-  
-
-<div class="article-metadata">
-
-  
-  
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="">
-  </span>
-  
-
-  <span class="article-date">
-    
-    <meta content="2019-01-19 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-    <time datetime="2019-01-19 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-      Jan 19, 2019
-    </time>
-  </span>
-  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="">
-  </span>
-
-  
-  <span class="middot-divider"></span>
-  
-  <span class="article-date">
-    <i class="fab fa-twitter"></i>
-    <a href="https://twitter.com/RKalcik" target="_blank">@RKalcik</a>&nbsp
-  
-
-  
-
-
-
-
-
-  
-
-
-
-
-  <span class="middot-divider"></span>
-  
-  <span class="article-date">
-    <i class="fab fa-github"></i>
-    <a href="https://github.com/robertkck/blog/blob/master/content/post/2019-01-19-embedding-of-the-patent-space.Rmd" target="_blank">View source</a>&nbsp
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    1 min read
-  </span>
-  
-
-  
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder"></i>
-    
-    <a href="/categories/technology/">technology</a>, 
-    
-    <a href="/categories/embeddings/">embeddings</a>, 
-    
-    <a href="">big data</a>, 
-    
-    <a href="">machine learning</a>
-    
-  </span>
-  
-  
-
-  
-
-</div>
-
-  
-  
-  
-  <h3 class="article-title" itemprop="headline">
-    <a href="/post/embedding-patents/" itemprop="url">Embedding of the Patent Space</a>
-  </h3>
-  <div class="article-style" itemprop="articleBody">
-    
-    
-
-
-<p>Yes yes</p>
-<p>Sources:</p>
-<ul>
-<li><a href="https://www.youtube.com/watch?v=gJD_5Gr5ZHA" class="uri">https://www.youtube.com/watch?v=gJD_5Gr5ZHA</a></li>
-<li><a href="https://www.ted.com/talks/vittorio_loreto_need_a_new_idea_start_at_the_edge_of_what_is_known/reading-list#t-956960" class="uri">https://www.ted.com/talks/vittorio_loreto_need_a_new_idea_start_at_the_edge_of_what_is_known/reading-list#t-956960</a></li>
-</ul>
-
-    
-  </div>
-  <p class="read-more" itemprop="mainEntityOfPage">
-    <a href="/post/embedding-patents/" class="btn btn-outline-primary my-1">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-    
-  
-    
-      
-
-<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-  
-
-<div class="article-metadata">
-
-  
-  
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="">
-  </span>
-  
-
-  <span class="article-date">
-    
-    <meta content="2018-11-20 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-    <time datetime="2018-11-20 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-      Nov 20, 2018
-    </time>
-  </span>
-  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="">
-  </span>
-
-  
-  <span class="middot-divider"></span>
-  
-  <span class="article-date">
-    <i class="fab fa-twitter"></i>
-    <a href="https://twitter.com/RKalcik" target="_blank">@RKalcik</a>&nbsp
-  
-
-  
-
-
-
-
-
-  
-
-
-
-
-  <span class="middot-divider"></span>
-  
-  <span class="article-date">
-    <i class="fab fa-github"></i>
-    <a href="https://github.com/robertkck/blog/blob/master/content/post/2018-11-20-eaepe-networks-workshop.Rmd" target="_blank">View source</a>&nbsp
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    4 min read
-  </span>
-  
-
-  
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder"></i>
-    
-    <a href="/categories/networks/">networks</a>, 
-    
-    <a href="/categories/economics/">economics</a>, 
-    
-    <a href="/categories/innovation/">innovation</a>, 
-    
-    <a href="/categories/policy/">policy</a>
-    
-  </span>
-  
-  
-
-  
-
-</div>
-
-  
-  
-  
-  <h3 class="article-title" itemprop="headline">
-    <a href="/post/eaepe-networks-workshop/" itemprop="url">EAEPE - Networks Workshop</a>
-  </h3>
-  <div class="article-style" itemprop="articleBody">
-    
-    Last week the pluralist forum EAEPE held its workshop on New ways of innovation policy design and its evaluation - instights from complex adaptive systems and beyond.
-Radical innovationThe feedback on the presentation related to
-The results are no surprise and similar to findings from the exploration/exploitation literature and regional lock-inSingle inventors need to be tackled by using a two stage regression approachExports could be used as another variable to explain the ties between two regions: Inter-regional industrial connection could lead to radical innovations and cross-fertilisationNew question: How does radicalness relate to regional competitiveness?
-    
-  </div>
-  <p class="read-more" itemprop="mainEntityOfPage">
-    <a href="/post/eaepe-networks-workshop/" class="btn btn-outline-primary my-1">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-    
-  
-
-  
-<nav>
-  <ul class="pagination justify-content-center">
-    
-    
-    <li class="page-item"><a class="page-link" href="/post/page/2/">&raquo;</a></li>
-    
-  </ul>
-</nav>
-
 
 
 </div>

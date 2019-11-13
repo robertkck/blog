@@ -2,211 +2,121 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on viz.</title>
-    <link>/tags/</link>
+    <link>https://viz.netlify.com/tags/</link>
     <description>Recent content in Tags on viz.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Robert Kalcik 2018</copyright>
     <lastBuildDate>Wed, 13 Nov 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://viz.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Academic</title>
-      <link>/tags/academic/</link>
+      <link>https://viz.netlify.com/tags/academic/</link>
       <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/academic/</guid>
+      <guid>https://viz.netlify.com/tags/academic/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R&amp;D</title>
-      <link>/tags/rd/</link>
+      <link>https://viz.netlify.com/tags/rd/</link>
       <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/rd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>deployment</title>
-      <link>/tags/deployment/</link>
-      <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/deployment/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Digitisation</title>
-      <link>/tags/digitisation/</link>
-      <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/digitisation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>leaflet</title>
-      <link>/tags/leaflet/</link>
-      <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/leaflet/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>network</title>
-      <link>/tags/network/</link>
-      <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/network/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Discourse</title>
-      <link>/tags/discourse/</link>
-      <pubDate>Sun, 04 Aug 2019 11:02:38 +0200</pubDate>
-      
-      <guid>/tags/discourse/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Media</title>
-      <link>/tags/media/</link>
-      <pubDate>Sun, 04 Aug 2019 11:02:38 +0200</pubDate>
-      
-      <guid>/tags/media/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Participation</title>
-      <link>/tags/participation/</link>
-      <pubDate>Sun, 04 Aug 2019 11:02:38 +0200</pubDate>
-      
-      <guid>/tags/participation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Apportionment</title>
-      <link>/tags/apportionment/</link>
-      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/apportionment/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>EP</title>
-      <link>/tags/ep/</link>
-      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/ep/</guid>
+      <guid>https://viz.netlify.com/tags/rd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Shiny</title>
-      <link>/tags/shiny/</link>
+      <link>https://viz.netlify.com/tags/shiny/</link>
+      <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://viz.netlify.com/tags/shiny/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Digitisation</title>
+      <link>https://viz.netlify.com/tags/digitisation/</link>
+      <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://viz.netlify.com/tags/digitisation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>leaflet</title>
+      <link>https://viz.netlify.com/tags/leaflet/</link>
+      <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://viz.netlify.com/tags/leaflet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>network</title>
+      <link>https://viz.netlify.com/tags/network/</link>
+      <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://viz.netlify.com/tags/network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Apportionment</title>
+      <link>https://viz.netlify.com/tags/apportionment/</link>
       <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/shiny/</guid>
+      <guid>https://viz.netlify.com/tags/apportionment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EP</title>
+      <link>https://viz.netlify.com/tags/ep/</link>
+      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://viz.netlify.com/tags/ep/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cheatsheets</title>
-      <link>/tags/cheatsheets/</link>
+      <link>https://viz.netlify.com/tags/cheatsheets/</link>
       <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/cheatsheets/</guid>
+      <guid>https://viz.netlify.com/tags/cheatsheets/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bot</title>
-      <link>/tags/bot/</link>
+      <link>https://viz.netlify.com/tags/bot/</link>
       <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/bot/</guid>
+      <guid>https://viz.netlify.com/tags/bot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>/tags/python/</link>
+      <link>https://viz.netlify.com/tags/python/</link>
       <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/python/</guid>
+      <guid>https://viz.netlify.com/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>World Control</title>
-      <link>/tags/world-control/</link>
+      <link>https://viz.netlify.com/tags/world-control/</link>
       <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/world-control/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tutorial</title>
-      <link>/tags/tutorial/</link>
-      <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/tutorial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Demo</title>
-      <link>/tags/demo/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/demo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Deep Learning</title>
-      <link>/tags/deep-learning/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
-      
-      <guid>/tags/deep-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R Markdown</title>
-      <link>/tags/r-markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/tags/r-markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>plot</title>
-      <link>/tags/plot/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/tags/plot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>regression</title>
-      <link>/tags/regression/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/tags/regression/</guid>
+      <guid>https://viz.netlify.com/tags/world-control/</guid>
       <description></description>
     </item>
     

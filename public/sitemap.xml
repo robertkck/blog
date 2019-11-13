@@ -3,7 +3,7 @@
     
     <url>
     
-      <loc>/courses/example/example1/</loc>
+      <loc>https://viz.netlify.com/courses/example/example1/</loc>
       <lastmod>2019-05-05T00:00:00+01:00</lastmod>
     </url>
     
@@ -11,7 +11,7 @@
     
     <url>
     
-      <loc>/courses/example/</loc>
+      <loc>https://viz.netlify.com/courses/example/</loc>
       <lastmod>2018-09-09T00:00:00+00:00</lastmod>
     </url>
     
@@ -19,7 +19,7 @@
     
     <url>
     
-      <loc>/courses/example/example2/</loc>
+      <loc>https://viz.netlify.com/courses/example/example2/</loc>
       <lastmod>2019-05-05T00:00:00+01:00</lastmod>
     </url>
     
@@ -27,7 +27,7 @@
     
     <url>
     
-      <loc>/tags/academic/</loc>
+      <loc>https://viz.netlify.com/tags/academic/</loc>
       <lastmod>2019-11-13T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -36,7 +36,7 @@
     
     <url>
     
-      <loc>/categories/</loc>
+      <loc>https://viz.netlify.com/categories/</loc>
       <lastmod>2019-11-13T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -45,7 +45,7 @@
     
     <url>
     
-      <loc>/project/</loc>
+      <loc>https://viz.netlify.com/project/</loc>
       <lastmod>2019-11-13T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -54,7 +54,7 @@
     
     <url>
     
-      <loc>/tags/rd/</loc>
+      <loc>https://viz.netlify.com/tags/rd/</loc>
       <lastmod>2019-11-13T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -63,7 +63,7 @@
     
     <url>
     
-      <loc>/project/2019-11-13-r-d-investment-dashboard/</loc>
+      <loc>https://viz.netlify.com/project/2019-11-13-r-d-investment-dashboard/</loc>
       <lastmod>2019-11-13T00:00:00+00:00</lastmod>
     </url>
     
@@ -71,16 +71,7 @@
     
     <url>
     
-      <loc>/categories/shiny/</loc>
-      <lastmod>2019-11-13T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/</loc>
+      <loc>https://viz.netlify.com/categories/shiny/</loc>
       <lastmod>2019-11-13T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -89,7 +80,7 @@
     
     <url>
     
-      <loc>/</loc>
+      <loc>https://viz.netlify.com/tags/shiny/</loc>
       <lastmod>2019-11-13T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -98,16 +89,8 @@
     
     <url>
     
-      <loc>/post/2019-08-22-deploying-with-shinyproxy-and-golem/</loc>
-      <lastmod>2019-08-22T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/r/</loc>
-      <lastmod>2019-08-22T00:00:00+00:00</lastmod>
+      <loc>https://viz.netlify.com/tags/</loc>
+      <lastmod>2019-11-13T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -115,8 +98,8 @@
     
     <url>
     
-      <loc>/tags/deployment/</loc>
-      <lastmod>2019-08-22T00:00:00+00:00</lastmod>
+      <loc>https://viz.netlify.com/</loc>
+      <lastmod>2019-11-13T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -124,7 +107,7 @@
     
     <url>
     
-      <loc>/project/2019-08-21-community-map/</loc>
+      <loc>https://viz.netlify.com/project/2019-08-21-community-map/</loc>
       <lastmod>2019-08-21T00:00:00+00:00</lastmod>
     </url>
     
@@ -132,15 +115,7 @@
     
     <url>
     
-      <loc>/post/2019-08-21-custom-markers-in-leaflet/</loc>
-      <lastmod>2019-08-21T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/digitisation/</loc>
+      <loc>https://viz.netlify.com/tags/digitisation/</loc>
       <lastmod>2019-08-21T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -149,7 +124,7 @@
     
     <url>
     
-      <loc>/categories/digitisation/</loc>
+      <loc>https://viz.netlify.com/categories/r/</loc>
       <lastmod>2019-08-21T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -158,7 +133,7 @@
     
     <url>
     
-      <loc>/tags/leaflet/</loc>
+      <loc>https://viz.netlify.com/categories/digitisation/</loc>
       <lastmod>2019-08-21T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -167,7 +142,7 @@
     
     <url>
     
-      <loc>/tags/network/</loc>
+      <loc>https://viz.netlify.com/tags/leaflet/</loc>
       <lastmod>2019-08-21T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -176,8 +151,8 @@
     
     <url>
     
-      <loc>/tags/discourse/</loc>
-      <lastmod>2019-08-04T11:02:38+02:00</lastmod>
+      <loc>https://viz.netlify.com/tags/network/</loc>
+      <lastmod>2019-08-21T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -185,50 +160,7 @@
     
     <url>
     
-      <loc>/categories/media/</loc>
-      <lastmod>2019-08-04T11:02:38+02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/media/</loc>
-      <lastmod>2019-08-04T11:02:38+02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/participation/</loc>
-      <lastmod>2019-08-04T11:02:38+02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/project/sag-deine-meinung/</loc>
-      <lastmod>2019-08-04T11:02:38+02:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/2019-06-25-risis-summer-school-on-data-science-in-sti/</loc>
-      <lastmod>2019-06-25T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/apportionment/</loc>
+      <loc>https://viz.netlify.com/tags/apportionment/</loc>
       <lastmod>2019-06-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -237,7 +169,7 @@
     
     <url>
     
-      <loc>/tags/ep/</loc>
+      <loc>https://viz.netlify.com/tags/ep/</loc>
       <lastmod>2019-06-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -246,7 +178,7 @@
     
     <url>
     
-      <loc>/post/2019-06-20-join-rstudio-cheat-sheets-using-pdftools/</loc>
+      <loc>https://viz.netlify.com/post/2019-06-20-join-rstudio-cheat-sheets-using-pdftools/</loc>
       <lastmod>2019-06-20T00:00:00+00:00</lastmod>
     </url>
     
@@ -254,7 +186,7 @@
     
     <url>
     
-      <loc>/project/2019-06-20-seats-in-the-european-parliament/</loc>
+      <loc>https://viz.netlify.com/project/2019-06-20-seats-in-the-european-parliament/</loc>
       <lastmod>2019-06-20T00:00:00+00:00</lastmod>
     </url>
     
@@ -262,16 +194,7 @@
     
     <url>
     
-      <loc>/tags/shiny/</loc>
-      <lastmod>2019-06-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/cheatsheets/</loc>
+      <loc>https://viz.netlify.com/tags/cheatsheets/</loc>
       <lastmod>2019-06-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -280,40 +203,7 @@
     
     <url>
     
-      <loc>/post/is-there-information-in-technology-specialisation/</loc>
-      <lastmod>2019-06-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/predictability-of-technology-trajectories/</loc>
-      <lastmod>2019-06-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/dabblings-in-causal-inference/</loc>
-      <lastmod>2019-05-29T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/economics/</loc>
-      <lastmod>2019-05-29T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/</loc>
+      <loc>https://viz.netlify.com/slides/</loc>
       <lastmod>2019-02-05T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -322,7 +212,7 @@
     
     <url>
     
-      <loc>/post/jupyter/</loc>
+      <loc>https://viz.netlify.com/slides/example/</loc>
       <lastmod>2019-02-05T00:00:00+00:00</lastmod>
     </url>
     
@@ -330,33 +220,7 @@
     
     <url>
     
-      <loc>/slides/</loc>
-      <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/slides/example/</loc>
-      <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/admin/</loc>
-      <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/bot/</loc>
+      <loc>https://viz.netlify.com/categories/bot/</loc>
       <lastmod>2019-01-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -365,7 +229,7 @@
     
     <url>
     
-      <loc>/tags/bot/</loc>
+      <loc>https://viz.netlify.com/tags/bot/</loc>
       <lastmod>2019-01-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -374,7 +238,7 @@
     
     <url>
     
-      <loc>/project/minister-vlatin/minister-vlatin/</loc>
+      <loc>https://viz.netlify.com/project/minister-vlatin/minister-vlatin/</loc>
       <lastmod>2019-01-27T00:00:00+00:00</lastmod>
     </url>
     
@@ -382,16 +246,7 @@
     
     <url>
     
-      <loc>/tags/python/</loc>
-      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/world-control/</loc>
+      <loc>https://viz.netlify.com/tags/python/</loc>
       <lastmod>2019-01-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -400,16 +255,8 @@
     
     <url>
     
-      <loc>/post/embedding-patents/</loc>
-      <lastmod>2019-01-19T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/big-data/</loc>
-      <lastmod>2019-01-19T00:00:00+00:00</lastmod>
+      <loc>https://viz.netlify.com/tags/world-control/</loc>
+      <lastmod>2019-01-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -417,69 +264,7 @@
     
     <url>
     
-      <loc>/categories/embeddings/</loc>
-      <lastmod>2019-01-19T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/machine-learning/</loc>
-      <lastmod>2019-01-19T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/technology/</loc>
-      <lastmod>2019-01-19T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/eaepe-networks-workshop/</loc>
-      <lastmod>2018-11-20T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/innovation/</loc>
-      <lastmod>2018-11-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/networks/</loc>
-      <lastmod>2018-11-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/policy/</loc>
-      <lastmod>2018-11-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tutorial/example/</loc>
+      <loc>https://viz.netlify.com/tutorial/example/</loc>
       <lastmod>2018-09-09T00:00:00+02:00</lastmod>
     </url>
     
@@ -487,7 +272,7 @@
     
     <url>
     
-      <loc>/tutorial/</loc>
+      <loc>https://viz.netlify.com/tutorial/</loc>
       <lastmod>2018-09-09T00:00:00+02:00</lastmod>
     </url>
     
@@ -495,49 +280,7 @@
     
     <url>
     
-      <loc>/post/creating-this-blog/</loc>
-      <lastmod>2018-07-13T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/tutorial/</loc>
-      <lastmod>2018-07-13T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/astronomy/</loc>
-      <lastmod>2018-07-12T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/kepler-s-exoplanet-necklaces/</loc>
-      <lastmod>2018-07-12T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/kepler-s-exoplanet-necklaces/</loc>
-      <lastmod>2018-07-12T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/license/</loc>
+      <loc>https://viz.netlify.com/license/</loc>
       <lastmod>2018-06-28T00:00:00+02:00</lastmod>
     </url>
     
@@ -545,15 +288,7 @@
     
     <url>
     
-      <loc>/privacy/</loc>
-      <lastmod>2018-06-28T00:00:00+02:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication_types/0/</loc>
+      <loc>https://viz.netlify.com/publication_types/0/</loc>
       <lastmod>2018-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -562,7 +297,7 @@
     
     <url>
     
-      <loc>/publication_types/6/</loc>
+      <loc>https://viz.netlify.com/publication_types/6/</loc>
       <lastmod>2018-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -571,23 +306,7 @@
     
     <url>
     
-      <loc>/publication/kalcik-does-2018/</loc>
-      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication/zachmann-export-2018/</loc>
-      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/georg-zachmann/</loc>
+      <loc>https://viz.netlify.com/authors/</loc>
       <lastmod>2018-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -596,7 +315,23 @@
     
     <url>
     
-      <loc>/authors/guntram-wolff/</loc>
+      <loc>https://viz.netlify.com/publication/kalcik-does-2018/</loc>
+      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://viz.netlify.com/publication/zachmann-export-2018/</loc>
+      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://viz.netlify.com/authors/georg-zachmann/</loc>
       <lastmod>2018-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -605,7 +340,7 @@
     
     <url>
     
-      <loc>/authors/nicoals-moes/</loc>
+      <loc>https://viz.netlify.com/authors/guntram-wolff/</loc>
       <lastmod>2018-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -614,7 +349,7 @@
     
     <url>
     
-      <loc>/publication_types/</loc>
+      <loc>https://viz.netlify.com/authors/nicoals-moes/</loc>
       <lastmod>2018-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -623,7 +358,7 @@
     
     <url>
     
-      <loc>/authors/robert-kalcik/</loc>
+      <loc>https://viz.netlify.com/publication_types/</loc>
       <lastmod>2018-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -632,7 +367,16 @@
     
     <url>
     
-      <loc>/publication/zachmann-europes-2017/</loc>
+      <loc>https://viz.netlify.com/authors/robert-kalcik/</loc>
+      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://viz.netlify.com/publication/zachmann-europes-2017/</loc>
       <lastmod>2017-09-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -640,7 +384,7 @@
     
     <url>
     
-      <loc>/publication_types/2/</loc>
+      <loc>https://viz.netlify.com/publication_types/2/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -649,7 +393,7 @@
     
     <url>
     
-      <loc>/publication_types/5/</loc>
+      <loc>https://viz.netlify.com/publication_types/5/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -658,7 +402,7 @@
     
     <url>
     
-      <loc>/publication/zachmann-approach-2017/</loc>
+      <loc>https://viz.netlify.com/publication/zachmann-approach-2017/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -666,7 +410,7 @@
     
     <url>
     
-      <loc>/publication/batsaikhan-brexit-2017/</loc>
+      <loc>https://viz.netlify.com/publication/batsaikhan-brexit-2017/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -674,16 +418,7 @@
     
     <url>
     
-      <loc>/authors/dirk-schoenmaker/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/filippo-biondi/</loc>
+      <loc>https://viz.netlify.com/authors/dirk-schoenmaker/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -692,7 +427,7 @@
     
     <url>
     
-      <loc>/authors/guntram-b-wolff/</loc>
+      <loc>https://viz.netlify.com/authors/filippo-biondi/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -701,31 +436,7 @@
     
     <url>
     
-      <loc>/publication/kalcik-is-2017-1/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication/kalcik-is-2017/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication/biondi-trade-2017/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/uuriintuya-batsaikhan/</loc>
+      <loc>https://viz.netlify.com/authors/guntram-b-wolff/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -734,7 +445,40 @@
     
     <url>
     
-      <loc>/talk/example/</loc>
+      <loc>https://viz.netlify.com/publication/kalcik-is-2017-1/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://viz.netlify.com/publication/kalcik-is-2017/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://viz.netlify.com/publication/biondi-trade-2017/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://viz.netlify.com/authors/uuriintuya-batsaikhan/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://viz.netlify.com/talk/example/</loc>
       <lastmod>2017-01-01T00:00:00+01:00</lastmod>
     </url>
     
@@ -742,7 +486,7 @@
     
     <url>
     
-      <loc>/post/</loc>
+      <loc>https://viz.netlify.com/post/</loc>
       <lastmod>2017-01-01T00:00:00+01:00</lastmod>
     </url>
     
@@ -750,7 +494,7 @@
     
     <url>
     
-      <loc>/publication/</loc>
+      <loc>https://viz.netlify.com/publication/</loc>
       <lastmod>2017-01-01T00:00:00+01:00</lastmod>
     </url>
     
@@ -758,7 +502,7 @@
     
     <url>
     
-      <loc>/talk/</loc>
+      <loc>https://viz.netlify.com/talk/</loc>
       <lastmod>2017-01-01T00:00:00+01:00</lastmod>
     </url>
     
@@ -766,8 +510,21 @@
     
     <url>
     
-      <loc>/tags/demo/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <loc>https://viz.netlify.com/author/admin/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://viz.netlify.com/authors/admin/_index-copy/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://viz.netlify.com/author/</loc>
       <priority>0</priority>
     </url>
     
@@ -775,16 +532,7 @@
     
     <url>
     
-      <loc>/project/external-project/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/deep-learning/</loc>
-      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <loc>https://viz.netlify.com/authors/</loc>
       <priority>0</priority>
     </url>
     
@@ -792,95 +540,22 @@
     
     <url>
     
-      <loc>/project/internal-project/</loc>
-      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <loc>https://viz.netlify.com/courses/</loc>
     </url>
     
   
     
     <url>
     
-      <loc>/post/getting-started/</loc>
-      <lastmod>2018-01-13T00:00:00+01:00</lastmod>
+      <loc>https://viz.netlify.com/slides/example-slides/</loc>
     </url>
     
   
     
     <url>
     
-      <loc>/post/2015-07-23-r-rmarkdown/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/r-markdown/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+      <loc>https://viz.netlify.com/authors/admin/</loc>
       <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/plot/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/regression/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/author/admin/</loc>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/admin/_index-copy/</loc>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/author/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/courses/</loc>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/slides/example-slides/</loc>
     </url>
     
   

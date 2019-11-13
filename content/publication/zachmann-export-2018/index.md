@@ -7,5 +7,6 @@ publication_types: ["6"]
 abstract: ""
 featured: true
 publication: "*The Global Innovation Index 2018: Energizing the World with Innovation*"
+url_pdf: "https://www.wipo.int/edocs/pubdocs/en/wipo_pub_gii_2018.pdf"
 ---
 

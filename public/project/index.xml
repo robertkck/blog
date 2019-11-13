@@ -7,18 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Robert Kalcik 2018</copyright>
-    <lastBuildDate>Wed, 21 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Community Map</title>
+      <title>R&amp;D Investment Dashboard</title>
+      <link>/project/2019-11-13-r-d-investment-dashboard/</link>
+      <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/2019-11-13-r-d-investment-dashboard/</guid>
+      <description>The JRC annualy publishes the top R&amp;amp;D investing firms. This dashboard helps to explore the 2017 dataset.</description>
+    </item>
+    
+    <item>
+      <title>Community Map (WIP)</title>
       <link>/project/2019-08-21-community-map/</link>
       <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>/project/2019-08-21-community-map/</guid>
-      <description>The Austrian Digitisation Agency commissioned a stakeholder mapping of actors pushing digitisation forward in Austria. The Community Map, a Shiny app, shows data collected from a snowballing survey in which key actors identified their main partners and provided information about their R&amp;amp;D, business and data sharing links.</description>
+      <description>The Austrian &lt;a href=&#34;https://www.digitalaustria.gv.at/&#34; target=&#34;_blank&#34;&gt;Digitisation Agency&lt;/a&gt; commissioned a stakeholder mapping of actors pushing digitisation forward in Austria. The &lt;a href=&#34;http://robertkck.shinyapps.io/community_map&#34; target=&#34;_blank&#34;&gt;Community Map&lt;/a&gt;, a Shiny app, shows data collected from a snowballing survey in which key actors identified their main partners and provided information about their R&amp;amp;D, business and data sharing links.</description>
     </item>
     
     <item>
@@ -36,7 +45,7 @@
       <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>/project/2019-06-20-seats-in-the-european-parliament/</guid>
-      <description></description>
+      <description>With the UK leaving the EU, 73 MEPs leave the Parliament. The distribution of these seats matters for Europe. Find out about the proposals and explore your own distribution</description>
     </item>
     
     <item>
@@ -45,13 +54,7 @@
       <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/project/minister-vlatin/minister-vlatin/</guid>
-      <description>Meet Minister Vlatin! @MinisterVlatin is WorldControl&amp;rsquo;s own Twitter-Bot, that grants you the possibility to turn your #FakeNewz into real Game-Events
-This is how it works:
- Tweet your news with the tags #fakenewz and @truWorldControl Include the intended game effect in [square brackets] @MinisterVlatin will take it from there!  Example:
-@truWorldControl #fakenewz
-The Queen drowns in a cup of tea
-England sues India for bad taste.
-[ MUMBAI 70b &amp;gt; LONDON ]</description>
+      <description>Minister Vlatin ist der Haus und Hof Bot von dem totalen Brettspiel True World Control</description>
     </item>
     
     <item>

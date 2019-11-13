@@ -3,6 +3,7 @@ title: Minister Vlatin
 author: Robert Kalcik
 date: '2019-01-27'
 slug: minister-vlatin
+summary: Minister Vlatin ist der Haus und Hof Bot von dem totalen Brettspiel True World Control
 categories:
   - Bot
 tags:

@@ -6,7 +6,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Robert Kalcik 2018</copyright>
-    <lastBuildDate>Thu, 22 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 Nov 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
@@ -78,6 +78,19 @@
 &lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
 
 &lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R&amp;D Investment Dashboard</title>
+      <link>/project/2019-11-13-r-d-investment-dashboard/</link>
+      <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/2019-11-13-r-d-investment-dashboard/</guid>
+      <description>
+
+
+
 </description>
     </item>
     
@@ -175,7 +188,7 @@ logging:
     </item>
     
     <item>
-      <title>Community Map</title>
+      <title>Community Map (WIP)</title>
       <link>/project/2019-08-21-community-map/</link>
       <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
       
@@ -183,7 +196,7 @@ logging:
       <description>
 
 
-&lt;p&gt;The Austrian &lt;a href=&#34;https://www.digitalaustria.gv.at/&#34;&gt;Digitisation Agency&lt;/a&gt; commissioned a stakeholder mapping of actors pushing digitisation forward in Austria. The &lt;a href=&#34;http://robertkck.shinyapps.io/community_map&#34;&gt;Community Map&lt;/a&gt;, a Shiny app, shows data collected from a snowballing survey in which key actors identified their main partners and provided information about their R&amp;amp;D, business and data sharing links.&lt;/p&gt;
+
 </description>
     </item>
     
@@ -244,14 +257,6 @@ leaflet(df) %&amp;gt;%
 
 &lt;p&gt;wir motivieren die schweigende Mehrheit, sich aktiv im österreichischen Online-Diskurs zu beteiligen umso ein repräsentativeres Meinungsbild zu schaffen. Noch nie war es so einfach sich am Meinungsbildungsprozess zu beteiligen und trotzdem tun es aktuell nur sehr Wenige.
 Ein tagesaktuelles Analysetool erfasst Online-Kommentare automatisiert und gibt Hinweise über deren Repräsentativität. Die Resultate werden in einem Dashboard mit Gamification-Elementen dargestellt, um spielerische Anreize für Beteiligung zu setzen. Mit Hilfe einer Social-Media-Kampagne werden zentrale Erkenntnisse verbreitet, eine österreichische Community aufgebaut und somit die Beteiligung der schweigenden Mehrheit erhöht.&lt;/p&gt;
-
-&lt;h1 id=&#34;etappenziel-transparente-meinungsbildungsprozesse&#34;&gt;Etappenziel – transparente Meinungsbildungsprozesse&lt;/h1&gt;
-
-&lt;p&gt;wir schaffen Transparenz im undurchsichtigen Prozess der digitalen Meinungsbeeinflussung und zeigen somit die Notwenigkeit auf sich am Online-Diskurs zu beteiligen. Wir zeigen auf wie einige wenige sehr aktive User die Meinungen in Online-Foren diktieren. Parallel dazu nutzen Online-Redaktionen unsere Analyse um den Prozess der Erzeugung von Aufmerksamkeit im Netz und Verzerrungen des Diskurses besser zu verstehen. Diese beiden Effekte – die zunehmende digitale Meinungsvielfalt und die reflektierte Wahrnehmung dieser durch JournalistInnen – ermöglichen eine breitere Vielfalt der Berichterstattung.&lt;/p&gt;
-
-&lt;h1 id=&#34;den-weg-den-wir-gehen-vertrauen-in-die-mehrheit&#34;&gt;Den Weg den wir gehen – Vertrauen in die Mehrheit&lt;/h1&gt;
-
-&lt;p&gt;wir glauben an die Vernunft der breiten Öffentlichkeit und motivieren durch eine breit aufgestellte Social Media-Kampagne zur Beteiligung am Online-Diskurs. Die digitalen Straßen des 3. Jahrtausend werden nun auch von der breiten Mehrheit genutzt und nicht weiter ein paar wenigen überlassen. Reißerischen Phrasen und hasserfüllter Hetze wird so mit Vernunft, Respekt und inhaltlicher Diskussion die Stirn geboten. Durch eine breite Themenvielfalt wird die im Netz bisher unsichtbare Meinungsvielfalt widergespiegelt und kommt so endlich auch in der digitalen Welt an. So wird ein Schritt in Richtung Repräsentativität der Meinungen in Online-Medien erzeugt.&lt;/p&gt;
 
 &lt;h1 id=&#34;wer-wir-sind&#34;&gt;Wer wir sind&lt;/h1&gt;
 
@@ -352,7 +357,7 @@ Ein tagesaktuelles Analysetool erfasst Online-Kommentare automatisiert und gibt 
       <description>
 
 
-&lt;p&gt;At the occastion of the &lt;a href=&#34;https://www.risis2.eu/summer-schools/&#34;&gt;RISIS Summer School on Data Science in Science, Technology and Innovation Studies&lt;/a&gt; I wanted to print all &lt;a href=&#34;https://www.rstudio.com/resources/cheatsheets/&#34;&gt;RStudio cheatsheets&lt;/a&gt;. They are very well designed, speed up the coding and provide a good overview of the main functionality of a package. The regex, ggplot2, purrr and RMarkdown cheatsheets are my go to source.&lt;/p&gt;
+&lt;p&gt;At the occasion of the &lt;a href=&#34;https://www.risis2.eu/summer-schools/&#34;&gt;RISIS Summer School on Data Science in Science, Technology and Innovation Studies&lt;/a&gt; I wanted to print all &lt;a href=&#34;https://www.rstudio.com/resources/cheatsheets/&#34;&gt;RStudio cheatsheets&lt;/a&gt;. They are very well designed, speed up the coding and provide a good overview of the main functionality of a package. The regex, ggplot2, purrr and RMarkdown cheatsheets are my go to source.&lt;/p&gt;
 &lt;p&gt;Garrett Grolemund at RStudio maintains the &lt;a href=&#34;https://github.com/rstudio/cheatsheets&#34;&gt;github repo&lt;/a&gt; of all contributed cheatsheets. Since the sheets have been contributed by members of the R Community under &lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/&#34;&gt;CC-BY-4.0&lt;/a&gt;, I can share my merged files with you. You will find credits for each individual sheet author at the bottom of the page.&lt;/p&gt;
 &lt;p&gt;This is how to do it in R:&lt;/p&gt;
 &lt;ul&gt;
@@ -391,8 +396,7 @@ pdf_combine(f[len == 2], output = &amp;quot;2sided.pdf&amp;quot;)
       <description>
 
 
-&lt;iframe src=&#34;https://robertkck.shinyapps.io/ep19/?showcase=0&#34; width=&#34;672&#34; height=&#34;1500px&#34;&gt;
-&lt;/iframe&gt;
+
 </description>
     </item>
     
@@ -760,38 +764,6 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Minister Vlatin</title>
-      <link>/project/minister-vlatin/minister-vlatin/</link>
-      <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/project/minister-vlatin/minister-vlatin/</guid>
-      <description>
-
-&lt;h1 id=&#34;meet-minister-vlatin&#34;&gt;Meet Minister Vlatin!&lt;/h1&gt;
-
-&lt;p&gt;@MinisterVlatin is WorldControl&amp;rsquo;s own Twitter-Bot, that grants you the possibility to turn your #FakeNewz into real Game-Events&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://cdn.shopify.com/s/files/1/2321/0379/files/wc_selection-53_large.jpg?v=1520462231&#34; alt=&#34;World Control game-event cards&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This is how it works:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Tweet your news with the tags #fakenewz and @truWorldControl&lt;/li&gt;
-&lt;li&gt;Include the intended game effect in [square brackets]&lt;/li&gt;
-&lt;li&gt;@MinisterVlatin will take it from there!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Example:&lt;/p&gt;
-
-&lt;div class=&#34;center&#34;&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/truWorldControl?ref_src=twsrc%5Etfw&#34;&gt;@truWorldControl&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/fakenewz?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#fakenewz&lt;/a&gt;&lt;br&gt;The Queen drowns in a cup of tea&lt;br&gt;&lt;br&gt;England sues India for bad taste.&lt;br&gt;&lt;br&gt;[ MUMBAI 70b &amp;gt; LONDON ]&lt;/p&gt;&amp;mdash; imago.im (@im_imago) &lt;a href=&#34;https://twitter.com/im_imago/status/1042402544859979777?ref_src=twsrc%5Etfw&#34;&gt;September 19, 2018&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt; 
-&lt;/div&gt;
-
-&lt;p&gt;@MinisterVlatin will then send you a link to a pdf for printing &amp;amp; cutting&lt;/p&gt;
 </description>
     </item>
     

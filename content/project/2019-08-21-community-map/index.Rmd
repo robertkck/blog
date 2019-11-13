@@ -1,13 +1,15 @@
 ---
-title: Community Map
+title: Community Map (WIP)
 author: Robert Kalcik
 date: '2019-08-21'
 slug: []
-draft: true
+draft: false
 categories:
   - digitisation
   - R
   - Shiny
+summary: 'The Austrian [Digitisation Agency](https://www.digitalaustria.gv.at/) commissioned a stakeholder mapping of actors pushing digitisation forward in Austria. The [Community Map](http://robertkck.shinyapps.io/community_map), a Shiny app, shows data collected from a snowballing survey in which key actors identified their main partners and provided information about their R&D, business and data sharing links.'
+external_link: https://robertkck.shinyapps.io/community_map
 tags:
   - Digitisation
   - leaflet
@@ -17,4 +19,3 @@ image:
   focal_point: ''
 ---
 
-The Austrian [Digitisation Agency](https://www.digitalaustria.gv.at/) commissioned a stakeholder mapping of actors pushing digitisation forward in Austria. The [Community Map](http://robertkck.shinyapps.io/community_map), a Shiny app, shows data collected from a snowballing survey in which key actors identified their main partners and provided information about their R&D, business and data sharing links. 

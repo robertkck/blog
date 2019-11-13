@@ -21,7 +21,7 @@ setwd(here::here("content/post/2019-06-20-join-rstudio-cheat-sheets-using-pdftoo
 library(fontawesome)
 ```
 
-At the occastion of the [RISIS Summer School on Data Science in Science, Technology and Innovation Studies](https://www.risis2.eu/summer-schools/) I wanted to print all [RStudio cheatsheets](https://www.rstudio.com/resources/cheatsheets/). They are very well designed, speed up the coding and provide a good overview of the main functionality of a package. The regex, ggplot2, purrr and RMarkdown cheatsheets are my go to source. 
+At the occasion of the [RISIS Summer School on Data Science in Science, Technology and Innovation Studies](https://www.risis2.eu/summer-schools/) I wanted to print all [RStudio cheatsheets](https://www.rstudio.com/resources/cheatsheets/). They are very well designed, speed up the coding and provide a good overview of the main functionality of a package. The regex, ggplot2, purrr and RMarkdown cheatsheets are my go to source. 
 
 Garrett Grolemund at RStudio maintains the [github repo](https://github.com/rstudio/cheatsheets) of all contributed cheatsheets. Since the sheets have been contributed by members of the R Community under [CC-BY-4.0](https://creativecommons.org/licenses/by-sa/4.0/), I can share my merged files with you. You will find credits for each individual sheet author at the bottom of the page. 
 

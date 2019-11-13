@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Robert Kalcik 2018</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 13 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/academic/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>R&amp;D Investment Dashboard</title>
+      <link>/project/2019-11-13-r-d-investment-dashboard/</link>
+      <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/2019-11-13-r-d-investment-dashboard/</guid>
+      <description>The JRC annualy publishes the top R&amp;amp;D investing firms. This dashboard helps to explore the 2017 dataset.</description>
+    </item>
     
     <item>
       <title>Academic: the website designer for Hugo</title>

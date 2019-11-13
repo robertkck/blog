@@ -13,12 +13,12 @@
     
     
     <item>
-      <title>Community Map</title>
+      <title>Community Map (WIP)</title>
       <link>/project/2019-08-21-community-map/</link>
       <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>/project/2019-08-21-community-map/</guid>
-      <description>The Austrian Digitisation Agency commissioned a stakeholder mapping of actors pushing digitisation forward in Austria. The Community Map, a Shiny app, shows data collected from a snowballing survey in which key actors identified their main partners and provided information about their R&amp;amp;D, business and data sharing links.</description>
+      <description>The Austrian &lt;a href=&#34;https://www.digitalaustria.gv.at/&#34; target=&#34;_blank&#34;&gt;Digitisation Agency&lt;/a&gt; commissioned a stakeholder mapping of actors pushing digitisation forward in Austria. The &lt;a href=&#34;http://robertkck.shinyapps.io/community_map&#34; target=&#34;_blank&#34;&gt;Community Map&lt;/a&gt;, a Shiny app, shows data collected from a snowballing survey in which key actors identified their main partners and provided information about their R&amp;amp;D, business and data sharing links.</description>
     </item>
     
     <item>

@@ -1,6 +1,4 @@
 ---
-categories:
-- Media
 date: "2019-08-04T11:02:38+02:00"
 draft: true
 image:
@@ -10,6 +8,8 @@ title: Sag Deine Meinung (de)
 external_link: ""
 summary: Öffentlicher Diskurs und Mitsprache
 abstract: "Öffentlicher Diskurs und Mitsprache"
+categories:
+- Media
 tags:
 - Media
 - Participation

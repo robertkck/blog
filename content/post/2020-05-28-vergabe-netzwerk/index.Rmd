@@ -9,7 +9,6 @@ categories:
 tags:
   - R
 authors: []
-draft: true
 image:
   caption: ''
   focal_point: ''

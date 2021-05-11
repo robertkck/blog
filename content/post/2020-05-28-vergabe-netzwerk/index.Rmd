@@ -2,6 +2,7 @@
 title: Vergabe Netzwerk
 author: Robert Kalcik
 date: '2020-05-28'
+draft: true
 slug: []
 categories:
   - R

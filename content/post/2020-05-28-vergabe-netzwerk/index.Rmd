@@ -1,0 +1,17 @@
+---
+title: Vergabe Netzwerk
+author: Robert Kalcik
+date: '2020-05-28'
+slug: []
+categories:
+  - R
+tags:
+  - R
+authors: []
+draft: true
+image:
+  caption: ''
+  focal_point: ''
+---
+
+https://offenevergaben.at/

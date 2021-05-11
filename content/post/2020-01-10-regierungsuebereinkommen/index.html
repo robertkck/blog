@@ -1,0 +1,153 @@
+---
+title: "Die Sprache Des Regierungsübereinkommens"
+subtitle: "NLP Analyse des Programmtextes"
+author: Robert Kalcik
+draft: true
+date: '2020-01-10'
+slug: []
+categories:
+  - policy
+  - nlp
+tags:
+  - Politics
+  - R
+image:
+  caption: ''
+  focal_point: ''
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>Hello</p>
+<pre class="r"><code>library(pdftools)
+library(tidyverse)</code></pre>
+<pre><code>## -- Attaching packages -------------------------------------------------------------------------------- tidyverse 1.3.0 --</code></pre>
+<pre><code>## v ggplot2 3.3.0     v purrr   0.3.3
+## v tibble  3.0.1     v dplyr   0.8.5
+## v tidyr   1.0.2     v stringr 1.4.0
+## v readr   1.3.1     v forcats 0.4.0</code></pre>
+<pre><code>## Warning: Paket &#39;ggplot2&#39; wurde unter R Version 3.6.3 erstellt</code></pre>
+<pre><code>## Warning: Paket &#39;tibble&#39; wurde unter R Version 3.6.3 erstellt</code></pre>
+<pre><code>## Warning: Paket &#39;dplyr&#39; wurde unter R Version 3.6.3 erstellt</code></pre>
+<pre><code>## -- Conflicts ----------------------------------------------------------------------------------- tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code>library(ggpage)</code></pre>
+<pre><code>## Warning: Paket &#39;ggpage&#39; wurde unter R Version 3.6.3 erstellt</code></pre>
+<pre class="r"><code>library(tidytext)
+library(topicmodels)</code></pre>
+<pre><code>## Warning: Paket &#39;topicmodels&#39; wurde unter R Version 3.6.3 erstellt</code></pre>
+<pre class="r"><code># download.file(&quot;https://gruene.at/themen/demokratie-verfassung/regierungsuebereinkommen-tuerkis-gruen/regierungsuebereinkommen.pdf&quot;, &quot;data/regierungsuebereinkommen.pdf&quot;, mode = &quot;wb&quot;)
+text &lt;- pdf_data(&quot;regierungsuebereinkommen.pdf&quot;)</code></pre>
+<pre class="r"><code>toc &lt;- text[[3]] %&gt;% 
+  filter(row_number() &gt; 3) %&gt;% 
+  mutate(
+    # chapter = ifelse(str_detect(text, &quot;^0[1-6]\\.&quot;), parse_number(text), NA),
+    page_number = parse_number(text)
+  ) %&gt;% 
+  fill(page_number) %&gt;% 
+  # fill(chapter) %&gt;% 
+  filter(is.na(parse_number(text)), page_number &gt;= 10) %&gt;% 
+  group_by(page_number) %&gt;% 
+  summarise(title = paste(text, collapse = &quot; &quot;))</code></pre>
+<pre><code>## Warning: 105 parsing failures.
+## row col expected       actual
+##   2  -- a number Staat,      
+##   3  -- a number Gesellschaft
+##   4  -- a number &amp;           
+##   5  -- a number Transparenz 
+##   7  -- a number Verfassung, 
+## ... ... ........ ............
+## See problems(...) for more details.
+
+## Warning: 105 parsing failures.
+## row col expected       actual
+##   2  -- a number Staat,      
+##   3  -- a number Gesellschaft
+##   4  -- a number &amp;           
+##   5  -- a number Transparenz 
+##   7  -- a number Verfassung, 
+## ... ... ........ ............
+## See problems(...) for more details.</code></pre>
+<pre class="r"><code>df &lt;- bind_rows(text, .id = &quot;page_number&quot;) %&gt;% mutate(page_number = as.numeric(page_number))
+df &lt;- df %&gt;% 
+  left_join(toc, by = &quot;page_number&quot;) %&gt;% 
+  fill(title) %&gt;% 
+  na.omit()</code></pre>
+<pre><code>## Warning: Column `page_number` has different attributes on LHS and RHS of join</code></pre>
+<pre class="r"><code>df %&gt;% 
+  filter(page_number == 10) %&gt;% 
+  summarise(text = paste(text, collapse = &quot; &quot;)) %&gt;% 
+  mutate(
+    text = str_wrap(text, width = 80),
+    text = str_split(text, &quot;\n&quot;)
+  ) %&gt;% 
+  unnest() %&gt;% 
+  ggpage_quick()</code></pre>
+<pre><code>## Warning: `cols` is now required.
+## Please use `cols = c(text)`</code></pre>
+<pre><code>## Warning: Use of `data_1$x_space_right` is discouraged. Use `x_space_right`
+## instead.</code></pre>
+<pre><code>## Warning: Use of `data_1$x_page` is discouraged. Use `x_page` instead.</code></pre>
+<pre><code>## Warning: Use of `data_1$x_space_left` is discouraged. Use `x_space_left`
+## instead.</code></pre>
+<pre><code>## Warning: Use of `data_1$x_page` is discouraged. Use `x_page` instead.</code></pre>
+<pre><code>## Warning: Use of `data_1$line` is discouraged. Use `line` instead.</code></pre>
+<pre><code>## Warning: Use of `data_1$y_page` is discouraged. Use `y_page` instead.</code></pre>
+<pre><code>## Warning: Use of `data_1$line` is discouraged. Use `line` instead.</code></pre>
+<pre><code>## Warning: Use of `data_1$y_page` is discouraged. Use `y_page` instead.</code></pre>
+<p><img src="/post/2020-01-10-regierungsuebereinkommen/index_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<pre class="r"><code>df &lt;- df %&gt;% 
+  mutate(
+    row_break = str_detect(text, &quot;.\\-$&quot;),
+    text = ifelse(row_break, paste0(str_remove(text, &quot;\\-$&quot;), lead(text)), text)
+  ) %&gt;% 
+  filter(!lag(row_break))</code></pre>
+<pre class="r"><code>df &lt;- df %&gt;% 
+  mutate(text = tolower(text)) %&gt;% 
+  filter(!text %in% stopwords::stopwords(language = &quot;de&quot;))
+
+df &lt;- df %&gt;% 
+  filter(str_detect(text, &quot;[[:alpha:]]&quot;)) %&gt;% 
+  filter(!text %in% c(&quot;sowie&quot;, &quot;o&quot;, &quot;seite&quot;, &quot;z.b.&quot;, &quot;regierungsprogramm&quot;, &quot;fahne&quot;, &quot;bzw&quot;, &quot;insbesondere&quot;, &quot;österreich&quot;, &quot;bzw&quot;, &quot;österreichischen&quot;)) %&gt;% 
+  mutate(text = str_remove(text, &quot;[[:punct:]]&quot;)) %&gt;% 
+  filter(!text %in% stopwords::stopwords(language = &quot;de&quot;))</code></pre>
+<pre class="r"><code>df %&gt;% count(title, text, sort = T) %&gt;% 
+  group_by(title) %&gt;% top_n(10, n) %&gt;% 
+  ungroup() %&gt;% 
+  mutate(text = reorder_within(text, n, title)) %&gt;% 
+  ggplot(aes(x = text, y = n, fill = factor(title))) +
+  geom_col(show.legend = FALSE) +
+  coord_flip() +
+  facet_wrap(~title, scales = &quot;free&quot;, ncol = 3) +
+  scale_x_reordered()</code></pre>
+<p><img src="/post/2020-01-10-regierungsuebereinkommen/index_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<div id="lda" class="section level1">
+<h1>LDA</h1>
+<pre class="r"><code>dtm &lt;- df %&gt;% 
+  count(title, text) %&gt;% 
+  cast_dtm(title, text, n)
+
+page_lda &lt;- LDA(dtm, k = 5, control = list(seed = 12345))
+# saveRDS(page_lda, file = paste0(&quot;model/lda_&quot;, Sys.Date(), &quot;.RDS&quot;))
+# page_lda &lt;- readRDS(&quot;model/lda_2020-01-07.RDS&quot;)
+
+page_topics &lt;- tidy(page_lda, matrix = &quot;beta&quot;)
+
+
+page_top_terms &lt;- page_topics %&gt;%
+  group_by(topic) %&gt;%
+  top_n(10, beta) %&gt;%
+  ungroup() %&gt;%
+  arrange(topic, -beta)
+
+page_top_terms %&gt;%
+  mutate(term = reorder_within(term, beta, topic)) %&gt;%
+  ggplot(aes(term, beta, fill = factor(topic))) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~ topic, scales = &quot;free&quot;) +
+  coord_flip() +
+  scale_x_reordered()</code></pre>
+<p><img src="/post/2020-01-10-regierungsuebereinkommen/index_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+</div>

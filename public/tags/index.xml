@@ -6,11 +6,20 @@
     <description>Recent content in Tags on viz.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; Robert Kalcik 2018</copyright>
-    <lastBuildDate>Wed, 13 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <copyright>&amp;copy; Robert Hawlik 2021</copyright>
+    <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://viz.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>R</title>
+      <link>https://viz.netlify.com/tags/r/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://viz.netlify.com/tags/r/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Academic</title>

@@ -13,7 +13,7 @@ baseurl = "https://viz.netlify.com/"
 
 # Enter a copyright notice to display in the site footer.
 # To display a copyright symbol, type `&copy;`.
-copyright = "&copy; Robert Kalcik 2018"
+copyright = "&copy; Robert Hawlik 2021"
 
 # Enable analytics by entering your Google Analytics tracking ID
 googleAnalytics = "UA-133289279-1"

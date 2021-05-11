@@ -1,0 +1,41 @@
+* {
+	font-family: 'Nunito', sans-serif;
+	color:#4b4a49;
+}
+h1 {
+	color: #18aa9b;
+	text-transform: uppercase;
+}
+h2 {
+	color:#18aa9b;
+}
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+.summary li:first-child:not(.chapter) a{
+    background-image: url(images/logo_i24c_breugle.svg) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    color:transparent !important;
+}
+
+.summary li:first-child:not(.chapter) {
+	background:white !important;
+	height:49px !important;
+}
+
+.book .book-summary ul.summary li.divider {
+	margin:0px !important;
+}

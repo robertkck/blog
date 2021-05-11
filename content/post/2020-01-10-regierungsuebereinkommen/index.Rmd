@@ -1,0 +1,136 @@
+---
+title: "Die Sprache Des Regierungsübereinkommens"
+subtitle: "NLP Analyse des Programmtextes"
+author: Robert Kalcik
+draft: true
+date: '2020-01-10'
+slug: []
+categories:
+  - policy
+  - nlp
+tags:
+  - Politics
+  - R
+image:
+  caption: ''
+  focal_point: ''
+---
+
+Hello
+
+
+
+```{r}
+library(pdftools)
+library(tidyverse)
+library(ggpage)
+library(tidytext)
+library(topicmodels)
+
+# download.file("https://gruene.at/themen/demokratie-verfassung/regierungsuebereinkommen-tuerkis-gruen/regierungsuebereinkommen.pdf", "data/regierungsuebereinkommen.pdf", mode = "wb")
+text <- pdf_data("regierungsuebereinkommen.pdf")
+```
+
+```{r}
+toc <- text[[3]] %>% 
+  filter(row_number() > 3) %>% 
+  mutate(
+    # chapter = ifelse(str_detect(text, "^0[1-6]\\."), parse_number(text), NA),
+    page_number = parse_number(text)
+  ) %>% 
+  fill(page_number) %>% 
+  # fill(chapter) %>% 
+  filter(is.na(parse_number(text)), page_number >= 10) %>% 
+  group_by(page_number) %>% 
+  summarise(title = paste(text, collapse = " "))
+```
+
+
+```{r}
+df <- bind_rows(text, .id = "page_number") %>% mutate(page_number = as.numeric(page_number))
+df <- df %>% 
+  left_join(toc, by = "page_number") %>% 
+  fill(title) %>% 
+  na.omit()
+
+```
+
+```{r}
+df %>% 
+  filter(page_number == 10) %>% 
+  summarise(text = paste(text, collapse = " ")) %>% 
+  mutate(
+    text = str_wrap(text, width = 80),
+    text = str_split(text, "\n")
+  ) %>% 
+  unnest() %>% 
+  ggpage_quick()
+```
+
+```{r}
+df <- df %>% 
+  mutate(
+    row_break = str_detect(text, ".\\-$"),
+    text = ifelse(row_break, paste0(str_remove(text, "\\-$"), lead(text)), text)
+  ) %>% 
+  filter(!lag(row_break))
+```
+
+```{r}
+df <- df %>% 
+  mutate(text = tolower(text)) %>% 
+  filter(!text %in% stopwords::stopwords(language = "de"))
+
+df <- df %>% 
+  filter(str_detect(text, "[[:alpha:]]")) %>% 
+  filter(!text %in% c("sowie", "o", "seite", "z.b.", "regierungsprogramm", "fahne", "bzw", "insbesondere", "österreich", "bzw", "österreichischen")) %>% 
+  mutate(text = str_remove(text, "[[:punct:]]")) %>% 
+  filter(!text %in% stopwords::stopwords(language = "de"))
+```
+
+```{r}
+df %>% count(title, text, sort = T) %>% 
+  group_by(title) %>% top_n(10, n) %>% 
+  ungroup() %>% 
+  mutate(text = reorder_within(text, n, title)) %>% 
+  ggplot(aes(x = text, y = n, fill = factor(title))) +
+  geom_col(show.legend = FALSE) +
+  coord_flip() +
+  facet_wrap(~title, scales = "free", ncol = 3) +
+  scale_x_reordered()
+
+```
+
+# LDA
+
+```{r}
+
+
+dtm <- df %>% 
+  count(title, text) %>% 
+  cast_dtm(title, text, n)
+
+page_lda <- LDA(dtm, k = 5, control = list(seed = 12345))
+# saveRDS(page_lda, file = paste0("model/lda_", Sys.Date(), ".RDS"))
+# page_lda <- readRDS("model/lda_2020-01-07.RDS")
+
+page_topics <- tidy(page_lda, matrix = "beta")
+
+
+page_top_terms <- page_topics %>%
+  group_by(topic) %>%
+  top_n(10, beta) %>%
+  ungroup() %>%
+  arrange(topic, -beta)
+
+page_top_terms %>%
+  mutate(term = reorder_within(term, beta, topic)) %>%
+  ggplot(aes(term, beta, fill = factor(topic))) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~ topic, scales = "free") +
+  coord_flip() +
+  scale_x_reordered()
+
+
+```
+

@@ -1,0 +1,65 @@
+.ca-editor input[type=text] {
+  width: 99.5%;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #ededed; }
+
+.ca-editor .container {
+  max-width: 100%;
+  width: 100%; }
+
+div.ta-toolbar {
+  background-color: #F0F0F0;
+  border: 1px solid #EEE;
+  margin-left: 0px;
+  padding: 10px 10px 5px; }
+
+.ta-editor, .white-box {
+  padding: 10px;
+  background-color: #FFF;
+  border: 1px solid #EEE; }
+
+.ta-scroll-window {
+  min-height: 300px;
+  height: auto;
+  overflow: auto;
+  font-family: inherit;
+  font-size: 100%; }
+
+.dotted-border {
+  border: 1px dotted #454545; }
+
+/*img{
+	max-width: 100%;
+	height: auto;
+}*/
+.causality-component .Grid {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0; }
+.causality-component .Grid-cell {
+  box-sizing: border-box;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  min-width: 0; }
+.causality-component .u-md-size1of2 {
+  -webkit-flex-basis: auto !important;
+  -ms-flex-preferred-size: auto !important;
+  flex-basis: auto !important;
+  width: 50% !important; }
+.causality-component .u-md-size1of3 {
+  -webkit-flex-basis: auto !important;
+  -ms-flex-preferred-size: auto !important;
+  flex-basis: auto !important;
+  width: 33% !important; }
+
+/*# sourceMappingURL=ca-editor.css.map */
